@@ -52,7 +52,7 @@ export default function Navbar({ activePage, setActivePage }) {
                 Al Karam <span className="text-medical-600">Medical</span>
               </span>
               <span className="block text-[9px] uppercase tracking-wider text-slate-500 font-bold leading-none mt-0.5">
-                Planning, Maintenance & Support
+                EQUIPMENT, Planning & Support
               </span>
             </div>
           </div>

@@ -15,8 +15,8 @@ import {
 function Hero({ setActivePage }) {
   const stats = [
     { label: "Biomedical Engineers", value: "35+", icon: Wrench, color: "text-blue-600", bg: "bg-blue-50" },
-    { label: "Emergency SLA Response", value: "< 2 Hrs", icon: Clock, color: "text-rose-500", bg: "bg-rose-50" },
-    { label: "Equipment Under Calibrations", value: "5,000+", icon: Activity, color: "text-emerald-500", bg: "bg-emerald-50" },
+    { label: "Emergency SLA Response", value: "< 24 Hrs", icon: Clock, color: "text-rose-500", bg: "bg-rose-50" },
+    { label: "Equipment Sold", value: "5,000+", icon: Activity, color: "text-emerald-500", bg: "bg-emerald-50" },
     { label: "Operational Reliability", value: "99.8%", icon: Shield, color: "text-indigo-600", bg: "bg-indigo-50" }
   ];
 

@@ -215,7 +215,7 @@ function AboutUs({ setActivePage = () => { } }) {
                   Corporate Overview
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 leading-snug">
-                  Smart Applications & Precise Clinical Devices
+                  Integrated Healthcare Solutions
                 </h2>
               </div>
 
