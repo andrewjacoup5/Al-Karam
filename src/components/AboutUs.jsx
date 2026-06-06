@@ -172,7 +172,7 @@ function AboutUs({ setActivePage = () => { } }) {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-medical-500"></span>
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-600">
-                Pioneering Medtech & Strategic Planning • Est. 2017
+                Alkaram Medical • Est. 2017
               </span>
             </div>
 
