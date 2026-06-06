@@ -1,213 +1,214 @@
-import React from "react";
-import { X, ShieldAlert, Award, FileText, CheckCircle2, Download, AlertTriangle } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import { X, Download, FileText, CheckCircle2, ShieldCheck, HelpCircle } from "lucide-react";
+import ProductGallery from "./ProductGallery";
+import DocxParser from "./DocxParser";
+import { getSortedGalleryImages } from "../utils/productUtils";
 
-export default function ProductModal({ product, onClose }) {
-  if (!product) return null;
+/**
+ * Large, responsive details modal for Al Karam products.
+ */
+export default function ProductModal({ device, activeVersionIdx, setActiveVersionIdx, onClose }) {
+  const modalRef = useRef(null);
+  const [detectedDeviceName, setDetectedDeviceName] = useState(
+    `${device.brand} - ${device.name}`
+  );
 
-  // Dynamic documentation text file generator and downloader
-  const downloadDocumentation = () => {
-    let doc = `========================================================================\n`;
-    doc += `               ALKARAM MEDICAL FOR BIOMEDICAL SERVICES                  \n`;
-    doc += `           TECHNICAL DIAGNOSTIC AND SPECIFICATION ARCHIVE               \n`;
-    doc += `========================================================================\n\n`;
-    
-    doc += `DEVICE SPECIFICATION LEDGER\n`;
-    doc += `------------------------------------------------------------------------\n`;
-    doc += `Brand / Manufacturer     : ${product.brand}\n`;
-    doc += `Equipment Model Name     : ${product.name}\n`;
-    doc += `Full Nomenclature ID    : ${product.fullName}\n`;
-    doc += `Target Clinical Sectors : ${product.sectors.join(", ")}\n`;
-    doc += `Regulatory Risk Profile : ${product.riskCategory}\n`;
-    doc += `Scheduled Calibration   : Every ${product.calibrationInterval}\n`;
-    doc += `Operating Standards      : IEC 60601-1 / ISO 13485 Compliant\n\n`;
-    
-    doc += `1. DETAILED HARDWARE SPECIFICATIONS\n`;
-    doc += `------------------------------------------------------------------------\n`;
-    Object.entries(product.specs).forEach(([key, value]) => {
-      doc += `${key.padEnd(25)}: ${value}\n`;
-    });
-    doc += `\n`;
-    
-    doc += `2. BIOMEDICAL PREVENTIVE MAINTENANCE CHECKLIST (AAMI/ECRI)\n`;
-    doc += `------------------------------------------------------------------------\n`;
-    product.checklist.forEach((step, index) => {
-      doc += `[ ] PM-STEP 0${index + 1}: ${step}\n`;
-    });
-    doc += `\n`;
-    
-    doc += `3. CALIBRATION AND QUALITY ASSURANCE AUDIT COMPLIANCE\n`;
-    doc += `------------------------------------------------------------------------\n`;
-    doc += `* Ensure device is connected to NIST-traceable diagnostic simulator.\n`;
-    doc += `* Check casing ground-fault impedance (< 0.2 Ohms maximum threshold).\n`;
-    doc += `* Check enclosure electrical safety leakage currents (< 100 µA).\n`;
-    doc += `* Standard calibration interval of ${product.calibrationInterval} must be enforced.\n\n`;
-    
-    doc += `========================================================================\n`;
-    doc += `For urgent maintenance, parts sourcing, or emergency calibration,\n`;
-    doc += `contact Alkaram Medical Dispatch: support@alkaram-medical.com\n`;
-    doc += `Emergency Technical Hotline: +20 (10) 9999-9999\n`;
-    doc += `========================================================================\n`;
+  // Reset name on device/version swap
+  useEffect(() => {
+    setDetectedDeviceName(`${device.brand} - ${device.name}`);
+  }, [device, activeVersionIdx]);
 
-    const blob = new Blob([doc], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    
-    // Formatting filename safely
-    const cleanFileName = product.fullName.replace(/[^a-z0-9]/gi, "_").toLowerCase();
-    link.download = `alkaram_${cleanFileName}_specs.txt`;
-    
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  };
+  // Focus trap & ESC key listener for accessibility
+  useEffect(() => {
+    if (modalRef.current) {
+      modalRef.current.focus();
+    }
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  const version = device.versions[activeVersionIdx] || device.versions[0];
+  if (!version) return null;
+
+  // Extract DOCX and PDF documents
+  const docxFile = version.documents?.find(doc => doc.ext === ".docx");
+  const pdfFile = version.documents?.find(doc => doc.ext === ".pdf");
+
+  // Retrieve sorted image list
+  const sortedImages = getSortedGalleryImages(version.images);
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-4">
-      {/* Backdrop overlay */}
-      <div 
-        onClick={onClose}
-        className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity duration-300"
-      />
-      
-      {/* Modal Container */}
-      <div className="relative bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-100 flex flex-col justify-between max-h-[90vh] overflow-y-auto animate-page-enter">
-        
-        {/* Modal Close button */}
-        <button 
-          onClick={onClose}
-          className="absolute top-4 right-4 p-1.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
-        >
-          <X className="h-5 w-5" />
-        </button>
-
-        {/* Modal Content */}
-        <div>
-          {/* Header Row */}
-          <div className="flex items-start space-x-4 mb-6">
-            {/* Vector Badge */}
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-medical-500 to-medical-700 text-white font-bold text-xl flex items-center justify-center flex-shrink-0 shadow-md">
-              {product.brand.substring(0, 2).toUpperCase()}
-            </div>
-            
-            <div>
-              <span className="text-[10px] font-bold text-medical-600 bg-medical-50 border border-medical-100 px-3 py-1 rounded-full uppercase tracking-wider">
-                {product.brand} OEM Hardware
-              </span>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-800 mt-2 mb-1">
-                {product.name}
-              </h3>
-              <span className="text-xs font-semibold text-slate-400">
-                Nomenclature: {product.fullName}
-              </span>
-            </div>
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 md:p-6 overflow-y-auto select-none"
+      onClick={onClose}
+    >
+      <div
+        ref={modalRef}
+        tabIndex="-1"
+        className="bg-white rounded-3xl w-full max-w-[1400px] shadow-2xl border border-slate-100 overflow-hidden my-4 flex flex-col focus:outline-none animate-page-enter max-h-[92vh]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Modal Header */}
+        <div className="p-6 bg-slate-900 text-white flex justify-between items-start relative select-text">
+          <div>
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-medical-400 bg-medical-950 px-2.5 py-1 rounded">
+              {device.category} • Equipment Details
+            </span>
+            <h3 id="modal-title" className="text-xl md:text-2xl font-black mt-2 leading-tight">
+              {detectedDeviceName}
+            </h3>
           </div>
 
-          {/* Description */}
-          <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-            {product.description}
-          </p>
-
-          {/* Technical Specs & Compliance row grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            
-            {/* Tech Specs */}
-            <div className="bg-slate-50 rounded-2xl p-4.5 border border-slate-100/60">
-              <h4 className="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3 flex items-center">
-                <FileText className="h-4 w-4 mr-2 text-medical-600" />
-                Technical Specifications
-              </h4>
-              <div className="space-y-2">
-                {Object.entries(product.specs).map(([key, val]) => (
-                  <div key={key} className="flex justify-between items-start text-xs border-b border-slate-200/50 pb-1.5">
-                    <span className="text-slate-500 font-medium">{key}</span>
-                    <span className="text-slate-800 font-bold text-right">{val}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Support Parameters / Risk categories */}
-            <div className="space-y-4">
-              
-              {/* Risk category box */}
-              <div className="flex items-center space-x-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100/60">
-                <div className="p-2 rounded-xl bg-rose-50 text-rose-600">
-                  <ShieldAlert className="h-5 w-5" />
-                </div>
-                <div>
-                  <span className="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Risk Classification</span>
-                  <span className="block text-xs font-bold text-rose-600 mt-0.5">{product.riskCategory}</span>
-                </div>
-              </div>
-
-              {/* Calibration interval box */}
-              <div className="flex items-center space-x-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100/60">
-                <div className="p-2 rounded-xl bg-amber-50 text-amber-600">
-                  <Award className="h-5 w-5" />
-                </div>
-                <div>
-                  <span className="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Calibration Mandate</span>
-                  <span className="block text-xs font-bold text-slate-700 mt-0.5">Every {product.calibrationInterval}</span>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          {/* Biomedical PM Checklist */}
-          <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100/60 mb-6">
-            <h4 className="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3.5 flex items-center">
-              <CheckCircle2 className="h-4 w-4 mr-2 text-emerald-500" />
-              Biomedical PM Checklist (AAMI Standards)
-            </h4>
-            <div className="space-y-2">
-              {product.checklist.map((step, idx) => (
-                <div key={idx} className="flex items-start space-x-2.5 text-xs text-slate-500 font-medium">
-                  <div className="w-4 h-4 rounded border border-slate-300 bg-white flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-[9px] text-emerald-500">
-                    ✓
-                  </div>
-                  <span>{step}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Standards Alert Callout */}
-          <div className="flex items-start space-x-3 p-4 bg-amber-50/60 rounded-2xl border border-amber-100 text-xs text-amber-800 mb-6">
-            <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <p className="leading-relaxed">
-              <strong>Calibration Alert:</strong> All adjustments and measurements on this equipment model must be validated using NIST-traceable digital instrumentation. Self-servicing by non-certified personnel compromises patient safety margins.
-            </p>
-          </div>
-
+          <button
+            onClick={onClose}
+            aria-label="Close modal dialog"
+            className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white/90 hover:text-white transition-colors cursor-pointer border border-white/5 active:scale-95"
+          >
+            <X className="h-5 w-5" />
+          </button>
         </div>
 
-        {/* Modal Action footer */}
-        <div className="pt-5 border-t border-slate-200/60 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">
-            * Generated dynamically by Alkaram Metrology Desk
-          </span>
-          
-          <div className="flex space-x-3 w-full sm:w-auto">
+        {/* Dynamic Version Tabs for Multi-spec Devices */}
+        {device.versions.length > 1 && (
+          <div className="px-6 py-3.5 bg-slate-50 border-b border-slate-100/80 flex flex-wrap items-center gap-2 select-text">
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Device Version:</span>
+            <div className="flex flex-wrap gap-1.5">
+              {device.versions.map((ver, idx) => {
+                const isSelected = activeVersionIdx === idx;
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveVersionIdx(idx)}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                      isSelected
+                        ? "bg-medical-600 text-white border-medical-600 shadow-sm"
+                        : "bg-white text-slate-600 border-slate-200 hover:bg-slate-100/50"
+                    }`}
+                  >
+                    {ver.name}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Modal Main Body Scroll Grid */}
+        <div className="p-6 overflow-y-auto flex-1 select-text">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Left Column: Image Slider & Controls (7 Columns on Large screen) */}
+            <div className="lg:col-span-7 space-y-4">
+              <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center">
+                <FileText className="h-4.5 w-4.5 mr-2 text-medical-600" />
+                Image Gallery & Visual Proofs
+              </h4>
+              
+              <ProductGallery images={sortedImages} />
+            </div>
+
+            {/* Right Column: Device Specifications Accordions (5 Columns) */}
+            <div className="lg:col-span-5 space-y-4">
+              <h4 className="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center">
+                <HelpCircle className="h-4.5 w-4.5 mr-2 text-medical-600" />
+                Technical Profile & Specifications
+              </h4>
+
+              {docxFile ? (
+                /* Dynamic Word Document specifications engine */
+                <DocxParser
+                  docxPath={docxFile.path}
+                  fallbackName={`${device.brand} - ${device.name}`}
+                  onDeviceNameDetected={setDetectedDeviceName}
+                />
+              ) : (
+                /* Fallback specs profile for database-only items */
+                <div className="space-y-4">
+                  <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-200/50 shadow-sm">
+                    <h4 className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 mb-2">Device Overview</h4>
+                    <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                      Standard technical specifications and installation guidelines are stored under the Al Karam Biomedical Database registry. Use the PDF catalog below for offline viewing.
+                    </p>
+                  </div>
+
+                  <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm p-5 space-y-3">
+                    <div className="flex items-center space-x-2 text-medical-600 font-bold text-xs pb-1 border-b border-slate-100">
+                      <CheckCircle2 className="h-4.5 w-4.5" />
+                      <span>Preventive Maintenance Standard Checks</span>
+                    </div>
+                    <ul className="space-y-2 text-xs text-slate-600">
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Electrical Safety Test</li>
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Sensors & Alarms Calibration</li>
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Battery Backup Load Cycle Test</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-2xl border border-slate-200/60 shadow-sm p-5 space-y-3">
+                    <div className="flex items-center space-x-2 text-medical-600 font-bold text-xs pb-1 border-b border-slate-100">
+                      <ShieldCheck className="h-4.5 w-4.5" />
+                      <span>Compliance Checklist</span>
+                    </div>
+                    <ul className="space-y-2 text-xs text-slate-600">
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />ISO 13485 Medical Quality</li>
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />NIST-Traceable Calibration Certificate</li>
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </div>
+
+          </div>
+        </div>
+
+        {/* Modal Footer & PDF Download Section */}
+        <div className="p-4 bg-slate-50 border-t border-slate-100/80 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-center md:text-left">
+            <span className="block text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Calibration SLA Standard</span>
+            <span className="block text-xs text-slate-500 mt-0.5 font-medium">Certified Equipment Maintenance Profile</span>
+          </div>
+
+          {/* PDF Catalog Action */}
+          {pdfFile ? (
+            <div className="flex items-center bg-white p-3 rounded-2xl border border-slate-200 shadow-sm gap-4 w-full md:w-auto max-w-md select-text">
+              <div className="p-2.5 bg-red-50 text-red-600 rounded-xl border border-red-100/70 flex-shrink-0">
+                <FileText className="h-5 w-5" />
+              </div>
+              <div className="flex-1 min-w-0 pr-4">
+                <span className="block text-xs font-black text-slate-800 truncate" title={pdfFile.name}>
+                  {pdfFile.name}
+                </span>
+                <span className="block text-[9px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">
+                  PDF Portfolio
+                </span>
+              </div>
+              <a
+                href={pdfFile.path}
+                download={pdfFile.name}
+                className="flex items-center space-x-2 px-5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow-md transition-all active:scale-95 cursor-pointer whitespace-nowrap"
+              >
+                <Download className="h-4 w-4" />
+                <span>Download PDF</span>
+              </a>
+            </div>
+          ) : (
             <button
               onClick={onClose}
-              className="flex-1 sm:flex-none border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold px-5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer"
+              className="w-full md:w-auto px-8 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-md transition-colors cursor-pointer text-center"
             >
-              Close Details
+              Close Specifications
             </button>
-            <button
-              onClick={downloadDocumentation}
-              className="flex-1 sm:flex-none flex items-center justify-center space-x-2 bg-gradient-to-r from-medical-600 to-medical-500 hover:from-medical-700 hover:to-medical-600 text-white font-bold px-5 py-2.5 rounded-xl text-xs shadow-md shadow-medical-100 hover:shadow-lg transition-all duration-200 cursor-pointer"
-            >
-              <Download className="h-4 w-4" />
-              <span>Download Technical Specs</span>
-            </button>
-          </div>
+          )}
         </div>
-
       </div>
     </div>
   );

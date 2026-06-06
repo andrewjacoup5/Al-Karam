@@ -149,8 +149,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/Ambulance/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/Ambulance/Axcent - CETUS X12/cetus x12.jpg"
+          "assets/Products/Ambulance/Axcent - CETUS X12/1.jpg",
+          "assets/Products/Ambulance/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
           {
@@ -206,8 +206,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/Ambulance/Axcent - MUSCA X2/MUSCA x2 - Alkaram.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/Ambulance/Axcent - MUSCA X2/musca-x2_1.jpg"
+          "assets/Products/Ambulance/Axcent - MUSCA X2/1.jpg",
+          "assets/Products/Ambulance/Axcent - MUSCA X2/MUSCA x2 - Alkaram.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
           {
@@ -397,7 +397,7 @@ export const PRODUCT_CATALOG = [
     "id": "ambulance-spencer-stretcher-spencer-175kg",
     "folderName": "SPENCER - STRETCHER SPENCER 175kg",
     "name": "STRETCHER SPENCER 175kg",
-    "brand": "Spencer",
+    "brand": "SPENCER",
     "category": "Ambulance",
     "versions": [
       {
@@ -424,7 +424,7 @@ export const PRODUCT_CATALOG = [
     "id": "ambulance-spencer-stretcher-spencer-250kg",
     "folderName": "SPENCER - STRETCHER SPENCER 250kg",
     "name": "STRETCHER SPENCER 250kg",
-    "brand": "Spencer",
+    "brand": "SPENCER",
     "category": "Ambulance",
     "versions": [
       {
@@ -545,11 +545,11 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Clinics/Optium - BD 48/1.png",
           "assets/Products/Clinics/Optium - BD 48/BD-48-Color-Options.jpg",
           "assets/Products/Clinics/Optium - BD 48/BD-48-Electronic-Blood-Drawing-Chair-4-Motors-scaled.jpg",
           "assets/Products/Clinics/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-1.png",
           "assets/Products/Clinics/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-2.png",
-          "assets/Products/Clinics/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-3.png",
           "assets/Products/Clinics/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-4.png"
         ],
         "documents": [
@@ -609,8 +609,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Clinics/Optium - EC 17/1.jpg",
           "assets/Products/Clinics/Optium - EC 17/EC-17-Color-Options.png",
-          "assets/Products/Clinics/Optium - EC 17/EC-17.jpg",
           "assets/Products/Clinics/Optium - EC 17/ENT-and-Eye-Examination-Chair-1.jpg",
           "assets/Products/Clinics/Optium - EC 17/ENT-and-Eye-Examination-Chair-1.png",
           "assets/Products/Clinics/Optium - EC 17/ENT-and-Eye-Examination-Chair-2.jpg"
@@ -727,12 +727,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Clinics/Optium - Examy 5/1.jpg",
           "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-1.jpg",
           "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-13.jpg",
           "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-15.jpg",
           "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-4.jpg",
-          "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-6.jpg",
-          "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-Examination-Couch-Height-Adjustable-1.jpg"
+          "assets/Products/Clinics/Optium - Examy 5/EXAMY-5-6.jpg"
         ],
         "documents": [
           {
@@ -759,8 +759,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/Clinics/Optium - GYN 16/GYN-16-2-1014x1024.jpg",
-          "assets/Products/Clinics/Optium - GYN 16/GYN-16-3.jpg"
+          "assets/Products/Clinics/Optium - GYN 16/1.jpg",
+          "assets/Products/Clinics/Optium - GYN 16/GYN-16-2-1014x1024.jpg"
         ],
         "documents": [
           {
@@ -843,7 +843,7 @@ export const PRODUCT_CATALOG = [
         "name": "Standard Specs",
         "images": [
           "assets/Products/Clinics/Optium - MATERNEUM/1-1.jpg",
-          "assets/Products/Clinics/Optium - MATERNEUM/10.jpg",
+          "assets/Products/Clinics/Optium - MATERNEUM/1.jpg",
           "assets/Products/Clinics/Optium - MATERNEUM/11.jpg",
           "assets/Products/Clinics/Optium - MATERNEUM/2.jpg",
           "assets/Products/Clinics/Optium - MATERNEUM/3-1.jpg"
@@ -896,10 +896,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Clinics/Optium - UNICART DRESSSING/1.jpg",
           "assets/Products/Clinics/Optium - UNICART DRESSSING/central-lock.jpg",
           "assets/Products/Clinics/Optium - UNICART DRESSSING/drawer-with-seperators.jpg",
-          "assets/Products/Clinics/Optium - UNICART DRESSSING/unicart-dressing-04.jpg",
-          "assets/Products/Clinics/Optium - UNICART DRESSSING/UNICART-DRESSING-scaled.jpg"
+          "assets/Products/Clinics/Optium - UNICART DRESSSING/unicart-dressing-04.jpg"
         ],
         "documents": [
           {
@@ -1057,8 +1057,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/Dialysis/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/Dialysis/Axcent - CETUS X12/cetus x12.jpg"
+          "assets/Products/Dialysis/Axcent - CETUS X12/1.jpg",
+          "assets/Products/Dialysis/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
           {
@@ -1147,8 +1147,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Dialysis/Optium - BD 28/1.jpg",
           "assets/Products/Dialysis/Optium - BD 28/BD 28 - Blood Drawing Chair.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/Dialysis/Optium - BD 28/BD-28.jpg",
           "assets/Products/Dialysis/Optium - BD 28/DSC00184-kopya-scaled.jpg",
           "assets/Products/Dialysis/Optium - BD 28/DSC00186-kopya-scaled.jpg",
           "assets/Products/Dialysis/Optium - BD 28/DSC00190-kopya-scaled.jpg",
@@ -1276,12 +1276,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/Dialysis/Optium - UT 26/1.jpg",
           "assets/Products/Dialysis/Optium - UT 26/Ekran-goruntusu-2024-10-03-171107.png",
           "assets/Products/Dialysis/Optium - UT 26/Ekran-goruntusu-2024-10-03-171121.png",
           "assets/Products/Dialysis/Optium - UT 26/Ekran-goruntusu-2024-10-03-171130.png",
           "assets/Products/Dialysis/Optium - UT 26/Ekran-goruntusu-2024-10-03-171138.png",
           "assets/Products/Dialysis/Optium - UT 26/quality.jpg",
-          "assets/Products/Dialysis/Optium - UT 26/UT-26-2-scaled.jpg",
           "assets/Products/Dialysis/Optium - UT 26/UT-26-3-460x295.jpg",
           "assets/Products/Dialysis/Optium - UT 26/UT-26-3-scaled.jpg",
           "assets/Products/Dialysis/Optium - UT 26/UT-Defibrillator-Tray-scaled.jpg",
@@ -1426,8 +1426,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/ER/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/ER/Axcent - CETUS X12/cetus x12.jpg"
+          "assets/Products/ER/Axcent - CETUS X12/1.jpg",
+          "assets/Products/ER/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
           {
@@ -1834,12 +1834,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ER/Optium - MOMENTUM/1.png",
           "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-1-2-scaled.jpg",
           "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-2-scaled.jpg",
           "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-4-scaled.jpg",
           "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-6-scaled.jpg",
-          "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-9-scaled.jpg",
-          "assets/Products/ER/Optium - MOMENTUM/MOMENTUM.png"
+          "assets/Products/ER/Optium - MOMENTUM/MOMENTUM-9-scaled.jpg"
         ],
         "documents": [
           {
@@ -1889,9 +1889,9 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ER/Optium - STACKER AL/1.jpg",
           "assets/Products/ER/Optium - STACKER AL/STACKER-AL-1.jpg",
-          "assets/Products/ER/Optium - STACKER AL/STACKER-AL-2.jpg",
-          "assets/Products/ER/Optium - STACKER AL/STACKER-AL.jpg"
+          "assets/Products/ER/Optium - STACKER AL/STACKER-AL-2.jpg"
         ],
         "documents": [
           {
@@ -1918,8 +1918,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ER/Optium - STACKER MRI/1.jpg",
           "assets/Products/ER/Optium - STACKER MRI/stacker-mri-02.jpg",
-          "assets/Products/ER/Optium - STACKER MRI/stacker-mri-03.jpg",
           "assets/Products/ER/Optium - STACKER MRI/STACKER-MRI.jpg"
         ],
         "documents": [
@@ -2006,12 +2006,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ER/Optium - UT 26/1.jpg",
           "assets/Products/ER/Optium - UT 26/Ekran-goruntusu-2024-10-03-171107.png",
           "assets/Products/ER/Optium - UT 26/Ekran-goruntusu-2024-10-03-171121.png",
           "assets/Products/ER/Optium - UT 26/Ekran-goruntusu-2024-10-03-171130.png",
           "assets/Products/ER/Optium - UT 26/Ekran-goruntusu-2024-10-03-171138.png",
           "assets/Products/ER/Optium - UT 26/quality.jpg",
-          "assets/Products/ER/Optium - UT 26/UT-26-2-scaled.jpg",
           "assets/Products/ER/Optium - UT 26/UT-26-3-460x295.jpg",
           "assets/Products/ER/Optium - UT 26/UT-26-3-scaled.jpg",
           "assets/Products/ER/Optium - UT 26/UT-Defibrillator-Tray-scaled.jpg",
@@ -2040,7 +2040,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-abn-regal-mobile-icu",
     "folderName": "ABN - Regal Mobile - ICU",
-    "name": "Regal Mobile",
+    "name": "Regal Mobile - ICU",
     "brand": "ABN",
     "category": "ICU",
     "versions": [
@@ -2067,7 +2067,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-aug-laryngoscope-fiber-optic-icu",
     "folderName": "AUG - LARYNGOSCOPE Fiber Optic - ICU",
-    "name": "LARYNGOSCOPE Fiber Optic",
+    "name": "LARYNGOSCOPE Fiber Optic - ICU",
     "brand": "AUG",
     "category": "ICU",
     "versions": [
@@ -2095,7 +2095,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-aug-videolaryngoscope-disposable-icu",
     "folderName": "AUG - VideoLARYNGOSCOPE Disposable - ICU",
-    "name": "VideoLARYNGOSCOPE Disposable",
+    "name": "VideoLARYNGOSCOPE Disposable - ICU",
     "brand": "AUG",
     "category": "ICU",
     "versions": [
@@ -2122,7 +2122,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-aug-videolaryngoscope-reusable-icu",
     "folderName": "AUG - VideoLARYNGOSCOPE Reusable - ICU",
-    "name": "VideoLARYNGOSCOPE Reusable",
+    "name": "VideoLARYNGOSCOPE Reusable - ICU",
     "brand": "AUG",
     "category": "ICU",
     "versions": [
@@ -2152,15 +2152,15 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-axcent-cetus-x12-icu",
     "folderName": "Axcent - CETUS X12 - ICU",
-    "name": "CETUS X12",
+    "name": "CETUS X12 - ICU",
     "brand": "Axcent",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
-          "assets/Products/ICU/Axcent - CETUS X12 - ICU/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Products/ICU/Axcent - CETUS X12 - ICU/cetus x12.jpg"
+          "assets/Products/ICU/Axcent - CETUS X12 - ICU/1.jpg",
+          "assets/Products/ICU/Axcent - CETUS X12 - ICU/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
           {
@@ -2180,7 +2180,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-axcent-cetus-x15-icu",
     "folderName": "Axcent - CETUS X15 - ICU",
-    "name": "CETUS X15",
+    "name": "CETUS X15 - ICU",
     "brand": "Axcent",
     "category": "ICU",
     "versions": [
@@ -2209,7 +2209,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-axcent-lyra-x1-icu",
     "folderName": "Axcent - LYRA X1 - ICU",
-    "name": "LYRA X1",
+    "name": "LYRA X1 - ICU",
     "brand": "Axcent",
     "category": "ICU",
     "versions": [
@@ -2238,7 +2238,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-axcent-lyra-x2-icu",
     "folderName": "Axcent - LYRA X2 - ICU",
-    "name": "LYRA X2",
+    "name": "LYRA X2 - ICU",
     "brand": "Axcent",
     "category": "ICU",
     "versions": [
@@ -2267,7 +2267,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-axcent-pavo-icu",
     "folderName": "Axcent - PAVO - ICU",
-    "name": "PAVO",
+    "name": "PAVO - ICU",
     "brand": "Axcent",
     "category": "ICU",
     "versions": [
@@ -2300,7 +2300,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-cami-askir-c30-icu",
     "folderName": "CAMI - ASKIR C30 - ICU",
-    "name": "ASKIR C30",
+    "name": "ASKIR C30 - ICU",
     "brand": "CAMI",
     "category": "ICU",
     "versions": [
@@ -2327,7 +2327,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-cami-hospivac-350-icu",
     "folderName": "CAMI - HOSPIVAC 350 - ICU",
-    "name": "HOSPIVAC 350",
+    "name": "HOSPIVAC 350 - ICU",
     "brand": "CAMI",
     "category": "ICU",
     "versions": [
@@ -2355,7 +2355,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-ekingst-capno-h-icu",
     "folderName": "Ekingst - CAPNO H - ICU",
-    "name": "CAPNO H",
+    "name": "CAPNO H - ICU",
     "brand": "Ekingst",
     "category": "ICU",
     "versions": [
@@ -2382,7 +2382,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-ekingst-capno-m-icu",
     "folderName": "Ekingst - CAPNO M - ICU",
-    "name": "CAPNO M",
+    "name": "CAPNO M - ICU",
     "brand": "Ekingst",
     "category": "ICU",
     "versions": [
@@ -2410,7 +2410,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-ekingst-capno-s-icu",
     "folderName": "Ekingst - CAPNO S - ICU",
-    "name": "CAPNO S",
+    "name": "CAPNO S - ICU",
     "brand": "Ekingst",
     "category": "ICU",
     "versions": [
@@ -2437,7 +2437,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-ekingst-capno-t-icu",
     "folderName": "Ekingst - CAPNO T - ICU",
-    "name": "CAPNO T",
+    "name": "CAPNO T - ICU",
     "brand": "Ekingst",
     "category": "ICU",
     "versions": [
@@ -2465,7 +2465,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-ggm-vh-2100-icu",
     "folderName": "GGM - VH 2100 - ICU",
-    "name": "VH 2100",
+    "name": "VH 2100 - ICU",
     "brand": "GGM",
     "category": "ICU",
     "versions": [
@@ -2492,7 +2492,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-konted-c10-cw-icu",
     "folderName": "Konted - C10 CW - ICU",
-    "name": "C10 CW",
+    "name": "C10 CW - ICU",
     "brand": "Konted",
     "category": "ICU",
     "versions": [
@@ -2520,7 +2520,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-konted-c10-rl-icu",
     "folderName": "Konted - C10 RL - ICU",
-    "name": "C10 RL",
+    "name": "C10 RL - ICU",
     "brand": "Konted",
     "category": "ICU",
     "versions": [
@@ -2550,7 +2550,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-konted-c10-tx-icu",
     "folderName": "Konted - C10 TX - ICU",
-    "name": "C10 TX",
+    "name": "C10 TX - ICU",
     "brand": "Konted",
     "category": "ICU",
     "versions": [
@@ -2580,7 +2580,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-konted-c10-xl-icu",
     "folderName": "Konted - C10 XL - ICU",
-    "name": "C10 XL",
+    "name": "C10 XL - ICU",
     "brand": "Konted",
     "category": "ICU",
     "versions": [
@@ -2610,7 +2610,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-cb-22-icu",
     "folderName": "Optium - CB 22 - ICU",
-    "name": "CB 22",
+    "name": "CB 22 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2637,16 +2637,16 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-cl-43-icu",
     "folderName": "Optium - CL 43 - ICU",
-    "name": "CL 43",
+    "name": "CL 43 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - CL 43 - ICU/1.jpg",
           "assets/Products/ICU/Optium - CL 43 - ICU/2.png",
           "assets/Products/ICU/Optium - CL 43 - ICU/6.png",
-          "assets/Products/ICU/Optium - CL 43 - ICU/CL-43-Electronic-ICU-Bed-4-Motors-1.jpg",
           "assets/Products/ICU/Optium - CL 43 - ICU/CL-43-Electronic-ICU-Bed-4-Motors-2.jpg",
           "assets/Products/ICU/Optium - CL 43 - ICU/CL-43-Electronic-ICU-Bed-4-Motors-3.jpg",
           "assets/Products/ICU/Optium - CL 43 - ICU/CL-43-Electronic-ICU-Bed-4-Motors-4.jpg",
@@ -2670,16 +2670,16 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-cl-45-icu",
     "folderName": "Optium - CL 45 - ICU",
-    "name": "CL 45",
+    "name": "CL 45 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - CL 45 - ICU/1.jpg",
           "assets/Products/ICU/Optium - CL 45 - ICU/6.png",
           "assets/Products/ICU/Optium - CL 45 - ICU/7.png",
-          "assets/Products/ICU/Optium - CL 45 - ICU/CL-45-Electronic-ICU-Bed-Column-Motors-1.jpg",
           "assets/Products/ICU/Optium - CL 45 - ICU/CL-45-Electronic-ICU-Bed-Column-Motors-2.jpg",
           "assets/Products/ICU/Optium - CL 45 - ICU/CL-45-Electronic-ICU-Bed-Column-Motors-3.jpg",
           "assets/Products/ICU/Optium - CL 45 - ICU/CL-45-Electronic-ICU-Bed-Column-Motors-4.jpg",
@@ -2703,20 +2703,20 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-cl-50-icu",
     "folderName": "Optium - CL 50 - ICU",
-    "name": "CL 50",
+    "name": "CL 50 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - CL 50 - ICU/1.jpg",
           "assets/Products/ICU/Optium - CL 50 - ICU/5.png",
           "assets/Products/ICU/Optium - CL 50 - ICU/6.png",
           "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-1.jpg",
           "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-2.jpg",
           "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-3.jpg",
-          "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-4.jpg",
-          "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-scaled.jpg"
+          "assets/Products/ICU/Optium - CL 50 - ICU/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-4.jpg"
         ],
         "documents": [
           {
@@ -2736,17 +2736,17 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-cl-55-icu",
     "folderName": "Optium - CL 55 - ICU",
-    "name": "CL 55",
+    "name": "CL 55 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - CL 55 - ICU/1.jpg",
           "assets/Products/ICU/Optium - CL 55 - ICU/6 (2).png",
           "assets/Products/ICU/Optium - CL 55 - ICU/6.png",
           "assets/Products/ICU/Optium - CL 55 - ICU/CL-55-Electronic-ICU-Bed-5-Motors-1.jpg",
-          "assets/Products/ICU/Optium - CL 55 - ICU/CL-55-Electronic-ICU-Bed-5-Motors-2-1.jpg",
           "assets/Products/ICU/Optium - CL 55 - ICU/CL-55-Electronic-ICU-Bed-5-Motors-3.jpg",
           "assets/Products/ICU/Optium - CL 55 - ICU/CL-55-Electronic-ICU-Bed-5-Motors-5.jpg",
           "assets/Products/ICU/Optium - CL 55 - ICU/CL-55-Electronic-ICU-Bed-5-Motors-7-scaled.jpg"
@@ -2769,7 +2769,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-dc-44-icu",
     "folderName": "Optium - DC 44 - ICU",
-    "name": "DC 44",
+    "name": "DC 44 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2802,7 +2802,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-emergeum-icu",
     "folderName": "Optium - EMERGEUM - ICU",
-    "name": "EMERGEUM",
+    "name": "EMERGEUM - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2833,18 +2833,18 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-in-42-icu",
     "folderName": "Optium - IN 42 - ICU",
-    "name": "IN 42",
+    "name": "IN 42 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - IN 42 - ICU/1.jpg",
           "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42-1.jpg",
           "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42-2.jpg",
           "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42-3.jpg",
-          "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42-4.jpg",
-          "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42.jpg"
+          "assets/Products/ICU/Optium - IN 42 - ICU/Electronic-ICU-Bed-4-Motors-IN-42-4.jpg"
         ],
         "documents": [
           {
@@ -2864,7 +2864,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-in-43-icu",
     "folderName": "Optium - IN 43 - ICU",
-    "name": "IN 43",
+    "name": "IN 43 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2895,7 +2895,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-in-45-icu",
     "folderName": "Optium - IN 45 - ICU",
-    "name": "IN 45",
+    "name": "IN 45 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2926,19 +2926,19 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-momentum-icu",
     "folderName": "Optium - MOMENTUM - ICU",
-    "name": "MOMENTUM",
+    "name": "MOMENTUM - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - MOMENTUM - ICU/1.png",
           "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-1-2-scaled.jpg",
           "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-2-scaled.jpg",
           "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-4-scaled.jpg",
           "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-6-scaled.jpg",
-          "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-9-scaled.jpg",
-          "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM.png"
+          "assets/Products/ICU/Optium - MOMENTUM - ICU/MOMENTUM-9-scaled.jpg"
         ],
         "documents": [
           {
@@ -2958,7 +2958,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-ob-33-icu",
     "folderName": "Optium - OB 33 - ICU",
-    "name": "OB 33",
+    "name": "OB 33 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -2985,7 +2985,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-ob-35-icu",
     "folderName": "Optium - OB 35 - ICU",
-    "name": "OB 35",
+    "name": "OB 35 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -3012,7 +3012,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-pe-42-icu",
     "folderName": "Optium - PE 42 - ICU",
-    "name": "PE 42",
+    "name": "PE 42 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -3043,7 +3043,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-pm-10-icu",
     "folderName": "Optium - PM 10 - ICU",
-    "name": "PM 10",
+    "name": "PM 10 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -3070,15 +3070,15 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-sb-01-icu",
     "folderName": "Optium - SB 01 - ICU",
-    "name": "SB 01",
+    "name": "SB 01 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - SB 01 - ICU/1.jpg",
           "assets/Products/ICU/Optium - SB 01 - ICU/SB-01-Leather-Color-Options.png",
-          "assets/Products/ICU/Optium - SB 01 - ICU/sb-01.jpg",
           "assets/Products/ICU/Optium - SB 01 - ICU/sb-02.jpg",
           "assets/Products/ICU/Optium - SB 01 - ICU/sb-03.jpg"
         ],
@@ -3100,17 +3100,17 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-sb-03-icu",
     "folderName": "Optium - SB 03 - ICU",
-    "name": "SB 03",
+    "name": "SB 03 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - SB 03 - ICU/1.jpg",
           "assets/Products/ICU/Optium - SB 03 - ICU/DSC00112-kopya.jpg",
           "assets/Products/ICU/Optium - SB 03 - ICU/DSC00114-kopya.jpg",
           "assets/Products/ICU/Optium - SB 03 - ICU/DSC00115-kopya.jpg",
-          "assets/Products/ICU/Optium - SB 03 - ICU/DSC00116-kopya.jpg",
           "assets/Products/ICU/Optium - SB 03 - ICU/DSC00117-kopya.jpg",
           "assets/Products/ICU/Optium - SB 03 - ICU/SB-03-Leather-Color-Options.png"
         ],
@@ -3132,7 +3132,7 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-unicart-emergency-icu",
     "folderName": "Optium - UNICART EMERGENCY - ICU",
-    "name": "UNICART EMERGENCY",
+    "name": "UNICART EMERGENCY - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
@@ -3164,19 +3164,19 @@ export const PRODUCT_CATALOG = [
   {
     "id": "icu-optium-ut-26-icu",
     "folderName": "Optium - UT 26 - ICU",
-    "name": "UT 26",
+    "name": "UT 26 - ICU",
     "brand": "Optium",
     "category": "ICU",
     "versions": [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/ICU/Optium - UT 26 - ICU/1.jpg",
           "assets/Products/ICU/Optium - UT 26 - ICU/Ekran-goruntusu-2024-10-03-171107.png",
           "assets/Products/ICU/Optium - UT 26 - ICU/Ekran-goruntusu-2024-10-03-171121.png",
           "assets/Products/ICU/Optium - UT 26 - ICU/Ekran-goruntusu-2024-10-03-171130.png",
           "assets/Products/ICU/Optium - UT 26 - ICU/Ekran-goruntusu-2024-10-03-171138.png",
           "assets/Products/ICU/Optium - UT 26 - ICU/quality.jpg",
-          "assets/Products/ICU/Optium - UT 26 - ICU/UT-26-2-scaled.jpg",
           "assets/Products/ICU/Optium - UT 26 - ICU/UT-26-3-scaled.jpg",
           "assets/Products/ICU/Optium - UT 26 - ICU/UT-Defibrillator-Tray-scaled.jpg",
           "assets/Products/ICU/Optium - UT 26 - ICU/UT-Detachable-Drawer-Inside-scaled.jpg",
@@ -3323,11 +3323,11 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - CL 22/1.jpg",
           "assets/Products/IN-Patient/Optium - CL 22/6 (2).png",
           "assets/Products/IN-Patient/Optium - CL 22/6.png",
           "assets/Products/IN-Patient/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-2.jpg",
-          "assets/Products/IN-Patient/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-3.jpg",
-          "assets/Products/IN-Patient/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-scaled.jpg"
+          "assets/Products/IN-Patient/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-3.jpg"
         ],
         "documents": [
           {
@@ -3354,11 +3354,11 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - CL 32/1.jpg",
           "assets/Products/IN-Patient/Optium - CL 32/5.png",
           "assets/Products/IN-Patient/Optium - CL 32/6.png",
           "assets/Products/IN-Patient/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-1-1.jpg",
-          "assets/Products/IN-Patient/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-2.jpg",
-          "assets/Products/IN-Patient/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-3.jpg"
+          "assets/Products/IN-Patient/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-2.jpg"
         ],
         "documents": [
           {
@@ -3497,10 +3497,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - IN 32/1.jpg",
           "assets/Products/IN-Patient/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32-1.jpg",
           "assets/Products/IN-Patient/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32-2.jpg",
-          "assets/Products/IN-Patient/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32.jpg",
-          "assets/Products/IN-Patient/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors.jpg"
+          "assets/Products/IN-Patient/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32.jpg"
         ],
         "documents": [
           {
@@ -3527,12 +3527,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - MOMENTUM/1.png",
           "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-1-2-scaled.jpg",
           "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-2-scaled.jpg",
           "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-4-scaled.jpg",
           "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-6-scaled.jpg",
-          "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-9-scaled.jpg",
-          "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM.png"
+          "assets/Products/IN-Patient/Optium - MOMENTUM/MOMENTUM-9-scaled.jpg"
         ],
         "documents": [
           {
@@ -3613,8 +3613,8 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - SB 01/1.jpg",
           "assets/Products/IN-Patient/Optium - SB 01/SB-01-Leather-Color-Options.png",
-          "assets/Products/IN-Patient/Optium - SB 01/sb-01.jpg",
           "assets/Products/IN-Patient/Optium - SB 01/sb-02.jpg",
           "assets/Products/IN-Patient/Optium - SB 01/sb-03.jpg"
         ],
@@ -3702,9 +3702,9 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - SB 04/1.jpg",
           "assets/Products/IN-Patient/Optium - SB 04/SB-03-Leather-Color-Options.png",
-          "assets/Products/IN-Patient/Optium - SB 04/SB-04-Sofa-Bed.jpg",
-          "assets/Products/IN-Patient/Optium - SB 04/SB-04.jpg"
+          "assets/Products/IN-Patient/Optium - SB 04/SB-04-Sofa-Bed.jpg"
         ],
         "documents": [
           {
@@ -3731,10 +3731,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - UNICART DRESSSING/1.jpg",
           "assets/Products/IN-Patient/Optium - UNICART DRESSSING/central-lock.jpg",
           "assets/Products/IN-Patient/Optium - UNICART DRESSSING/drawer-with-seperators.jpg",
-          "assets/Products/IN-Patient/Optium - UNICART DRESSSING/unicart-dressing-04.jpg",
-          "assets/Products/IN-Patient/Optium - UNICART DRESSSING/UNICART-DRESSING-scaled.jpg"
+          "assets/Products/IN-Patient/Optium - UNICART DRESSSING/unicart-dressing-04.jpg"
         ],
         "documents": [
           {
@@ -3761,10 +3761,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/IN-Patient/Optium - UT 27/1.jpg",
           "assets/Products/IN-Patient/Optium - UT 27/DSC_0474-kopya.jpg",
           "assets/Products/IN-Patient/Optium - UT 27/DSC_0476-kopya.jpg",
           "assets/Products/IN-Patient/Optium - UT 27/DSC_0477-kopya.jpg",
-          "assets/Products/IN-Patient/Optium - UT 27/UT-27-scaled.jpg",
           "assets/Products/IN-Patient/Optium - UT 27/UT-Pushing-Tray-scaled.jpg"
         ],
         "documents": [
@@ -3814,7 +3814,7 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-cbm-pin-index-regulator",
+    "id": "medical gases-cbm-pin-index-regulator",
     "folderName": "CBM - PIN-INDEX REGULATOR",
     "name": "PIN-INDEX REGULATOR",
     "brand": "CBM",
@@ -3841,10 +3841,10 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-cmb-oxygen-cylinder-aluminum",
+    "id": "medical gases-cmb-oxygen-cylinder-aluminum",
     "folderName": "CMB - OXYGEN CYLINDER ALUMINUM",
     "name": "OXYGEN CYLINDER ALUMINUM",
-    "brand": "CBM",
+    "brand": "CMB",
     "category": "Medical Gases",
     "versions": [
       {
@@ -3868,7 +3868,7 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-itc-oxygen-cylinder-regulator-with-outlet",
+    "id": "medical gases-itc-oxygen-cylinder-regulator-with-outlet",
     "folderName": "ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET",
     "name": "OXYGEN CYLINDER REGULATOR WITH OUTLET",
     "brand": "ITC",
@@ -3900,7 +3900,7 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-itc-oxygen-flowmeter-ball",
+    "id": "medical gases-itc-oxygen-flowmeter-ball",
     "folderName": "ITC - OXYGEN FLOWMETER Ball",
     "name": "OXYGEN FLOWMETER Ball",
     "brand": "ITC",
@@ -3930,7 +3930,7 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-itc-oxygen-flowmeter-digital",
+    "id": "medical gases-itc-oxygen-flowmeter-digital",
     "folderName": "ITC - OXYGEN FLOWMETER Digital",
     "name": "OXYGEN FLOWMETER Digital",
     "brand": "ITC",
@@ -3954,18 +3954,13 @@ export const PRODUCT_CATALOG = [
             "name": "JUST-Flow-C .pdf",
             "path": "assets/Products/Medical Gases/ITC - OXYGEN FLOWMETER Digital/JUST-Flow-C .pdf",
             "ext": ".pdf"
-          },
-          {
-            "name": "~$ST-Flow.docx",
-            "path": "assets/Products/Medical Gases/ITC - OXYGEN FLOWMETER Digital/~$ST-Flow.docx",
-            "ext": ".docx"
           }
         ]
       }
     ]
   },
   {
-    "id": "medical-gases-itc-pin-index-regulator",
+    "id": "medical gases-itc-pin-index-regulator",
     "folderName": "ITC - PIN-INDEX REGULATOR",
     "name": "PIN-INDEX REGULATOR",
     "brand": "ITC",
@@ -3992,7 +3987,7 @@ export const PRODUCT_CATALOG = [
     ]
   },
   {
-    "id": "medical-gases-itc-suction-regulator",
+    "id": "medical gases-itc-suction-regulator",
     "folderName": "ITC - SUCTION REGULATOR",
     "name": "SUCTION REGULATOR",
     "brand": "ITC",
@@ -4173,10 +4168,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/OR/Axcent - APUS X2/1.jpg",
           "assets/Products/OR/Axcent - APUS X2/2.jpg",
           "assets/Products/OR/Axcent - APUS X2/apus-bcs1-27jf9qm9k46c2zb.png",
           "assets/Products/OR/Axcent - APUS X2/apus-bcs1.jpg",
-          "assets/Products/OR/Axcent - APUS X2/apus-x2_1.jpg",
           "assets/Products/OR/Axcent - APUS X2/apus-x2_2.jpg"
         ],
         "documents": [
@@ -4626,12 +4621,12 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/OR/Optium - OBSTETRA/1.png",
           "assets/Products/OR/Optium - OBSTETRA/12.jpg",
           "assets/Products/OR/Optium - OBSTETRA/15.jpg",
           "assets/Products/OR/Optium - OBSTETRA/22.jpg",
           "assets/Products/OR/Optium - OBSTETRA/Ob1-scaled.jpg",
           "assets/Products/OR/Optium - OBSTETRA/Ob3-scaled.jpg",
-          "assets/Products/OR/Optium - OBSTETRA/OBSTETRA-2--1024x683.png",
           "assets/Products/OR/Optium - OBSTETRA/obstetra-5-1-scaled.jpg"
         ],
         "documents": [
@@ -4688,11 +4683,11 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/OR/Optium - UNICART ANESTHESIA/1.jpg",
           "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-02.jpg",
           "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-03.jpg",
           "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-04.jpg",
-          "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-2-scaled.jpg",
-          "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-scaled.jpg"
+          "assets/Products/OR/Optium - UNICART ANESTHESIA/unicart-anesthesia-2-scaled.jpg"
         ],
         "documents": [
           {
@@ -4719,10 +4714,10 @@ export const PRODUCT_CATALOG = [
       {
         "name": "Standard Specs",
         "images": [
+          "assets/Products/OR/Optium - UT 28/1.jpg",
           "assets/Products/OR/Optium - UT 28/DSC_0486-kopya.jpg",
           "assets/Products/OR/Optium - UT 28/DSC_0490-kopya.jpg",
           "assets/Products/OR/Optium - UT 28/DSC_0492-kopya.jpg",
-          "assets/Products/OR/Optium - UT 28/UT-28-1-scaled.jpg",
           "assets/Products/OR/Optium - UT 28/UT-Pushing-Tray-scaled.jpg"
         ],
         "documents": [
