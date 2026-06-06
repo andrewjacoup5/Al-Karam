@@ -209,12 +209,12 @@ export default function App() {
                 <div className="flex flex-col space-y-1 text-slate-400">
                   <span className="flex items-center space-x-2.5">
                     <Phone className="h-4 w-4 text-rose-500 flex-shrink-0" />
-                    <span>(002)01099442054</span>
+                    <span>+2 01099442054</span>
                   </span>
                   <span className="pl-6.5 block text-[11px] leading-tight">
-                    <span>(002)01206467528</span><br />
-                    <span>(002)01272398884</span><br />
-                    <span>(002)01098812385</span>
+                    <span>+2 01098812385</span><br />
+                    <span>+2 01272398884</span><br />
+                    <span>+2 01020328622</span>
                   </span>
                 </div>
 
