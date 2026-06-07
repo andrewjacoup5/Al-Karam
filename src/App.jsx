@@ -54,7 +54,7 @@ export default function App() {
             <Services setActivePage={setActivePage} />
             <Partners onSelectPartner={handleSelectPartnerFromHome} minimal={true} />
             <EventsNews />
-            <ContactUs />
+            <ContactUs source="Home Page" />
           </div>
         );
       case "products":
@@ -100,7 +100,7 @@ export default function App() {
       case "contact":
         return (
           <div className="pt-20">
-            <ContactUs />
+            <ContactUs source="Contact Us Page" />
           </div>
         );
       default:
@@ -220,8 +220,8 @@ export default function App() {
 
                 <div className="flex items-center space-x-2.5">
                   <Mail className="h-4 w-4 text-medical-500 flex-shrink-0" />
-                  <a href="mailto:sales@alkaram-medical.com" className="hover:text-white transition-colors">
-                    sales@alkaram-medical.com
+                  <a href="mailto:mu.adel2023@gmail.com" className="hover:text-white transition-colors">
+                    mu.adel2023@gmail.com
                   </a>
                 </div>
               </div>

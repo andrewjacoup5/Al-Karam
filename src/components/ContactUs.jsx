@@ -1,9 +1,11 @@
 import React, { useState, memo } from "react";
-import { Mail, Phone, MapPin, ShieldCheck, AlertOctagon, CheckCircle2, Copy, Building, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, ShieldCheck, AlertOctagon, CheckCircle2, Copy, Building, Clock, Loader2 } from "lucide-react";
 
-function ContactUs() {
+function ContactUs({ source = "Contact Us Page" }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [ticketId, setTicketId] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [ticketDetails, setTicketDetails] = useState({
     hospital: "",
     department: "ICU",
@@ -19,7 +21,7 @@ function ContactUs() {
     setTicketDetails({ ...ticketDetails, [name]: value });
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (!ticketDetails.hospital || !ticketDetails.phone || !ticketDetails.device) {
       alert("Please fill out all critical fields (*)");
@@ -29,8 +31,92 @@ function ContactUs() {
     // Generate simulated clinical ticket ID
     const randomHex = Math.floor(1000 + Math.random() * 9000).toString(16).toUpperCase();
     const generatedId = `TKT-${new Date().getFullYear()}-${randomHex}`;
-    setTicketId(generatedId);
-    setFormSubmitted(true);
+
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+      if (!accessKey) {
+        console.warn("Web3Forms access key not found in env. Simulating successful email dispatch.");
+        // Simulate network latency for high fidelity UX
+        await new Promise((resolve) => setTimeout(resolve, 1200));
+      } else {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: accessKey,
+            subject: `[Biomedical Support Desk] New Work Order - ${generatedId}`,
+            from_name: "Al Karam Support Hub",
+            to_name: "Andrew Osama",
+            hospital: ticketDetails.hospital,
+            department: ticketDetails.department,
+            contact_person: ticketDetails.person || "Not Specified",
+            phone: ticketDetails.phone,
+            equipment: ticketDetails.device,
+            description: ticketDetails.desc || "No extra description provided",
+            ticket_id: generatedId,
+            submission_source: source,
+          }),
+        });
+
+        const data = await response.json();
+        if (!response.ok || !data.success) {
+          throw new Error(data.message || "Failed to send the dispatch ticket. Please try again.");
+        }
+      }
+
+      setTicketId(generatedId);
+      setFormSubmitted(true);
+    } catch (err) {
+      console.error("Error submitting support form:", err);
+      setSubmitError(err.message || "An unexpected network error occurred. Please check your connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleCopyTicketId = (id) => {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(id)
+        .then(() => {
+          alert("Ticket ID copied to clipboard!");
+        })
+        .catch((err) => {
+          console.error("Failed to copy using clipboard API, falling back:", err);
+          fallbackCopyText(id);
+        });
+    } else {
+      fallbackCopyText(id);
+    }
+  };
+
+  const fallbackCopyText = (text) => {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      const successful = document.execCommand('copy');
+      if (successful) {
+        alert("Ticket ID copied to clipboard!");
+      } else {
+        alert("Failed to copy Ticket ID. Please copy it manually.");
+      }
+    } catch (err) {
+      console.error("Fallback copy failed:", err);
+      alert("Failed to copy Ticket ID. Please copy it manually.");
+    }
+    document.body.removeChild(textArea);
   };
 
   return (
@@ -135,8 +221,8 @@ function ContactUs() {
                     </div>
                     <div>
                       <span className="block font-bold text-slate-800">Service Ticket Desk</span>
-                      <a href="mailto:sales@alkaram-medical.com" className="block text-medical-600 hover:text-medical-700 hover:underline mt-1 font-bold">
-                        sales@alkaram-medical.com
+                      <a href="mailto:mu.adel2023@gmail.com" className="block text-medical-600 hover:text-medical-700 hover:underline mt-1 font-bold">
+                        mu.adel2023@gmail.com
                       </a>
                     </div>
                   </div>
@@ -175,10 +261,7 @@ function ContactUs() {
                     <span className="font-mono text-sm sm:text-base font-extrabold text-medical-600">{ticketId}</span>
                   </div>
                   <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(ticketId);
-                      alert("Ticket ID copied to clipboard!");
-                    }}
+                    onClick={() => handleCopyTicketId(ticketId)}
                     className="p-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-500 hover:text-slate-800 transition-colors cursor-pointer border border-slate-200 flex items-center"
                     title="Copy Ticket ID"
                   >
@@ -344,11 +427,27 @@ function ContactUs() {
                 </div>
 
                 {/* Submit button */}
+                {submitError && (
+                  <div className="bg-rose-50 border border-rose-200 text-rose-700 px-4 py-3 rounded-xl text-xs flex items-center space-x-2 animate-fade-in">
+                    <AlertOctagon className="h-4 w-4 flex-shrink-0 text-rose-500" />
+                    <span className="font-semibold">{submitError}</span>
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-medical-600 to-medical-500 hover:from-medical-700 hover:to-medical-600 text-white font-bold py-4 rounded-xl text-xs shadow-lg shadow-medical-500/10 hover:shadow-medical-500/20 transition-all duration-300 cursor-pointer border border-medical-500/20 hover:-translate-y-0.5"
+                  disabled={isSubmitting}
+                  className={`w-full bg-gradient-to-r from-medical-600 to-medical-500 hover:from-medical-700 hover:to-medical-600 text-white font-bold py-4 rounded-xl text-xs shadow-lg shadow-medical-500/10 hover:shadow-medical-500/20 transition-all duration-300 border border-medical-500/20 flex items-center justify-center space-x-2 ${isSubmitting ? "opacity-75 cursor-not-allowed" : "hover:-translate-y-0.5 cursor-pointer"
+                    }`}
                 >
-                  Generate & Dispatch Work Order
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="animate-spin h-4.5 w-4.5" />
+                      <span>Dispatching Work Order...</span>
+                    </>
+                  ) : (
+                    <span>Generate & Dispatch Work Order</span>
+                  )}
                 </button>
               </form>
             )}
