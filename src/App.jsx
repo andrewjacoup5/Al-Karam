@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ReferencesSlider from "./components/ReferencesSlider";
@@ -15,11 +15,102 @@ const ProductModal = lazy(() => import("./components/ProductModal"));
 
 import { Activity, Phone, Mail, Clock, ShieldCheck, MapPin } from "lucide-react";
 
+const parseHash = (hashStr) => {
+  const result = {
+    activePage: "home",
+    selectedPartnerId: null,
+    preFilteredBrand: "all"
+  };
+  if (!hashStr || !hashStr.startsWith("#/")) return result;
+
+  const parts = hashStr.substring(2).split("?");
+  const path = parts[0];
+  const query = parts[1];
+  
+  const validPages = ["home", "products", "services", "partners", "clients", "events", "about", "contact"];
+  if (validPages.includes(path)) {
+    result.activePage = path;
+  }
+
+  if (query) {
+    const params = new URLSearchParams(query);
+    if (params.has("partner")) {
+      result.selectedPartnerId = params.get("partner");
+    }
+    if (params.has("brand")) {
+      result.preFilteredBrand = params.get("brand");
+    }
+  }
+  return result;
+};
+
+const getUrlForState = (page, partnerId, brand) => {
+  if (page === "home") {
+    return "/";
+  }
+  let url = `#/${page}`;
+  const params = [];
+  if (page === "partners" && partnerId) {
+    params.push(`partner=${partnerId}`);
+  }
+  if (page === "products" && brand && brand !== "all") {
+    params.push(`brand=${brand}`);
+  }
+  if (params.length > 0) {
+    url += `?${params.join("&")}`;
+  }
+  return url;
+};
+
 export default function App() {
-  const [activePage, setActivePage] = useState("home");
-  const [preFilteredBrand, setPreFilteredBrand] = useState("all");
+  const initialRoute = parseHash(window.location.hash);
+  const [activePage, setActivePage] = useState(initialRoute.activePage);
+  const [preFilteredBrand, setPreFilteredBrand] = useState(initialRoute.preFilteredBrand);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedPartnerId, setSelectedPartnerId] = useState(null);
+  const [selectedPartnerId, setSelectedPartnerId] = useState(initialRoute.selectedPartnerId);
+
+  const isPopStateRef = useRef(false);
+
+  // Sync state with browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = (event) => {
+      const routeState = event.state || parseHash(window.location.hash);
+      isPopStateRef.current = true;
+      setActivePage(routeState.activePage || "home");
+      setSelectedPartnerId(routeState.selectedPartnerId || null);
+      setPreFilteredBrand(routeState.preFilteredBrand || "all");
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    // Initial state setup in browser history
+    const currentRoute = parseHash(window.location.hash);
+    window.history.replaceState(currentRoute, "", getUrlForState(currentRoute.activePage, currentRoute.selectedPartnerId, currentRoute.preFilteredBrand));
+
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  // Update browser history when app state changes
+  useEffect(() => {
+    if (isPopStateRef.current) {
+      isPopStateRef.current = false;
+      return;
+    }
+
+    const currentState = window.history.state;
+    if (!currentState || 
+        currentState.activePage !== activePage || 
+        currentState.selectedPartnerId !== selectedPartnerId || 
+        currentState.preFilteredBrand !== preFilteredBrand) {
+      
+      const newUrl = getUrlForState(activePage, selectedPartnerId, preFilteredBrand);
+      window.history.pushState({
+        activePage,
+        selectedPartnerId,
+        preFilteredBrand
+      }, "", newUrl);
+    }
+  }, [activePage, selectedPartnerId, preFilteredBrand]);
 
   // Transition handler when clicking a partner logo
   const handleSelectPartner = (brandId) => {
