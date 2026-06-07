@@ -362,5 +362,155 @@ export const CLIENTS = [
     sector: "Private Care",
     arabicSector: "رعاية خاصة",
     description: "Dynamic critical and surgery care facility."
+  },
+  {
+    name: "Al-Mahwar Hospital",
+    arabicName: "مستشفى المحور",
+    logo: "/Our Clients/Al-Mahwar Hospital.jpg",
+    location: "Giza",
+    arabicLocation: "الجيزة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "Specialized healthcare and emergency services on the Mehwar corridor."
+  },
+  {
+    name: "Andalusia Hospitals",
+    arabicName: "مستشفيات أندلسية",
+    logo: "/Our Clients/Andalusia Hospitals.jpg",
+    location: "Alexandria",
+    arabicLocation: "الإسكندرية",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "Leading healthcare provider with multiple specialized branches in Egypt."
+  },
+  {
+    name: "Arab Contractors Medical Center",
+    arabicName: "المركز الطبي للمقاولون العرب",
+    logo: "/Our Clients/Arab Contractors Medical Center.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "Comprehensive medical services and advanced diagnostic and surgical care."
+  },
+  {
+    name: "Bahia Foundation",
+    arabicName: "مؤسسة بهية",
+    logo: "/Our Clients/Bahia Foundation.jpg",
+    location: "Giza",
+    arabicLocation: "الجيزة",
+    sector: "Charity Foundation",
+    arabicSector: "مؤسسة خيرية",
+    description: "Early detection and comprehensive treatment for breast cancer."
+  },
+  {
+    name: "Cleopatra Hospitals Group",
+    arabicName: "مجموعة مستشفيات كليوباترا",
+    logo: "/Our Clients/Cleopatra Hospitals Group.webp",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "The largest private hospital group and medical network in Egypt."
+  },
+  {
+    name: "Dar Al-Urouba Hospital",
+    arabicName: "مستشفى دار العروبة",
+    logo: "/Our Clients/Dar Al-Urouba Hospital.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "Specialized cardiovascular and acute critical care services."
+  },
+  {
+    name: "Egyptian Electricity Holding Company",
+    arabicName: "الشركة القابضة لكهرباء مصر - الخدمات الطبية",
+    logo: "/Our Clients/Egyptian Electricity Holding Company.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Public Hospital",
+    arabicSector: "مستشفى عام",
+    description: "Medical care and clinical services for public utility staff and citizens."
+  },
+  {
+    name: "Ganzoury Specialized Hospital",
+    arabicName: "مستشفى الجنزوري التخصصي",
+    logo: "/Our Clients/Ganzoury Specialized Hospital.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "A pioneer in private multi-specialty clinical healthcare."
+  },
+  {
+    name: "General Authority for Health Insurance",
+    arabicName: "الهيئة العامة للتأمين الصحي",
+    logo: "/Our Clients/General Authority for Health Insurance.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Public Hospital",
+    arabicSector: "مستشفى عام",
+    description: "National health insurance provider and healthcare service administrator."
+  },
+  {
+    name: "Mansoura University Hospitals",
+    arabicName: "مستشفيات جامعة المنصورة",
+    logo: "/Our Clients/Mansoura University Hospitals.png",
+    location: "Mansoura",
+    arabicLocation: "المنصورة",
+    sector: "University Medical Center",
+    arabicSector: "مستشفى جامعي حكومي",
+    description: "Leading academic and clinical referral center in the Delta governorate."
+  },
+  {
+    name: "Shifa Al Orman Hospital",
+    arabicName: "مستشفى شفاء الأورمان",
+    logo: "/Our Clients/Shifa Al Orman Hospital.png",
+    location: "Luxor",
+    arabicLocation: "الأقصر",
+    sector: "Charity Foundation",
+    arabicSector: "مؤسسة خيرية",
+    description: "State-of-the-art oncology diagnostic and treatment center in Upper Egypt."
+  },
+  {
+    name: "Sinai University",
+    arabicName: "جامعة سيناء - مستشفى الأسنان التعليمي",
+    logo: "/Our Clients/Sinai University.jpg",
+    location: "Sinai",
+    arabicLocation: "سيناء",
+    sector: "University Medical Center",
+    arabicSector: "مستشفى جامعي تعليمي",
+    description: "Modern clinical training and community dental services in Sinai."
+  },
+  {
+    name: "Talaat Moustafa Group",
+    arabicName: "مجموعة طلعت مصطفى - الخدمات الطبية",
+    logo: "/Our Clients/Talaat Moustafa Group.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Private Care",
+    arabicSector: "رعاية خاصة",
+    description: "Premium healthcare services and clinics in modern residential cities."
+  },
+  {
+    name: "Unified Procurement Authority",
+    arabicName: "الهيئة المصرية للشراء الموحد",
+    logo: "/Our Clients/Unified Procurement Authority.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Public Hospital",
+    arabicSector: "مستشفى عام",
+    description: "The official Egyptian authority for unified medical procurement."
+  },
+  {
+    name: "Wafaa Foundation for Egypt",
+    arabicName: "مؤسسة وفاء لمصر",
+    logo: "/Our Clients/Wafaa Foundation for Egypt.jpg",
+    location: "Cairo",
+    arabicLocation: "القاهرة",
+    sector: "Charity Foundation",
+    arabicSector: "مؤسسة خيرية",
+    description: "Social development, healthcare upgrades, and medical support initiatives."
   }
 ];
