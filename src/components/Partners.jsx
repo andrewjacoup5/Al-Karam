@@ -15,13 +15,37 @@ import {
 } from "lucide-react";
 import { PARTNERS_CATALOG } from "../data/partnersCatalog";
 
+// Reordered list of brands based on the requested ranking:
+// 1-OPTIUM, 2-AXCENT, 3-AUG, 4-EKINGST, 5-KONTED, 6-CAMI, 7-ABN, 8-ITC, 9-CBM, 10-SPENCER, 11-GGM
+const BRAND_ORDER = [
+  "optium",
+  "axcent",
+  "aug",
+  "kingst",
+  "konted",
+  "cami",
+  "abn",
+  "itc",
+  "cbm",
+  "spencer",
+  "ggm"
+];
+
+const sortedPartners = [...PARTNERS_CATALOG].sort((a, b) => {
+  const indexA = BRAND_ORDER.indexOf(a.id);
+  const indexB = BRAND_ORDER.indexOf(b.id);
+  const valA = indexA === -1 ? 999 : indexA;
+  const valB = indexB === -1 ? 999 : indexB;
+  return valA - valB;
+});
+
 function Partners({ onSelectPartner, initialPartnerId = null, minimal = false }) {
   const initialPartner = useMemo(() => {
     if (initialPartnerId) {
-      const found = PARTNERS_CATALOG.find(p => p.id === initialPartnerId);
+      const found = sortedPartners.find(p => p.id === initialPartnerId);
       if (found) return found;
     }
-    return PARTNERS_CATALOG[0];
+    return sortedPartners[0];
   }, [initialPartnerId]);
 
   const [selectedPartner, setSelectedPartner] = useState(initialPartner);
@@ -34,7 +58,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
   // Sync selected partner if initialPartnerId changes
   useEffect(() => {
     if (initialPartnerId) {
-      const found = PARTNERS_CATALOG.find(p => p.id === initialPartnerId);
+      const found = sortedPartners.find(p => p.id === initialPartnerId);
       if (found) {
         setSelectedPartner(found);
       }
@@ -84,7 +108,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
 
         {/* Partners Grid */}
         <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 ${minimal ? "" : "mb-16"}`}>
-          {PARTNERS_CATALOG.map((partner) => {
+          {sortedPartners.map((partner) => {
             const isSelected = !minimal && selectedPartner && selectedPartner.id === partner.id;
             return (
               <div
