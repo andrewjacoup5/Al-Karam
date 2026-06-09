@@ -486,7 +486,7 @@ export const PARTNERS_CATALOG = [
   {
     "id": "cbm",
     "name": "CBM",
-    "logo": null,
+    "logo": "assets/Partners/CBM/CBM.png",
     "brandProducts": [
       {
         "id": "cbm-cbm-oxygen-cylinder-aluminum",
