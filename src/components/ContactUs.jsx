@@ -221,8 +221,8 @@ function ContactUs({ source = "Contact Us Page" }) {
                     </div>
                     <div>
                       <span className="block font-bold text-slate-800">Service Ticket Desk</span>
-                      <a href="mailto:mu.adel2023@gmail.com" className="block text-medical-600 hover:text-medical-700 hover:underline mt-1 font-bold">
-                        mu.adel2023@gmail.com
+                      <a href="mailto:Info@alkaram-medical.com" className="block text-medical-600 hover:text-medical-700 hover:underline mt-1 font-bold">
+                        Info@alkaram-medical.com
                       </a>
                     </div>
                   </div>

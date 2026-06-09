@@ -26,7 +26,7 @@ const parseHash = (hashStr) => {
   const parts = hashStr.substring(2).split("?");
   const path = parts[0];
   const query = parts[1];
-  
+
   const validPages = ["home", "products", "services", "partners", "clients", "events", "about", "contact"];
   if (validPages.includes(path)) {
     result.activePage = path;
@@ -98,11 +98,11 @@ export default function App() {
     }
 
     const currentState = window.history.state;
-    if (!currentState || 
-        currentState.activePage !== activePage || 
-        currentState.selectedPartnerId !== selectedPartnerId || 
-        currentState.preFilteredBrand !== preFilteredBrand) {
-      
+    if (!currentState ||
+      currentState.activePage !== activePage ||
+      currentState.selectedPartnerId !== selectedPartnerId ||
+      currentState.preFilteredBrand !== preFilteredBrand) {
+
       const newUrl = getUrlForState(activePage, selectedPartnerId, preFilteredBrand);
       window.history.pushState({
         activePage,
@@ -311,8 +311,8 @@ export default function App() {
 
                 <div className="flex items-center space-x-2.5">
                   <Mail className="h-4 w-4 text-medical-500 flex-shrink-0" />
-                  <a href="mailto:mu.adel2023@gmail.com" className="hover:text-white transition-colors">
-                    mu.adel2023@gmail.com
+                  <a href="mailto:Info@alkaram-medical.com" className="hover:text-white transition-colors">
+                    Info@alkaram-medical.com
                   </a>
                 </div>
               </div>
