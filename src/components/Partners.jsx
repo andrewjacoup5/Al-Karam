@@ -14,6 +14,9 @@ import {
   BookOpen
 } from "lucide-react";
 import { PARTNERS_CATALOG } from "../data/partnersCatalog";
+import ProductModal from "./ProductModal";
+import Pagination from "./Pagination";
+import { getMainProductImage } from "../utils/productUtils";
 
 // Reordered list of brands based on the requested ranking:
 // 1-OPTIUM, 2-AXCENT, 3-AUG, 4-EKINGST, 5-KONTED, 6-CAMI, 7-ABN, 8-ITC, 9-CBM, 10-SPENCER, 11-GGM
@@ -39,6 +42,134 @@ const sortedPartners = [...PARTNERS_CATALOG].sort((a, b) => {
   return valA - valB;
 });
 
+/**
+ * Performance-optimized Card Image using IntersectionObserver.
+ */
+const OptimizedCardImage = React.memo(({ src, alt }) => {
+  const [visible, setVisible] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "100px" }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!visible || !src) return;
+    const img = new Image();
+    img.src = src;
+    img.onload = () => setLoaded(true);
+    img.onerror = () => {
+      console.warn("Card image loading failed: ", src);
+      setError(true);
+    };
+  }, [visible, src]);
+
+  if (error || !src) {
+    return (
+      <div className="w-full h-full bg-slate-100 flex items-center justify-center">
+        <ImageIcon className="h-8 w-8 text-slate-300" />
+      </div>
+    );
+  }
+
+  return (
+    <div ref={ref} className="w-full h-full bg-slate-50 relative flex items-center justify-center overflow-hidden">
+      {!loaded && (
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-pulse flex items-center justify-center">
+          <ImageIcon className="h-6 w-6 text-slate-300 animate-bounce" />
+        </div>
+      )}
+      {visible && (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className={`w-full h-full object-cover transition-opacity duration-300 ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      )}
+    </div>
+  );
+});
+
+/**
+ * Highly optimized Partner Product Card using React.memo.
+ */
+const PartnerProductCard = React.memo(({ product, brandName, onClick }) => {
+  const images = product.images || [];
+  const docs = product.documents || [];
+
+  // Main Image selection utility
+  const mainImage = getMainProductImage(images);
+
+  // Stats summaries
+  const imageCount = images.length;
+  const docCount = docs.length;
+
+  return (
+    <article
+      onClick={onClick}
+      className="group bg-white rounded-3xl border border-slate-200/60 hover:border-medical-300 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col overflow-hidden cursor-pointer active:scale-[0.99]"
+    >
+      {/* Top Image Preview */}
+      <div className="aspect-[4/3] w-full overflow-hidden bg-slate-50 border-b border-slate-100 relative">
+        <OptimizedCardImage src={mainImage} alt={product.name} />
+
+        {/* Category tag */}
+        <span className="absolute top-4 right-4 text-[9px] font-extrabold uppercase tracking-widest text-slate-600 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full shadow-sm">
+          {brandName}
+        </span>
+      </div>
+
+      {/* Detail contents */}
+      <div className="p-5 flex-1 flex flex-col justify-between">
+        <div>
+          <span className="text-[10px] font-extrabold uppercase tracking-widest text-medical-600">
+            {brandName}
+          </span>
+          <h3 className="text-base font-bold text-slate-800 mt-1 leading-snug group-hover:text-medical-700 transition-colors">
+            {product.name}
+          </h3>
+          <span className="block text-[10px] text-slate-400 font-mono mt-1">
+            dir: {brandName} - {product.name}
+          </span>
+        </div>
+
+        {/* Metadata Footer */}
+        <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-[10px] font-bold text-slate-500">
+          <div className="flex items-center space-x-2">
+            <span className="flex items-center bg-slate-50 px-2 py-0.5 rounded border border-slate-150">
+              <ImageIcon className="h-3 w-3 mr-1 text-slate-400" />
+              {imageCount}
+            </span>
+            <span className="flex items-center bg-slate-50 px-2 py-0.5 rounded border border-slate-150">
+              <FileText className="h-3 w-3 mr-1 text-slate-400" />
+              {docCount}
+            </span>
+          </div>
+
+          <span className="text-medical-600 group-hover:underline flex items-center">
+            Explore Asset &rarr;
+          </span>
+        </div>
+      </div>
+    </article>
+  );
+});
+
 function Partners({ onSelectPartner, initialPartnerId = null, minimal = false }) {
   const initialPartner = useMemo(() => {
     if (initialPartnerId) {
@@ -50,8 +181,9 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
 
   const [selectedPartner, setSelectedPartner] = useState(initialPartner);
   const [activeProduct, setActiveProduct] = useState(null);
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [activeVersionIdx, setActiveVersionIdx] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
   
   const productsRef = useRef(null);
 
@@ -61,6 +193,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
       const found = sortedPartners.find(p => p.id === initialPartnerId);
       if (found) {
         setSelectedPartner(found);
+        setCurrentPage(1);
       }
     }
   }, [initialPartnerId]);
@@ -73,6 +206,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
     } else {
       setSelectedPartner(partner);
       setSearchQuery("");
+      setCurrentPage(1);
       setTimeout(() => {
         productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100);
@@ -88,6 +222,32 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
         })
       : [];
   }, [selectedPartner, searchQuery]);
+
+  const paginatedProducts = useMemo(() => {
+    const startIdx = (currentPage - 1) * 16;
+    return filteredProducts.slice(startIdx, startIdx + 16);
+  }, [filteredProducts, currentPage]);
+
+  const totalPages = useMemo(() => {
+    return Math.ceil(filteredProducts.length / 16);
+  }, [filteredProducts]);
+
+  const activeDevice = useMemo(() => {
+    if (!activeProduct) return null;
+    return {
+      id: activeProduct.id,
+      brand: selectedPartner.name,
+      name: activeProduct.name,
+      category: selectedPartner.name,
+      versions: [
+        {
+          name: "Standard Specs",
+          images: activeProduct.images || [],
+          documents: activeProduct.documents || []
+        }
+      ]
+    };
+  }, [activeProduct, selectedPartner]);
 
   return (
     <section className="py-16 bg-slate-50 relative overflow-hidden grid-bg">
@@ -200,94 +360,43 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
                   type="text"
                   placeholder={`Search ${selectedPartner.name} products...`}
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    setCurrentPage(1);
+                  }}
                   className="w-full bg-slate-50 border border-slate-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-500/20 rounded-xl pl-10 pr-4 py-3 text-xs text-slate-800 outline-none transition-all"
                 />
               </div>
             </div>
 
             {/* Products grid display */}
-            {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
-                {filteredProducts.map((product) => {
-                  const firstImage = product.images && product.images.length > 0 ? `/${product.images[0]}` : null;
-                  const hasImages = product.images && product.images.length > 0;
-                  const hasDocs = product.documents && product.documents.length > 0;
-                  
-                  return (
-                    <div
+            {paginatedProducts.length > 0 ? (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 relative z-10">
+                  {paginatedProducts.map((product) => (
+                    <PartnerProductCard
                       key={product.id}
+                      product={product}
+                      brandName={selectedPartner.name}
                       onClick={() => {
                         setActiveProduct(product);
-                        setActiveImageIndex(0);
+                        setActiveVersionIdx(0);
                       }}
-                      className="group bg-white rounded-3xl border border-slate-200/50 hover:border-medical-400 hover:shadow-lg shadow-sm transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden relative"
-                    >
-                      <div>
-                        {/* Device Thumbnail */}
-                        <div className="h-40 bg-slate-100 relative flex items-center justify-center overflow-hidden border-b border-slate-100">
-                          {firstImage ? (
-                            <img
-                              src={firstImage}
-                              alt={product.name}
-                              loading="lazy"
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                          ) : (
-                            <div className="flex flex-col items-center justify-center p-6 text-slate-400">
-                              <Folder className="h-10 w-10 text-slate-300 mb-2" />
-                              <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400">No Image Preview</span>
-                            </div>
-                          )}
-                          
-                          {/* Hover action overlay */}
-                          <div className="absolute inset-0 bg-medical-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span className="bg-white/95 backdrop-blur text-medical-800 text-[10px] font-bold px-4 py-2 rounded-xl shadow-md border border-white flex items-center space-x-1.5">
-                              <Folder className="h-3.5 w-3.5" />
-                              <span>Explore Files</span>
-                            </span>
-                          </div>
-                        </div>
+                    />
+                  ))}
+                </div>
 
-                        <div className="p-5">
-                          {/* Folder Name */}
-                          <span className="inline-flex items-center text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-2">
-                            <Folder className="h-3.5 w-3.5 mr-1.5 text-medical-400" />
-                            {product.folderName}
-                          </span>
-                          
-                          {/* Product Name */}
-                          <h4 className="text-sm font-extrabold text-slate-800 group-hover:text-medical-600 transition-colors leading-snug line-clamp-1">
-                            {product.name}
-                          </h4>
-                        </div>
-                      </div>
-
-                      {/* Footer containing metrics */}
-                      <div className="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex justify-between items-center text-[10px] font-bold">
-                        <div className="flex space-x-2 text-slate-500">
-                          {hasImages && (
-                            <span className="flex items-center bg-white px-2 py-0.5 rounded border border-slate-200/50 text-emerald-600">
-                              <ImageIcon className="h-3 w-3 mr-1 text-emerald-500" />
-                              {product.images.length} Image{product.images.length > 1 ? 's' : ''}
-                            </span>
-                          )}
-                          {hasDocs && (
-                            <span className="flex items-center bg-white px-2 py-0.5 rounded border border-slate-200/50 text-blue-600">
-                              <FileText className="h-3 w-3 mr-1 text-blue-500" />
-                              {product.documents.length} File{product.documents.length > 1 ? 's' : ''}
-                            </span>
-                          )}
-                        </div>
-                        
-                        <span className="text-medical-600 group-hover:underline">
-                          Explore Files &rarr;
-                        </span>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+                {/* Pagination Controls */}
+                {totalPages > 1 && (
+                  <div className="mt-10">
+                    <Pagination
+                      currentPage={currentPage}
+                      totalPages={totalPages}
+                      onPageChange={setCurrentPage}
+                    />
+                  </div>
+                )}
+              </>
             ) : (
               <div className="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
                 <Folder className="h-10 w-10 text-slate-300 mx-auto mb-3 animate-pulse" />
@@ -328,212 +437,14 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
 
       </div>
 
-      {/* Dynamic Brand Product Explorer Modal */}
-      {activeProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
-          {/* Glass backdrop */}
-          <div 
-            onClick={() => setActiveProduct(null)}
-            className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-fade-in"
-          />
-          
-          {/* Modal Container */}
-          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative flex flex-col justify-between animate-fade-in">
-            
-            {/* Modal Header */}
-            <div className="p-6 pb-4 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white z-10">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-xl bg-medical-50 flex items-center justify-center text-medical-600 font-bold text-sm overflow-hidden">
-                  {selectedPartner.logo ? (
-                    <img 
-                      src={`/${selectedPartner.logo}`} 
-                      alt={selectedPartner.name} 
-                      className="max-h-full max-w-full object-contain p-1" 
-                    />
-                  ) : (
-                    <span>{selectedPartner.name.substring(0, 2).toUpperCase()}</span>
-                  )}
-                </div>
-                <div>
-                  <span className="block text-[9px] font-extrabold uppercase tracking-widest text-slate-400">
-                    {selectedPartner.name} System Profile
-                  </span>
-                  <h4 className="text-base font-extrabold text-slate-900 leading-tight">
-                    {activeProduct.name}
-                  </h4>
-                </div>
-              </div>
-
-              {/* Close Button */}
-              <button
-                onClick={() => setActiveProduct(null)}
-                className="p-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
-
-            {/* Modal Content */}
-            <div className="p-6 grid grid-cols-1 md:grid-cols-12 gap-8 flex-grow">
-              
-              {/* Left Column: Visual Assets (.jpg extensions) */}
-              <div className="md:col-span-6 space-y-4">
-                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                  Equipment Photographic Assets
-                </span>
-                
-                {activeProduct.images && activeProduct.images.length > 0 ? (
-                  <div className="space-y-4">
-                    {/* Main Image View */}
-                    <div className="w-full h-64 bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-inner flex items-center justify-center p-4 relative group">
-                      <img 
-                        src={`/${activeProduct.images[activeImageIndex] || activeProduct.images[0]}`} 
-                        alt={activeProduct.name} 
-                        loading="lazy"
-                        className="max-h-full max-w-full object-contain rounded-lg transition-transform duration-300"
-                      />
-                      
-                      {/* Image format info pill */}
-                      <span className="absolute bottom-3 right-3 text-[9px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded shadow-sm border border-emerald-100">
-                        HD METROLOGY PHOTO
-                      </span>
-                    </div>
-
-                    {/* Secondary Thumbnails if more than 1 image exists */}
-                    {activeProduct.images.length > 1 && (
-                      <div className="grid grid-cols-3 gap-3">
-                        {activeProduct.images.map((img, i) => {
-                          const isActive = activeImageIndex === i;
-                          return (
-                            <div 
-                              key={i} 
-                              onClick={() => setActiveImageIndex(i)}
-                              className={`h-16 bg-slate-50 border rounded-xl overflow-hidden p-1 flex items-center justify-center hover:shadow-sm transition-all duration-200 cursor-pointer ${
-                                isActive 
-                                  ? "border-medical-500 ring-2 ring-medical-500/20" 
-                                  : "border-slate-100 hover:border-medical-300"
-                              }`}
-                            >
-                              <img src={`/${img}`} alt={`${activeProduct.name} thumb ${i}`} loading="lazy" className="max-h-full max-w-full object-contain rounded-md" />
-                            </div>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  // Elegant vector clinical placeholder if no .jpg image is attached
-                  <div className="w-full h-64 bg-slate-50 border border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
-                    <div className="p-4 rounded-full bg-medical-50 text-medical-600 mb-3">
-                      <ImageIcon className="h-8 w-8" />
-                    </div>
-                    <span className="block text-xs font-bold text-slate-700 leading-snug">
-                      Product Graphic Registry Complete
-                    </span>
-                    <span className="block text-[10px] text-slate-400 mt-1 max-w-[200px] leading-relaxed">
-                      Photo asset is saved in clinical database archive. Use download documents to view technical drawings.
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              {/* Right Column: Files Downloads (.docx and .pdf files) */}
-              <div className="md:col-span-6 space-y-6">
-                
-                {/* Specifications note */}
-                <div className="bg-slate-50 rounded-2xl border border-slate-100 p-4.5 space-y-2">
-                  <h5 className="font-extrabold text-[11px] text-slate-800 uppercase tracking-wide flex items-center">
-                    <BookOpen className="h-3.5 w-3.5 text-medical-500 mr-1.5" />
-                    Calibration Technical Memo
-                  </h5>
-                  <p className="text-[10px] text-slate-500 leading-relaxed font-normal">
-                    This authorized biomedical device directory is mapped inside the Alkaram medical calibration server. Download the original factory manuals and specification sheets below to review guidelines.
-                  </p>
-                </div>
-
-                <div className="space-y-3">
-                  <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                    Authorized Technical Downloads
-                  </span>
-
-                  {activeProduct.documents && activeProduct.documents.length > 0 ? (
-                    <div className="space-y-3">
-                      {activeProduct.documents.map((doc, idx) => {
-                        const isPdf = doc.ext.toLowerCase() === '.pdf';
-                        return (
-                          <div 
-                            key={idx}
-                            className="bg-white border border-slate-200/80 hover:border-medical-300 rounded-xl p-4.5 flex items-center justify-between shadow-sm hover:shadow-md transition-all duration-200"
-                          >
-                            <div className="flex items-center space-x-3.5 flex-1 min-w-0 pr-4">
-                              {/* File format icon container */}
-                              <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 font-extrabold text-xs shadow-inner ${
-                                isPdf 
-                                  ? "bg-rose-50 text-rose-600 border border-rose-100" 
-                                  : "bg-blue-50 text-blue-600 border border-blue-100"
-                              }`}>
-                                <FileText className="h-5 w-5" />
-                              </div>
-                              
-                              <div className="truncate">
-                                <span className="block text-xs font-bold text-slate-800 truncate leading-tight">
-                                  {doc.name}
-                                </span>
-                                <span className={`inline-flex items-center text-[9px] font-bold uppercase tracking-wider mt-1 px-1.5 py-0.5 rounded ${
-                                  isPdf 
-                                    ? "bg-rose-50 text-rose-600" 
-                                    : "bg-blue-50 text-blue-600"
-                                }`}>
-                                  {doc.ext.substring(1).toUpperCase()} File
-                                </span>
-                              </div>
-                            </div>
-
-                            {/* Download Action anchor */}
-                            <a
-                              href={`/${doc.path}`}
-                              download={doc.name}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={`flex-shrink-0 p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center hover:scale-105 transition-all cursor-pointer ${
-                                isPdf 
-                                  ? "bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-700 hover:to-rose-600 shadow-rose-100" 
-                                  : "bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-blue-100"
-                              }`}
-                            >
-                              <Download className="h-4 w-4" />
-                            </a>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  ) : (
-                    <div className="text-center py-6 bg-slate-50 border border-dashed border-slate-200 rounded-xl">
-                      <FileCheck className="h-8 w-8 text-slate-300 mx-auto mb-2" />
-                      <span className="block text-[10px] text-slate-400 font-medium">
-                        No Documentation Attached
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-              </div>
-
-            </div>
-
-            {/* Modal Footer */}
-            <div className="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[10px] text-slate-400 gap-2 rounded-b-3xl">
-              <span className="flex items-center">
-                <ShieldCheck className="h-4 w-4 text-emerald-500 mr-1.5 flex-shrink-0" />
-                Al Karam Authorized Biomedical Support
-              </span>
-              <span>
-                Calibration Registry: EGY-{new Date().getFullYear()}-{activeProduct.id.substring(0, 5).toUpperCase()}
-              </span>
-            </div>
-
-          </div>
-        </div>
+      {/* Modern Device Detail Modal Sheet */}
+      {activeDevice && (
+        <ProductModal
+          device={activeDevice}
+          activeVersionIdx={activeVersionIdx}
+          setActiveVersionIdx={setActiveVersionIdx}
+          onClose={() => setActiveProduct(null)}
+        />
       )}
 
     </section>
