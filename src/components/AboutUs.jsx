@@ -83,7 +83,7 @@ function AboutUs({ setActivePage = () => { } }) {
       bg: "bg-sky-50"
     },
     {
-      title: "Resource & Efficiency Calibration",
+      title: "Resource & Efficiency Optimization",
       desc: "Optimizing room spacing, clinical data sheets, and resource allocation to elevate institutional throughput and surgical safety.",
       bullet: "Optimizing patient care & operational efficiency",
       icon: TrendingUp,
@@ -111,7 +111,7 @@ function AboutUs({ setActivePage = () => { } }) {
   const whyChooseUs = [
     {
       title: "Established Since 2017",
-      desc: "Solid industry roots with years of medical calibration, planning, and premium equipment distribution in Egypt.",
+      desc: "Solid industry roots with years of medical maintenance, planning, and premium equipment distribution in Egypt.",
       icon: Award,
       color: "text-blue-600 bg-blue-50 border-blue-100"
     },
@@ -151,7 +151,7 @@ function AboutUs({ setActivePage = () => { } }) {
     { value: "2017", label: "Year Established", desc: "Egyptian Corporate Roots" },
     { value: "35+", label: "Biomedical Engineers", desc: "Highly Certified Staff" },
     { value: "99.8%", label: "SLA Reliability", desc: "Minimized Clinical Downtime" },
-    { value: "5,000+", label: "Calibrations Tracked", desc: "NIST-Traceable Standards" }
+    { value: "5,000+", label: "Devices Serviced", desc: "NIST-Traceable Standards" }
   ];
 
   return (
@@ -245,7 +245,7 @@ function AboutUs({ setActivePage = () => { } }) {
 
               <div className="space-y-4 relative z-10">
                 <span className="text-[9px] font-bold text-medical-300 uppercase tracking-widest block">
-                  Egypt Calibration License Compliant
+                  Egypt Medical Licensing Compliant
                 </span>
                 <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight leading-snug">
                   Uncompromising Standards for Critical Sectors

@@ -33,7 +33,7 @@ const EVENTS_AND_NEWS_DATA = {
           "Interactive medical equipment demos",
           "One-on-one sessions with our engineering heads",
           "Exploring new distribution and technical partnerships",
-          "Calibration standards live demonstration"
+          "Biomedical maintenance live demonstration"
         ]
       }
     ],

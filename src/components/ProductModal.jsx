@@ -148,7 +148,7 @@ export default function ProductModal({ device, activeVersionIdx, setActiveVersio
                     </div>
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Electrical Safety Test</li>
-                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Sensors & Alarms Calibration</li>
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Sensors & Alarms Verification</li>
                       <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />Battery Backup Load Cycle Test</li>
                     </ul>
                   </div>
@@ -160,7 +160,7 @@ export default function ProductModal({ device, activeVersionIdx, setActiveVersio
                     </div>
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />ISO 13485 Medical Quality</li>
-                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />NIST-Traceable Calibration Certificate</li>
+                      <li className="flex items-center"><span className="h-1.5 w-1.5 rounded-full bg-medical-500 mr-2.5" />NIST-Traceable Verification Certificate</li>
                     </ul>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export default function ProductModal({ device, activeVersionIdx, setActiveVersio
         {/* Modal Footer & PDF Download Section */}
         <div className="p-4 bg-slate-50 border-t border-slate-100/80 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <span className="block text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Calibration SLA Standard</span>
+            <span className="block text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Maintenance SLA Standard</span>
             <span className="block text-xs text-slate-500 mt-0.5 font-medium">Certified Equipment Maintenance Profile</span>
           </div>
 

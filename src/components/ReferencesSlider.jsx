@@ -91,7 +91,7 @@ function ReferencesSlider({ setActivePage }) {
               Trusted by Egypt's Leading Healthcare Networks
             </h2>
             <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-              We provide strategic planning, authorized calibrations, and robust 24/7 technical support SLAs to major university clinical centers and charity foundations.
+              We provide strategic planning, specialized maintenance, and robust 24/7 technical support SLAs to major university clinical centers and charity foundations.
             </p>
           </div>
           

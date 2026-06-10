@@ -262,7 +262,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
             Authorized Support & Brands Partnerships
           </h2>
           <p className="text-base text-slate-600 leading-relaxed">
-            Alkaram Medical is the premier authorized calibration and service provider for global medical manufacturers. {minimal ? "Click on any brand below to explore their complete equipment line, technical specifications, and metrology documentation on our Partners hub." : "Click on any brand below to view their complete equipment line, search specific systems, and download technical specifications and metrology documentation."}
+            Alkaram Medical is the premier authorized maintenance and service provider for global medical manufacturers. {minimal ? "Click on any brand below to explore their complete equipment line, technical specifications, and maintenance documentation on our Partners hub." : "Click on any brand below to view their complete equipment line, search specific systems, and download technical specifications and maintenance documentation."}
           </p>
         </div>
 
@@ -348,7 +348,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
                     </span>
                   </div>
                   <h3 className="text-2xl font-extrabold text-slate-900 mt-1">
-                    {selectedPartner.name} Calibration Line
+                    {selectedPartner.name} Equipment Line
                   </h3>
                 </div>
               </div>
@@ -418,10 +418,10 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
             <div className="lg:flex lg:items-center lg:justify-between relative">
               <div className="mb-6 lg:mb-0 lg:max-w-2xl">
                 <h3 className="text-xl sm:text-2xl font-bold leading-tight mb-2">
-                  Certified Calibration & Technical Dispatch
+                  Certified Maintenance & Technical Dispatch
                 </h3>
                 <p className="text-sm text-medical-100 leading-relaxed font-light">
-                  Our support engineers undergo factory certification directly with our international partner brands. We provide original replacement parts, NIST-traceable calibration certificates, and 24/7 technical callouts across Egypt.
+                  Our support engineers undergo factory certification directly with our international partner brands. We provide original replacement parts, quality verification certificates, and 24/7 technical callouts across Egypt.
                 </p>
               </div>
               

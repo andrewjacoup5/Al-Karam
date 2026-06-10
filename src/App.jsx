@@ -341,7 +341,7 @@ export default function App() {
                 </div>
               </div>
               <p className="text-[10px] text-slate-600 border-t border-slate-800 pt-3 leading-relaxed">
-                Ministry of Health Calibration License No. MoH-EGY-2026/894. NIST Calibration standards Traceability Certified.
+                Ministry of Health Maintenance & Service License No. MoH-EGY-2026/894. NIST Quality standards Traceability Certified.
               </p>
             </div>
 

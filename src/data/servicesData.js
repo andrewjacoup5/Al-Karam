@@ -89,14 +89,14 @@ export const MEDICAL_PLANNING = {
     },
     {
       title: "We Stay Until It Works",
-      desc: "On-site supervision through delivery, installation, testing, and calibration. We don't sign off until your facility is fully operational."
+      desc: "On-site supervision through delivery, installation, testing, and verification. We don't sign off until your facility is fully operational."
     }
   ]
 };
 
 export const MAINTENANCE_SERVICES = {
   title: "Maintenance & Technical Support",
-  subtitle: "Advanced Biomedical Calibration & Operational SLA",
+  subtitle: "Advanced Biomedical Maintenance & Operational SLA",
   intro: "Al Karam Medical delivers comprehensive medical equipment maintenance solutions based on advanced engineering standards, operational efficiency, and long-term reliability. Through our highly qualified biomedical engineering team, we provide professional support and services tailored to meet the operational demands of healthcare facilities across Egypt.",
   safetyCallout: "At Al Karam Medical, we understand that equipment reliability directly impacts clinical performance and patient safety. Therefore, our maintenance strategy focuses on minimizing downtime, extending equipment lifespan, improving operational stability, and ensuring maximum performance efficiency for all medical systems.",
   experienceCallout: "With a strong track record and extensive references across Egypt, Al Karam Medical has successfully supported hospitals, medical centers, and healthcare institutions through reliable maintenance solutions and responsive engineering services, establishing a reputation built on trust, technical expertise, and commitment to quality.",
@@ -134,8 +134,8 @@ export const MAINTENANCE_SERVICES = {
       desc: "Predictable technical partnerships guaranteeing scheduled visits, priority callouts, and comprehensive support aligned with international guidelines."
     },
     {
-      name: "Technical Inspections, Calibration & Verification",
-      desc: "Scientific metrology calibration employing certified digital simulators (e.g. Fluke Biomedical) to ensure diagnostic parameter accuracy."
+      name: "Technical Inspections & Performance Verification",
+      desc: "Scientific testing employing certified digital simulators (e.g. Fluke Biomedical) to ensure diagnostic parameter accuracy and safety compliance."
     },
     {
       name: "Spare Parts Management & Continuous Support",

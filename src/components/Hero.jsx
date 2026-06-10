@@ -105,7 +105,7 @@ function Hero({ setActivePage }) {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                Biomedical Calibration & SLA Engineering Egypt
+                Biomedical Maintenance & SLA Engineering Egypt
               </span>
             </div>
 
@@ -127,7 +127,7 @@ function Hero({ setActivePage }) {
             </div>
 
             <p className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed">
-              Al Karam Medical delivers comprehensive medical equipment planning, custom maintenance solutions, and expert calibrations based on advanced engineering standards, operational efficiency, and long-term reliability. We minimize clinical downtime to safeguard patient lives across Egypt.
+              Al Karam Medical delivers comprehensive medical equipment planning, custom maintenance solutions, and technical inspections based on advanced engineering standards, operational efficiency, and long-term reliability. We minimize clinical downtime to safeguard patient lives across Egypt.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
@@ -169,7 +169,7 @@ function Hero({ setActivePage }) {
                   Technical Support & Planning
                 </h3>
                 <p className="text-slate-500 text-sm mb-6 leading-relaxed">
-                  Highly qualified biomedical engineering team providing planning, corrective repair, preventative calibration, and OEM spare parts management Egyptian-wide.
+                  Highly qualified biomedical engineering team providing planning, corrective repair, preventative maintenance, and OEM spare parts management Egyptian-wide.
                 </p>
 
                 {/* Sub-cards representation */}
@@ -180,7 +180,7 @@ function Hero({ setActivePage }) {
                   </div>
                   <div className="flex items-center space-x-3 p-3 rounded-xl bg-white/70 border border-slate-100">
                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500" />
-                    <span className="text-xs font-semibold text-slate-700">OR & Surgical Platform Metrology Checks</span>
+                    <span className="text-xs font-semibold text-slate-700">OR & Surgical Platform Technical Checks</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 rounded-xl bg-white/70 border border-slate-100">
                     <div className="w-2.5 h-2.5 rounded-full bg-purple-500" />

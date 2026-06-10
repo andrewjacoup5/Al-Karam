@@ -231,7 +231,7 @@ function ContactUs({ source = "Contact Us Page" }) {
 
               <div className="pt-6 border-t border-slate-100 flex items-center space-x-2 text-[10px] text-slate-400 font-bold uppercase tracking-wider">
                 <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 animate-pulse" />
-                <span>NIST Calibration Compliance Assured</span>
+                <span>NIST Quality Compliance Assured</span>
               </div>
             </div>
 
@@ -251,7 +251,7 @@ function ContactUs({ source = "Contact Us Page" }) {
                   Work Ticket Dispatched!
                 </h3>
                 <p className="text-xs text-slate-500 max-w-md mx-auto mb-8 leading-relaxed">
-                  Our calibration supervisor has registered your request. An authorized field team has been scheduled.
+                  Our maintenance supervisor has registered your request. An authorized field team has been scheduled.
                 </p>
 
                 {/* Ticket ID Box */}
@@ -292,7 +292,7 @@ function ContactUs({ source = "Contact Us Page" }) {
                   <div className="border-t border-medical-100 pt-2 flex items-start space-x-2 text-slate-500">
                     <Clock className="h-4 w-4 text-medical-600 flex-shrink-0 mt-0.5" />
                     <p className="leading-relaxed text-[10px]">
-                      Response Window: A certified calibration engineer will arrive at your facility <strong>Within 24 Hours (Next Business Day)</strong>.
+                      Response Window: A certified service engineer will arrive at your facility <strong>Within 24 Hours (Next Business Day)</strong>.
                     </p>
                   </div>
                 </div>
@@ -413,13 +413,13 @@ function ContactUs({ source = "Contact Us Page" }) {
                 {/* Fault description */}
                 <div>
                   <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">
-                    Details of Fault or Calibration Query
+                    Details of Fault or Maintenance Query
                   </label>
                   <textarea
                     id="ticket-desc"
                     name="desc"
                     rows="3"
-                    placeholder="e.g. Screen error code E-04 airway flow sensor error during volume ventilation calibration cycle."
+                    placeholder="e.g. Screen error code E-04 airway flow sensor error during volume ventilation maintenance cycle."
                     value={ticketDetails.desc}
                     onChange={handleInputChange}
                     className="w-full bg-slate-50 border border-slate-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-500/20 rounded-xl px-4 py-3 text-xs text-slate-800 placeholder-slate-400 outline-none transition-all resize-none"
