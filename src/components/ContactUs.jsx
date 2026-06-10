@@ -163,19 +163,18 @@ function ContactUs({ source = "Contact Us Page" }) {
                 For complete failures in life-support ventilators, anesthesia workstations, or emergency defibrillators, call our technical dispatch team immediately:
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {[
                   "+2 01099442054",
                   "+2 01098812385",
-                  "+2 01272398884",
-                  "+2 01020328622"
+                  "+2 01272398884"
                 ].map((phone) => (
                   <a
                     key={phone}
                     href={`tel:${phone.replace(/\D/g, "")}`}
-                    className="flex items-center space-x-3 bg-rose-50 hover:bg-rose-600 text-rose-700 hover:text-white px-4 py-3 rounded-xl border border-rose-200/60 hover:border-rose-650 transition-all duration-300 cursor-pointer shadow-sm text-xs font-bold group"
+                    className="flex items-center space-x-2.5 bg-rose-50 hover:bg-rose-600 text-rose-700 hover:text-white px-2.5 py-3 rounded-xl border border-rose-200/60 hover:border-rose-650 transition-all duration-300 cursor-pointer shadow-sm text-[11px] font-bold group"
                   >
-                    <Phone className="h-4 w-4 text-rose-500 group-hover:text-white hover:scale-110 transition-transform" />
+                    <Phone className="h-3.5 w-3.5 text-rose-500 group-hover:text-white hover:scale-110 transition-transform flex-shrink-0" />
                     <span>{phone}</span>
                   </a>
                 ))}
@@ -196,9 +195,9 @@ function ContactUs({ source = "Contact Us Page" }) {
                       <MapPin className="h-4 w-4" />
                     </div>
                     <div>
-                      <span className="block font-bold text-slate-800">10th of Ramadan Office</span>
+                      <span className="block font-bold text-slate-800">Cairo Office</span>
                       <span className="block text-slate-655 mt-1 leading-relaxed">
-                        10th of Ramadan City, Alordonia, Al Jawhara Mall, Office 447.
+                        32 Obur Building - Salah Salem Street, Cairo, Egypt.
                       </span>
                     </div>
                   </div>
@@ -208,9 +207,9 @@ function ContactUs({ source = "Contact Us Page" }) {
                       <MapPin className="h-4 w-4" />
                     </div>
                     <div>
-                      <span className="block font-bold text-slate-800">Cairo Office</span>
+                      <span className="block font-bold text-slate-800">10th of Ramadan Office</span>
                       <span className="block text-slate-655 mt-1 leading-relaxed">
-                        32 Obur Building - Salah Salem Street, Cairo, Egypt.
+                        10th of Ramadan City, Alordonia, Al Jawhara Mall, Office 447.
                       </span>
                     </div>
                   </div>

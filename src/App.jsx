@@ -300,8 +300,7 @@ export default function App() {
                   </span>
                   <span className="pl-6.5 block text-[11px] leading-tight">
                     <span>+2 01098812385</span><br />
-                    <span>+2 01272398884</span><br />
-                    <span>+2 01020328622</span>
+                    <span>+2 01272398884</span>
                   </span>
                 </div>
 
@@ -324,15 +323,15 @@ export default function App() {
                 <div className="flex items-start space-x-2.5">
                   <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0 mt-0.5" />
                   <span>
-                    10th of RamadaN City, Alordonia,<br />
-                    Al Jawhara Mall, Office 447.
+                    32 Obur Building - Salah Salem Street,<br />
+                    Cairo, Egypt.
                   </span>
                 </div>
                 <div className="flex items-start space-x-2.5">
                   <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0 mt-0.5" />
                   <span>
-                    32 Obur Building - Salah Salem Street,<br />
-                    Cairo, Egypt.
+                    10th of RamadaN City, Alordonia,<br />
+                    Al Jawhara Mall, Office 447.
                   </span>
                 </div>
               </div>
