@@ -243,9 +243,6 @@ export default function App() {
                   <span className="text-lg font-bold tracking-tight text-white leading-tight">
                     Al Karam <span className="text-medical-400">Medical</span>
                   </span>
-                  <span className="block text-[8px] uppercase tracking-wider text-slate-500 font-bold leading-none mt-0.5">
-                    Biomedical Services Desk
-                  </span>
                 </div>
               </div>
               <p className="text-xs text-slate-500 leading-relaxed">
