@@ -231,7 +231,7 @@ function ContactUs({ source = "Contact Us Page" }) {
 
               <div className="pt-6 border-t border-slate-100 flex items-center space-x-2 text-[10px] text-slate-400 font-bold uppercase tracking-wider">
                 <ShieldCheck className="h-4.5 w-4.5 text-emerald-500 animate-pulse" />
-                <span>NIST Quality Compliance Assured</span>
+                <span>International Engineering Standards Compliance Assured</span>
               </div>
             </div>
 
@@ -321,7 +321,7 @@ function ContactUs({ source = "Contact Us Page" }) {
                 <div>
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Biomedical Work Order Desk</h3>
                   <p className="text-slate-500 text-xs mt-1">
-                    Generate an authorized engineering work ticket for calibrated diagnostic service.
+                    Generate an authorized engineering work ticket for diagnostic maintenance service.
                   </p>
                 </div>
 
@@ -415,7 +415,7 @@ function ContactUs({ source = "Contact Us Page" }) {
                 {/* Fault description */}
                 <div>
                   <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">
-                    Details of Fault or Maintenance Query
+                    Details of Fault or Technical Service Request
                   </label>
                   <textarea
                     id="ticket-desc"

@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef, memo, useMemo } from "react";
-import { 
-  ShieldCheck, 
-  ArrowUpRight, 
-  Globe, 
-  FileText, 
-  Download, 
-  Image as ImageIcon, 
-  Folder, 
-  X, 
+import {
+  ShieldCheck,
+  ArrowUpRight,
+  Globe,
+  FileText,
+  Download,
+  Image as ImageIcon,
+  Folder,
+  X,
   Search,
   CheckCircle,
   FileCheck,
@@ -96,9 +96,8 @@ const OptimizedCardImage = React.memo(({ src, alt }) => {
           src={src}
           alt={alt}
           loading="lazy"
-          className={`w-full h-full object-cover transition-opacity duration-300 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
+          className={`w-full h-full object-cover transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"
+            }`}
         />
       )}
     </div>
@@ -184,7 +183,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
   const [activeVersionIdx, setActiveVersionIdx] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  
+
   const productsRef = useRef(null);
 
   // Sync selected partner if initialPartnerId changes
@@ -216,10 +215,10 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
   const filteredProducts = useMemo(() => {
     return selectedPartner
       ? selectedPartner.brandProducts.filter(prod => {
-          const matchesSearch = prod.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            prod.folderName.toLowerCase().includes(searchQuery.toLowerCase());
-          return matchesSearch;
-        })
+        const matchesSearch = prod.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          prod.folderName.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesSearch;
+      })
       : [];
   }, [selectedPartner, searchQuery]);
 
@@ -252,7 +251,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
   return (
     <section className="py-16 bg-slate-50 relative overflow-hidden grid-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <span className="text-xs font-bold uppercase tracking-wider text-medical-600 bg-medical-50 px-3.5 py-1.5 rounded-full">
@@ -262,7 +261,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
             Authorized Support & Brands Partnerships
           </h2>
           <p className="text-base text-slate-600 leading-relaxed">
-            Alkaram Medical is the premier authorized maintenance and service provider for global medical manufacturers. {minimal ? "Click on any brand below to explore their complete equipment line, technical specifications, and maintenance documentation on our Partners hub." : "Click on any brand below to view their complete equipment line, search specific systems, and download technical specifications and maintenance documentation."}
+            Alkaram Medical is a premier provider of advanced medical technologies and authorized technical support for leading global medical manufacturers. {minimal ? "Click on any brand below to explore complete equipment lines, technical specifications, and product documentation through our Partners hub." : "Explore our partnered brands to discover complete equipment portfolios, search for specific systems, and access detailed technical specifications and product documentation."}
           </p>
         </div>
 
@@ -274,17 +273,16 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
               <div
                 key={partner.id}
                 onClick={() => handlePartnerSelect(partner)}
-                className={`group bg-white p-4.5 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col items-center justify-center text-center h-32 relative ${
-                  isSelected 
-                    ? "border-medical-500 bg-medical-50/20 ring-2 ring-medical-500/20 shadow-md shadow-medical-100" 
-                    : "border-slate-100 hover:border-medical-300 hover:shadow-lg shadow-sm hover:-translate-y-1"
-                }`}
+                className={`group bg-white p-4.5 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col items-center justify-center text-center h-32 relative ${isSelected
+                  ? "border-medical-500 bg-medical-50/20 ring-2 ring-medical-500/20 shadow-md shadow-medical-100"
+                  : "border-slate-100 hover:border-medical-300 hover:shadow-lg shadow-sm hover:-translate-y-1"
+                  }`}
               >
                 {/* Visual Logo Container */}
                 <div className="w-full h-16 flex items-center justify-center mb-2 overflow-hidden">
                   {partner.logo ? (
-                    <img 
-                      src={`/${partner.logo}`} 
+                    <img
+                      src={`/${partner.logo}`}
                       alt={`${partner.name} logo`}
                       loading="lazy"
                       className="max-h-full max-w-full object-contain filter group-hover:scale-105 transition-transform duration-300"
@@ -299,7 +297,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
                     </div>
                   )}
                 </div>
-                
+
                 <span className={`text-[10px] font-bold uppercase tracking-wider ${isSelected ? "text-medical-600" : "text-slate-400 group-hover:text-medical-600 transition-colors"}`}>
                   {partner.name}
                 </span>
@@ -317,22 +315,22 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
 
         {/* Selected Brand Details Showcase Area */}
         {!minimal && selectedPartner && (
-          <div 
+          <div
             ref={productsRef}
             className="bg-white rounded-3xl border border-slate-200/60 p-6 sm:p-8 shadow-sm relative overflow-hidden"
           >
             {/* Background geometric flare */}
             <div className="absolute right-0 top-0 -translate-y-1/3 translate-x-1/3 w-80 h-80 bg-medical-500/5 rounded-full blur-3xl pointer-events-none" />
-            
+
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8 pb-6 border-b border-slate-100 relative z-10">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-100 p-2 flex items-center justify-center overflow-hidden">
                   {selectedPartner.logo ? (
-                    <img 
-                      src={`/${selectedPartner.logo}`} 
-                      alt={selectedPartner.name} 
+                    <img
+                      src={`/${selectedPartner.logo}`}
+                      alt={selectedPartner.name}
                       loading="lazy"
-                      className="max-h-full max-w-full object-contain" 
+                      className="max-h-full max-w-full object-contain"
                     />
                   ) : (
                     <span className="text-medical-600 font-bold text-lg">{selectedPartner.name}</span>
@@ -414,7 +412,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
           <div className="mt-16 bg-gradient-to-r from-medical-900 to-medical-800 rounded-3xl p-8 text-white relative shadow-xl overflow-hidden">
             {/* Background decoration */}
             <div className="absolute right-0 bottom-0 translate-y-1/4 translate-x-1/4 w-96 h-96 bg-medical-500/10 rounded-full blur-3xl pointer-events-none" />
-            
+
             <div className="lg:flex lg:items-center lg:justify-between relative">
               <div className="mb-6 lg:mb-0 lg:max-w-2xl">
                 <h3 className="text-xl sm:text-2xl font-bold leading-tight mb-2">
@@ -424,7 +422,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
                   Our support engineers undergo factory certification directly with our international partner brands. We provide original replacement parts, quality verification certificates, and 24/7 technical callouts across Egypt.
                 </p>
               </div>
-              
+
               <button
                 onClick={() => onSelectPartner("all")}
                 className="inline-flex items-center justify-center bg-white text-medical-900 hover:bg-medical-50 px-6 py-3.5 rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"

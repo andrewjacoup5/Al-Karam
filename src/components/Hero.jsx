@@ -105,7 +105,7 @@ function Hero({ setActivePage }) {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                Biomedical Maintenance & SLA Engineering Egypt
+                Biomedical Equipment, Service & SLA Engineering in Egypt
               </span>
             </div>
 
@@ -127,7 +127,7 @@ function Hero({ setActivePage }) {
             </div>
 
             <p className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed">
-              Al Karam Medical delivers comprehensive medical equipment planning, custom maintenance solutions, and technical inspections based on advanced engineering standards, operational efficiency, and long-term reliability. We minimize clinical downtime to safeguard patient lives across Egypt.
+              Al Karam Medical delivers comprehensive medical equipment planning, advanced maintenance solutions, and expert technical support based on high engineering standards, operational efficiency, and long-term reliability. We help minimize clinical downtime and support safer healthcare operations across Egypt.
             </p>
 
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
@@ -169,7 +169,7 @@ function Hero({ setActivePage }) {
                   Technical Support & Planning
                 </h3>
                 <p className="text-slate-500 text-sm mb-6 leading-relaxed">
-                  Highly qualified biomedical engineering team providing planning, corrective repair, preventative maintenance, and OEM spare parts management Egyptian-wide.
+                  Highly qualified biomedical engineering team providing medical equipment planning, corrective maintenance, preventive service, and OEM spare parts management across Egypt.
                 </p>
 
                 {/* Sub-cards representation */}

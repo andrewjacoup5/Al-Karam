@@ -80,7 +80,7 @@ function ReferencesSlider({ setActivePage }) {
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-medical-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div className="max-w-2xl">
@@ -91,10 +91,10 @@ function ReferencesSlider({ setActivePage }) {
               Trusted by Egypt's Leading Healthcare Networks
             </h2>
             <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-              We provide strategic planning, specialized maintenance, and robust 24/7 technical support SLAs to major university clinical centers and charity foundations.
+              Highly qualified biomedical engineering team providing medical equipment planning, corrective maintenance, preventive service, and OEM spare parts management across Egypt.
             </p>
           </div>
-          
+
           <button
             onClick={handleNavToClients}
             className="flex-shrink-0 inline-flex items-center space-x-1.5 text-xs sm:text-sm font-bold text-medical-600 hover:text-medical-700 transition-colors group cursor-pointer"
@@ -106,10 +106,10 @@ function ReferencesSlider({ setActivePage }) {
 
         {/* Carousel Slider Wrapper */}
         <div className="relative group/slider px-4 sm:px-8">
-          
+
           {/* Slider Window Container */}
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex transition-transform duration-700 ease-out gap-6"
               style={{
                 transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)`,
@@ -164,7 +164,7 @@ function ReferencesSlider({ setActivePage }) {
           >
             <ChevronLeft className="h-4.5 w-4.5" />
           </button>
-          
+
           <button
             onClick={handleNext}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-600 p-2.5 sm:p-3 rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer opacity-0 group-hover/slider:opacity-100"
@@ -184,11 +184,10 @@ function ReferencesSlider({ setActivePage }) {
                 setCurrentIndex(dIdx);
                 resetTimer();
               }}
-              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                currentIndex === dIdx 
-                  ? "w-6 bg-medical-500" 
+              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${currentIndex === dIdx
+                  ? "w-6 bg-medical-500"
                   : "w-1.5 bg-slate-200 hover:bg-slate-400"
-              }`}
+                }`}
               aria-label={`Go to slide ${dIdx + 1}`}
             />
           ))}

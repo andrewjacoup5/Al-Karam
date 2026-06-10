@@ -6,7 +6,7 @@ export const MEDICAL_PLANNING = {
   subtitle: "From First Blueprint to Final Handover",
   intro: "At Al Karam, we collaborate as a team with healthcare facility owners, developers, and operators at every stage, whether you're building a new hospital, expanding a clinic, or opening a specialized department. One team, end-to-end accountability.",
   warning: "Most healthcare projects hit costly delays — wrong equipment specs, late procurement, installation clashes, missed MEP requirements. We eliminate every one of those risks by owning the process from day one to handover. Whether your project is still a sketch on paper or already under construction, we step in, take charge, and deliver a facility built right, equipped right, and ready to save lives.",
-  
+
   process: [
     {
       phase: "Planning",
@@ -89,7 +89,7 @@ export const MEDICAL_PLANNING = {
     },
     {
       title: "We Stay Until It Works",
-      desc: "On-site supervision through delivery, installation, testing, and verification. We don't sign off until your facility is fully operational."
+      desc: "On-site supervision through delivery, installation, testing, and commissioning. We don’t sign off until your facility is fully operational."
     }
   ]
 };
@@ -100,7 +100,7 @@ export const MAINTENANCE_SERVICES = {
   intro: "Al Karam Medical delivers comprehensive medical equipment maintenance solutions based on advanced engineering standards, operational efficiency, and long-term reliability. Through our highly qualified biomedical engineering team, we provide professional support and services tailored to meet the operational demands of healthcare facilities across Egypt.",
   safetyCallout: "At Al Karam Medical, we understand that equipment reliability directly impacts clinical performance and patient safety. Therefore, our maintenance strategy focuses on minimizing downtime, extending equipment lifespan, improving operational stability, and ensuring maximum performance efficiency for all medical systems.",
   experienceCallout: "With a strong track record and extensive references across Egypt, Al Karam Medical has successfully supported hospitals, medical centers, and healthcare institutions through reliable maintenance solutions and responsive engineering services, establishing a reputation built on trust, technical expertise, and commitment to quality.",
-  
+
   sectors: [
     {
       name: "Intensive Care Units (ICU) and Critical Care Systems",
