@@ -351,6 +351,8 @@ function ContactUs({ source = "Contact Us Page" }) {
                       onChange={handleInputChange}
                       className="w-full bg-slate-50 border border-slate-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-500/20 rounded-xl px-3 py-3 text-xs text-slate-700 outline-none transition-all cursor-pointer"
                     >
+                      <option value="Maintenance">Maintenance</option>
+                      <option value="Medical planning Consultant">Medical planning Consultant</option>
                       <option value="ICU">Intensive Care Unit (ICU)</option>
                       <option value="OR">Operating Room (OR)</option>
                       <option value="ER">Emergency Room (ER)</option>
