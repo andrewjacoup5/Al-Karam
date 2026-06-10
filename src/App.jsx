@@ -348,8 +348,20 @@ export default function App() {
 
           {/* Copyright bar */}
           <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-500 gap-4">
-            <span>
-              &copy; {new Date().getFullYear()} Alkaram Medical. All rights reserved.
+            <span className="flex flex-col sm:flex-row sm:items-center gap-1">
+              <span>&copy; {new Date().getFullYear()} Alkaram Medical. All rights reserved.</span>
+              <span className="hidden sm:inline text-slate-700">|</span>
+              <span>
+                Developed by{" "}
+                <a
+                  href="https://www.linkedin.com/in/andrew-osama-jacoup/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-medical-400 hover:text-medical-300 font-semibold transition-colors"
+                >
+                  Path Group
+                </a>
+              </span>
             </span>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-slate-400 transition-colors">Regulatory Policy</a>
