@@ -215,6 +215,17 @@ export default function ProductGallery({ images = [] }) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [lightboxOpen, handleNext, handlePrev]);
 
+  // Disable body scroll when lightbox is open
+  useEffect(() => {
+    if (lightboxOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [lightboxOpen]);
+
   // Guard against no images
   if (totalImages === 0) {
     return (

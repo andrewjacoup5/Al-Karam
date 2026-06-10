@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { 
   Calendar, 
   ArrowUpRight, 
@@ -67,6 +67,17 @@ const EmptyStateSoon = ({ type }) => (
 function EventsNews() {
   const [selectedYear, setSelectedYear] = useState(2026);
   const [lightboxImage, setLightboxImage] = useState(null);
+
+  // Disable body scroll when lightbox is open
+  useEffect(() => {
+    if (lightboxImage) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [lightboxImage]);
 
   const years = [2026, 2025, 2024];
   const currentYearData = EVENTS_AND_NEWS_DATA[selectedYear] || { events: [], news: [] };

@@ -34,6 +34,15 @@ export default function ProductModal({ device, activeVersionIdx, setActiveVersio
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+
   const version = device.versions[activeVersionIdx] || device.versions[0];
   if (!version) return null;
 
