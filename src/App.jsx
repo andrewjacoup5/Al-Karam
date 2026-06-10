@@ -145,7 +145,6 @@ export default function App() {
             <Services setActivePage={setActivePage} />
             <Partners onSelectPartner={handleSelectPartnerFromHome} minimal={true} />
             <EventsNews />
-            <ContactUs source="Home Page" />
           </div>
         );
       case "products":
