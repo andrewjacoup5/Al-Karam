@@ -407,31 +407,7 @@ function Partners({ onSelectPartner, initialPartnerId = null, minimal = false })
           </div>
         )}
 
-        {/* Global Compliance Note Banner */}
-        {!minimal && (
-          <div className="mt-16 bg-gradient-to-r from-medical-900 to-medical-800 rounded-3xl p-8 text-white relative shadow-xl overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute right-0 bottom-0 translate-y-1/4 translate-x-1/4 w-96 h-96 bg-medical-500/10 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="lg:flex lg:items-center lg:justify-between relative">
-              <div className="mb-6 lg:mb-0 lg:max-w-2xl">
-                <h3 className="text-xl sm:text-2xl font-bold leading-tight mb-2">
-                  Certified Maintenance & Technical Dispatch
-                </h3>
-                <p className="text-sm text-medical-100 leading-relaxed font-light">
-                  Our support engineers undergo factory certification directly with our international partner brands. We provide original replacement parts, quality verification certificates, and 24/7 technical callouts across Egypt.
-                </p>
-              </div>
-
-              <button
-                onClick={() => onSelectPartner("all")}
-                className="inline-flex items-center justify-center bg-white text-medical-900 hover:bg-medical-50 px-6 py-3.5 rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
-              >
-                Explore Combined Catalog
-              </button>
-            </div>
-          </div>
-        )}
 
       </div>
 
