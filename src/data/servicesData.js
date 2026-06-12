@@ -156,7 +156,7 @@ export const CLIENTS = [
   {
     name: "Saudi German Hospital",
     arabicName: "المستشفى السعودي الألماني",
-    logo: "/Our Clients/Saudi German Hospital.png",
+    logo: "/Our Clients/Saudi_German_Hospital.png",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "Private Care",
@@ -166,7 +166,7 @@ export const CLIENTS = [
   {
     name: "Dar Al-Fouad Hospital",
     arabicName: "مستشفى دار الفؤاد",
-    logo: "/Our Clients/Dar Al-Fouad Hospital.png",
+    logo: "/Our Clients/Dar_Al-Fouad_Hospital.png",
     location: "Giza / 6th October",
     arabicLocation: "الجيزة / 6 أكتوبر",
     sector: "Specialized Cardiology",
@@ -176,7 +176,7 @@ export const CLIENTS = [
   {
     name: "Al-Salam International Hospital",
     arabicName: "مستشفى السلام الدولي",
-    logo: "/Our Clients/Al-Salam International Hospital.jpg",
+    logo: "/Our Clients/Al-Salam_International_Hospital.jpg",
     location: "Cairo / Maadi",
     arabicLocation: "القاهرة / المعادي",
     sector: "Private Care",
@@ -186,7 +186,7 @@ export const CLIENTS = [
   {
     name: "Ain Shams University Hospital",
     arabicName: "مستشفيات جامعة عين شمس",
-    logo: "/Our Clients/Ain Shams University Hospital.png",
+    logo: "/Our Clients/Ain_Shams_University_Hospital.png",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -206,7 +206,7 @@ export const CLIENTS = [
   {
     name: "Magdi Yacoub Heart Foundation",
     arabicName: "مؤسسة مجدي يعقوب لأبحاث القلب",
-    logo: "/Our Clients/Magdi Yacoub Heart Foundation.webp",
+    logo: "/Our Clients/Magdi_Yacoub_Heart_Foundation.webp",
     location: "Aswan / Cairo",
     arabicLocation: "أسوان / القاهرة",
     sector: "Heart Foundation",
@@ -216,7 +216,7 @@ export const CLIENTS = [
   {
     name: "Arab Contractors Hospital",
     arabicName: "مستشفى المقاولون العرب",
-    logo: "/Our Clients/Arab Contractors Hospital.png",
+    logo: "/Our Clients/Arab_Contractors_Hospital.png",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "Private Care",
@@ -246,7 +246,7 @@ export const CLIENTS = [
   {
     name: "Abou El-Reesh El-Mounira Hospital",
     arabicName: "مستشفى أبو الريش المنيرة للأطفال",
-    logo: "/Our Clients/Abou El-Reesh El-Mounira Hospital.jpg",
+    logo: "/Our Clients/Abou_El-Reesh_El-Mounira_Hospital.jpg",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -256,7 +256,7 @@ export const CLIENTS = [
   {
     name: "Abou El-Reesh Japanese Hospital",
     arabicName: "مستشفى أبو الريش الياباني للأطفال",
-    logo: "/Our Clients/Abou El-Reesh Japanese Hospital.png",
+    logo: "/Our Clients/Abou_El-Reesh_Japanese_Hospital.png",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
