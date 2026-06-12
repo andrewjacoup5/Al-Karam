@@ -783,7 +783,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Konted/Konted - C10CW/c10cw-cardiac-probe1.png",
           "assets/Partners/Konted/Konted - C10CW/c10cw-cardiac-probe2.png",
-          "assets/Partners/Konted/Konted - C10CW/c10cw-cardiac-probe3.png"
+          "assets/Partners/Konted/Konted - C10CW/1.png"
         ],
         "documents": [
           {
@@ -851,7 +851,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Konted/Konted - C10XL/buy-smartphone-ultrasound.jpg",
           "assets/Partners/Konted/Konted - C10XL/C10XL.jpg",
-          "assets/Partners/Konted/Konted - C10XL/pocket-ultrasound-device.jpg",
+          "assets/Partners/Konted/Konted - C10XL/1.jpg",
           "assets/Partners/Konted/Konted - C10XL/smartphone-ultrasound-for-sale.jpg"
         ],
         "documents": [
