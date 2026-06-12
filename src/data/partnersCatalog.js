@@ -78,7 +78,7 @@ export const PARTNERS_CATALOG = [
         "name": "LARYNGOSCOPE Fiber Optic",
         "images": [
           "assets/Partners/AUG/AUG - LARYNGOSCOPE Fiber Optic/MAXXLITE HIGH 1-1000x1000.png",
-          "assets/Partners/AUG/AUG - LARYNGOSCOPE Fiber Optic/MAXXLITE HIGH 4-1000x1000.png"
+          "assets/Partners/AUG/AUG - LARYNGOSCOPE Fiber Optic/1.png"
         ],
         "documents": [
           {
@@ -140,7 +140,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/AUG/AUG - VideoLARYNGOSCOPE Reusable/Re Blades .png",
           "assets/Partners/AUG/AUG - VideoLARYNGOSCOPE Reusable/Re Video_Laryngoscope Pediatric.png",
-          "assets/Partners/AUG/AUG - VideoLARYNGOSCOPE Reusable/Re Video_Laryngoscope.png",
+          "assets/Partners/AUG/AUG - VideoLARYNGOSCOPE Reusable/1.png",
           "assets/Partners/AUG/AUG - VideoLARYNGOSCOPE Reusable/VEDIOLARYNGOSCOPE REUSALE.jpg"
         ],
         "documents": [
