@@ -299,8 +299,8 @@ export default function App() {
                     <span>+2 01099442054</span>
                   </span>
                   <span className="pl-6.5 block text-[11px] leading-tight">
-                    <span>+2 01098812385</span><br />
-                    <span>+2 01272398884</span>
+                    <span>+2 01272398884</span><br />
+                    <span>+2 01098812385</span>
                   </span>
                 </div>
 

@@ -168,8 +168,9 @@ function ContactUs({ source = "Contact Us Page" }) {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {[
                   "+2 01099442054",
-                  "+2 01098812385",
-                  "+2 01272398884"
+                  "+2 01272398884",
+                  "+2 01098812385"
+                  
                 ].map((phone) => (
                   <a
                     key={phone}
