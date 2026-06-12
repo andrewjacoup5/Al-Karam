@@ -170,7 +170,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Axcent/Axcent - APUS X1/2.jpg",
           "assets/Partners/Axcent/Axcent - APUS X1/apus-bcs1.jpg",
-          "assets/Partners/Axcent/Axcent - APUS X1/apus-x1_1 (1).jpg",
+          "assets/Partners/Axcent/Axcent - APUS X1/1.jpg",
           "assets/Partners/Axcent/Axcent - APUS X1/apus-x1_2.jpg",
           "assets/Partners/Axcent/Axcent - APUS X1/apus-x1_3.jpg"
         ],
@@ -195,7 +195,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Axcent/Axcent - APUS X2/2.jpg",
           "assets/Partners/Axcent/Axcent - APUS X2/apus-bcs1-27jf9qm9k46c2zb.png",
           "assets/Partners/Axcent/Axcent - APUS X2/apus-bcs1.jpg",
-          "assets/Partners/Axcent/Axcent - APUS X2/apus-x2_1.jpg",
+          "assets/Partners/Axcent/Axcent - APUS X2/1.jpg",
           "assets/Partners/Axcent/Axcent - APUS X2/apus-x2_2.jpg"
         ],
         "documents": [
@@ -241,7 +241,7 @@ export const PARTNERS_CATALOG = [
         "name": "CETUS X12",
         "images": [
           "assets/Partners/Axcent/Axcent - CETUS X12/aXcent CETUS x12 Patient monitor.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Partners/Axcent/Axcent - CETUS X12/cetus x12.jpg"
+          "assets/Partners/Axcent/Axcent - CETUS X12/1.jpg"
         ],
         "documents": [
           {
@@ -283,9 +283,9 @@ export const PARTNERS_CATALOG = [
         "folderName": "Axcent - LYRA X1",
         "name": "LYRA X1",
         "images": [
-          "assets/Partners/Axcent/Axcent - LYRA X1/1.jpg",
+          "assets/Partners/Axcent/Axcent - LYRA X1/3.jpg",
           "assets/Partners/Axcent/Axcent - LYRA X1/2.jpg",
-          "assets/Partners/Axcent/Axcent - LYRA X1/Lyra x1 - Alkaram.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
+          "assets/Partners/Axcent/Axcent - LYRA X1/1.jpg"
         ],
         "documents": [
           {
@@ -305,8 +305,8 @@ export const PARTNERS_CATALOG = [
         "folderName": "Axcent - LYRA X2",
         "name": "LYRA X2",
         "images": [
+          "assets/Partners/Axcent/Axcent - LYRA X2/12.jpg",
           "assets/Partners/Axcent/Axcent - LYRA X2/1.jpg",
-          "assets/Partners/Axcent/Axcent - LYRA X2/2.jpg",
           "assets/Partners/Axcent/Axcent - LYRA X2/Lyra x2 - Alkaram.pdf - Adobe Acrobat Pro DC (64-bit).jpg"
         ],
         "documents": [
@@ -350,7 +350,7 @@ export const PARTNERS_CATALOG = [
         "name": "MUSCA X2",
         "images": [
           "assets/Partners/Axcent/Axcent - MUSCA X2/MUSCA x2 - Alkaram.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Partners/Axcent/Axcent - MUSCA X2/musca-x2_1.jpg"
+          "assets/Partners/Axcent/Axcent - MUSCA X2/1.jpg"
         ],
         "documents": [
           {
@@ -370,8 +370,8 @@ export const PARTNERS_CATALOG = [
         "folderName": "Axcent - Pavo",
         "name": "Pavo",
         "images": [
+          "assets/Partners/Axcent/Axcent - Pavo/12.jpg",
           "assets/Partners/Axcent/Axcent - Pavo/1.jpg",
-          "assets/Partners/Axcent/Axcent - Pavo/2 (2).jpg",
           "assets/Partners/Axcent/Axcent - Pavo/2.jpg",
           "assets/Partners/Axcent/Axcent - Pavo/3.jpg",
           "assets/Partners/Axcent/Axcent - Pavo/4.jpg",
