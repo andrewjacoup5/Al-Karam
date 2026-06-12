@@ -8,12 +8,13 @@ function ContactUs({ source = "Contact Us Page" }) {
   const [submitError, setSubmitError] = useState("");
   const [ticketDetails, setTicketDetails] = useState({
     hospital: "",
-    department: "ICU",
+    department: "Maintenance",
     person: "",
     phone: "",
     priority: "scheduled",
     device: "",
-    desc: ""
+    desc: "",
+    internalDepartment: "Sales"
   });
 
   const handleInputChange = (e) => {
@@ -53,15 +54,16 @@ function ContactUs({ source = "Contact Us Page" }) {
             access_key: accessKey,
             subject: `[Biomedical Support Desk] New Work Order - ${generatedId}`,
             from_name: "Al Karam Support Hub",
-            to_name: "Andrew Osama",
+            //to_name: "Andrew Osama",
             hospital: ticketDetails.hospital,
             department: ticketDetails.department,
+            internal_department: ticketDetails.internalDepartment,
             contact_person: ticketDetails.person || "Not Specified",
             phone: ticketDetails.phone,
             equipment: ticketDetails.device,
             description: ticketDetails.desc || "No extra description provided",
             ticket_id: generatedId,
-            submission_source: source,
+            //submission_source: source,
           }),
         });
 
@@ -301,12 +303,13 @@ function ContactUs({ source = "Contact Us Page" }) {
                     setFormSubmitted(false);
                     setTicketDetails({
                       hospital: "",
-                      department: "ICU",
+                      department: "Maintenance",
                       person: "",
                       phone: "",
                       priority: "scheduled",
                       device: "",
-                      desc: ""
+                      desc: "",
+                      internalDepartment: "Sales"
                     });
                   }}
                   className="bg-gradient-to-r from-medical-600 to-medical-500 hover:from-medical-700 hover:to-medical-600 text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-lg transition-all cursor-pointer"
@@ -393,6 +396,23 @@ function ContactUs({ source = "Contact Us Page" }) {
                       className="w-full bg-slate-50 border border-slate-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-500/20 rounded-xl px-4 py-3 text-xs text-slate-800 placeholder-slate-400 outline-none transition-all"
                     />
                   </div>
+                </div>
+
+                {/* Internal Department dropdown */}
+                <div>
+                  <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">
+                    Internal Department
+                  </label>
+                  <select
+                    name="internalDepartment"
+                    value={ticketDetails.internalDepartment}
+                    onChange={handleInputChange}
+                    className="w-full bg-slate-50 border border-slate-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-500/20 rounded-xl px-3 py-3 text-xs text-slate-700 outline-none transition-all cursor-pointer"
+                  >
+                    <option value="Sales">Sales</option>
+                    <option value="Medical Planning">Medical Planning</option>
+                    <option value="Maintenance">Maintenance</option>
+                  </select>
                 </div>
 
                 {/* Equipment name */}
