@@ -880,7 +880,7 @@ export const PARTNERS_CATALOG = [
         "name": "BD 28",
         "images": [
           "assets/Partners/Optium/Optium - BD 28/BD 28 - Blood Drawing Chair.pdf - Adobe Acrobat Pro DC (64-bit).jpg",
-          "assets/Partners/Optium/Optium - BD 28/BD-28.jpg",
+          "assets/Partners/Optium/Optium - BD 28/1.jpg",
           "assets/Partners/Optium/Optium - BD 28/DSC00184-kopya-scaled.jpg",
           "assets/Partners/Optium/Optium - BD 28/DSC00186-kopya-scaled.jpg",
           "assets/Partners/Optium/Optium - BD 28/DSC00190-kopya-scaled.jpg",
@@ -908,7 +908,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - BD 48/BD-48-Electronic-Blood-Drawing-Chair-4-Motors-scaled.jpg",
           "assets/Partners/Optium/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-1.png",
           "assets/Partners/Optium/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-2.png",
-          "assets/Partners/Optium/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-3.png",
+          "assets/Partners/Optium/Optium - BD 48/1.png",
           "assets/Partners/Optium/Optium - BD 48/Electronic-Blood-Drawing-Chair-4-Motors-4.png"
         ],
         "documents": [
@@ -953,7 +953,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - CL 22/6.png",
           "assets/Partners/Optium/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-2.jpg",
           "assets/Partners/Optium/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-3.jpg",
-          "assets/Partners/Optium/Optium - CL 22/CL-22-Electronic-Patient-Care-Bed-2-Motors-scaled.jpg"
+          "assets/Partners/Optium/Optium - CL 22/1.jpg"
         ],
         "documents": [
           {
@@ -977,7 +977,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - CL 32/6.png",
           "assets/Partners/Optium/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-1-1.jpg",
           "assets/Partners/Optium/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-2.jpg",
-          "assets/Partners/Optium/Optium - CL 32/CL-32-Electronic-Patient-Care-Bed-3-Motors-3.jpg"
+          "assets/Partners/Optium/Optium - CL 32/1.jpg"
         ],
         "documents": [
           {
@@ -1003,7 +1003,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - CL 43/CL-43-Electronic-ICU-Bed-4-Motors-2.jpg",
           "assets/Partners/Optium/Optium - CL 43/CL-43-Electronic-ICU-Bed-4-Motors-3.jpg",
           "assets/Partners/Optium/Optium - CL 43/CL-43-Electronic-ICU-Bed-4-Motors-4.jpg",
-          "assets/Partners/Optium/Optium - CL 43/CL-43-Electronic-ICU-Bed-4-Motors-scaled.jpg"
+          "assets/Partners/Optium/Optium - CL 43/1.jpg"
         ],
         "documents": [
           {
@@ -1025,7 +1025,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Optium/Optium - CL 45/6.png",
           "assets/Partners/Optium/Optium - CL 45/7.png",
-          "assets/Partners/Optium/Optium - CL 45/CL-45-Electronic-ICU-Bed-Column-Motors-1.jpg",
+          "assets/Partners/Optium/Optium - CL 45/1.jpg",
           "assets/Partners/Optium/Optium - CL 45/CL-45-Electronic-ICU-Bed-Column-Motors-2.jpg",
           "assets/Partners/Optium/Optium - CL 45/CL-45-Electronic-ICU-Bed-Column-Motors-3.jpg",
           "assets/Partners/Optium/Optium - CL 45/CL-45-Electronic-ICU-Bed-Column-Motors-4.jpg",
@@ -1055,7 +1055,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - CL 50/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-2.jpg",
           "assets/Partners/Optium/Optium - CL 50/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-3.jpg",
           "assets/Partners/Optium/Optium - CL 50/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-4.jpg",
-          "assets/Partners/Optium/Optium - CL 50/CL-50-Electronic-ICU-Bed-5-Motors-Column-Motors-scaled.jpg"
+          "assets/Partners/Optium/Optium - CL 50/1.jpg"
         ],
         "documents": [
           {
@@ -1078,7 +1078,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - CL 55/6 (2).png",
           "assets/Partners/Optium/Optium - CL 55/6.png",
           "assets/Partners/Optium/Optium - CL 55/CL-55-Electronic-ICU-Bed-5-Motors-1.jpg",
-          "assets/Partners/Optium/Optium - CL 55/CL-55-Electronic-ICU-Bed-5-Motors-2-1.jpg",
+          "assets/Partners/Optium/Optium - CL 55/1.jpg",
           "assets/Partners/Optium/Optium - CL 55/CL-55-Electronic-ICU-Bed-5-Motors-3.jpg",
           "assets/Partners/Optium/Optium - CL 55/CL-55-Electronic-ICU-Bed-5-Motors-5.jpg",
           "assets/Partners/Optium/Optium - CL 55/CL-55-Electronic-ICU-Bed-5-Motors-7-scaled.jpg"
@@ -1126,12 +1126,12 @@ export const PARTNERS_CATALOG = [
         "folderName": "Optium - COSY PT",
         "name": "COSY PT",
         "images": [
-          "assets/Partners/Optium/Optium - COSY PT/1.jpg",
+          "assets/Partners/Optium/Optium - COSY PT/12.jpg",
           "assets/Partners/Optium/Optium - COSY PT/2.jpg",
           "assets/Partners/Optium/Optium - COSY PT/3.jpg",
           "assets/Partners/Optium/Optium - COSY PT/4.jpg",
           "assets/Partners/Optium/Optium - COSY PT/6.png",
-          "assets/Partners/Optium/Optium - COSY PT/SSS.jpg"
+          "assets/Partners/Optium/Optium - COSY PT/1.jpg"
         ],
         "documents": [
           {
@@ -1219,7 +1219,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Optium/Optium - EC 17/EC-17-Color-Options.png",
           "assets/Partners/Optium/Optium - EC 17/EC-17.jpg",
-          "assets/Partners/Optium/Optium - EC 17/ENT-and-Eye-Examination-Chair-1.jpg",
+          "assets/Partners/Optium/Optium - EC 17/1.jpg",
           "assets/Partners/Optium/Optium - EC 17/ENT-and-Eye-Examination-Chair-1.png",
           "assets/Partners/Optium/Optium - EC 17/ENT-and-Eye-Examination-Chair-2.jpg"
         ],
@@ -1242,7 +1242,7 @@ export const PARTNERS_CATALOG = [
         "name": "EMERGEUM",
         "images": [
           "assets/Partners/Optium/Optium - EMERGEUM/DSC00121-kopya-1-scaled.jpg",
-          "assets/Partners/Optium/Optium - EMERGEUM/DSC00134-kopya-scaled.jpg",
+          "assets/Partners/Optium/Optium - EMERGEUM/1.jpg",
           "assets/Partners/Optium/Optium - EMERGEUM/DSC00135-kopya-scaled.jpg",
           "assets/Partners/Optium/Optium - EMERGEUM/DSC00136-kopya-scaled.jpg",
           "assets/Partners/Optium/Optium - EMERGEUM/DSC00142-kopya-scaled.jpg"
@@ -1336,7 +1336,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - Examy 5/EXAMY-5-15.jpg",
           "assets/Partners/Optium/Optium - Examy 5/EXAMY-5-4.jpg",
           "assets/Partners/Optium/Optium - Examy 5/EXAMY-5-6.jpg",
-          "assets/Partners/Optium/Optium - Examy 5/EXAMY-5-Examination-Couch-Height-Adjustable-1.jpg"
+          "assets/Partners/Optium/Optium - Examy 5/1.jpg"
         ],
         "documents": [
           {
@@ -1357,7 +1357,7 @@ export const PARTNERS_CATALOG = [
         "name": "GYN 16",
         "images": [
           "assets/Partners/Optium/Optium - GYN 16/GYN-16-2-1014x1024.jpg",
-          "assets/Partners/Optium/Optium - GYN 16/GYN-16-3.jpg"
+          "assets/Partners/Optium/Optium - GYN 16/1.jpg"
         ],
         "documents": [
           {
@@ -1441,7 +1441,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32-1.jpg",
           "assets/Partners/Optium/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32-2.jpg",
           "assets/Partners/Optium/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors-IN-32.jpg",
-          "assets/Partners/Optium/Optium - IN 32/IN-32-Electronic-Patient-Care-Bed-3-Motors.jpg"
+          "assets/Partners/Optium/Optium - IN 32/1.jpg"
         ],
         "documents": [
           {
@@ -1465,7 +1465,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - IN 42/Electronic-ICU-Bed-4-Motors-IN-42-2.jpg",
           "assets/Partners/Optium/Optium - IN 42/Electronic-ICU-Bed-4-Motors-IN-42-3.jpg",
           "assets/Partners/Optium/Optium - IN 42/Electronic-ICU-Bed-4-Motors-IN-42-4.jpg",
-          "assets/Partners/Optium/Optium - IN 42/Electronic-ICU-Bed-4-Motors-IN-42.jpg"
+          "assets/Partners/Optium/Optium - IN 42/1.jpg"
         ],
         "documents": [
           {
@@ -1654,7 +1654,7 @@ export const PARTNERS_CATALOG = [
         "name": "MATERNEUM",
         "images": [
           "assets/Partners/Optium/Optium - MATERNEUM/1-1.jpg",
-          "assets/Partners/Optium/Optium - MATERNEUM/10.jpg",
+          "assets/Partners/Optium/Optium - MATERNEUM/1.jpg",
           "assets/Partners/Optium/Optium - MATERNEUM/11.jpg",
           "assets/Partners/Optium/Optium - MATERNEUM/2.jpg",
           "assets/Partners/Optium/Optium - MATERNEUM/3-1.jpg"
@@ -1682,7 +1682,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - MOMENTUM/MOMENTUM-4-scaled.jpg",
           "assets/Partners/Optium/Optium - MOMENTUM/MOMENTUM-6-scaled.jpg",
           "assets/Partners/Optium/Optium - MOMENTUM/MOMENTUM-9-scaled.jpg",
-          "assets/Partners/Optium/Optium - MOMENTUM/MOMENTUM.png"
+          "assets/Partners/Optium/Optium - MOMENTUM/1.png"
         ],
         "documents": [
           {
@@ -1747,7 +1747,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - OBSTETRA/22.jpg",
           "assets/Partners/Optium/Optium - OBSTETRA/Ob1-scaled.jpg",
           "assets/Partners/Optium/Optium - OBSTETRA/Ob3-scaled.jpg",
-          "assets/Partners/Optium/Optium - OBSTETRA/OBSTETRA-2--1024x683.png",
+          "assets/Partners/Optium/Optium - OBSTETRA/1.png",
           "assets/Partners/Optium/Optium - OBSTETRA/obstetra-5-1-scaled.jpg"
         ],
         "documents": [
@@ -1835,7 +1835,7 @@ export const PARTNERS_CATALOG = [
         "name": "SB 01",
         "images": [
           "assets/Partners/Optium/Optium - SB 01/SB-01-Leather-Color-Options.png",
-          "assets/Partners/Optium/Optium - SB 01/sb-01.jpg",
+          "assets/Partners/Optium/Optium - SB 01/1.jpg",
           "assets/Partners/Optium/Optium - SB 01/sb-02.jpg",
           "assets/Partners/Optium/Optium - SB 01/sb-03.jpg"
         ],
@@ -1880,7 +1880,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - SB 03/DSC00112-kopya.jpg",
           "assets/Partners/Optium/Optium - SB 03/DSC00114-kopya.jpg",
           "assets/Partners/Optium/Optium - SB 03/DSC00115-kopya.jpg",
-          "assets/Partners/Optium/Optium - SB 03/DSC00116-kopya.jpg",
+          "assets/Partners/Optium/Optium - SB 03/1.jpg",
           "assets/Partners/Optium/Optium - SB 03/DSC00117-kopya.jpg",
           "assets/Partners/Optium/Optium - SB 03/SB-03-Leather-Color-Options.png"
         ],
@@ -1904,7 +1904,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Optium/Optium - SB 04/SB-03-Leather-Color-Options.png",
           "assets/Partners/Optium/Optium - SB 04/SB-04-Sofa-Bed.jpg",
-          "assets/Partners/Optium/Optium - SB 04/SB-04.jpg"
+          "assets/Partners/Optium/Optium - SB 04/1.jpg"
         ],
         "documents": [
           {
@@ -1942,7 +1942,7 @@ export const PARTNERS_CATALOG = [
         "images": [
           "assets/Partners/Optium/Optium - STACKER AL/STACKER-AL-1.jpg",
           "assets/Partners/Optium/Optium - STACKER AL/STACKER-AL-2.jpg",
-          "assets/Partners/Optium/Optium - STACKER AL/STACKER-AL.jpg"
+          "assets/Partners/Optium/Optium - STACKER AL/1.jpg"
         ],
         "documents": [
           {
@@ -1963,7 +1963,7 @@ export const PARTNERS_CATALOG = [
         "name": "STACKER MRI",
         "images": [
           "assets/Partners/Optium/Optium - STACKER MRI/stacker-mri-02.jpg",
-          "assets/Partners/Optium/Optium - STACKER MRI/stacker-mri-03.jpg",
+          "assets/Partners/Optium/Optium - STACKER MRI/1.jpg",
           "assets/Partners/Optium/Optium - STACKER MRI/STACKER-MRI.jpg"
         ],
         "documents": [
@@ -2007,8 +2007,8 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - UNICART ANESTHESIA/unicart-anesthesia-02.jpg",
           "assets/Partners/Optium/Optium - UNICART ANESTHESIA/unicart-anesthesia-03.jpg",
           "assets/Partners/Optium/Optium - UNICART ANESTHESIA/unicart-anesthesia-04.jpg",
-          "assets/Partners/Optium/Optium - UNICART ANESTHESIA/unicart-anesthesia-2-scaled.jpg",
-          "assets/Partners/Optium/Optium - UNICART ANESTHESIA/unicart-anesthesia-scaled.jpg"
+          "assets/Partners/Optium/Optium - UNICART ANESTHESIA/1.jpg",
+          "assets/Partners/Optium/Optium - UNICART ANESTHESIA/2.jpg"
         ],
         "documents": [
           {
@@ -2031,7 +2031,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - UNICART DRESSSING/central-lock.jpg",
           "assets/Partners/Optium/Optium - UNICART DRESSSING/drawer-with-seperators.jpg",
           "assets/Partners/Optium/Optium - UNICART DRESSSING/unicart-dressing-04.jpg",
-          "assets/Partners/Optium/Optium - UNICART DRESSSING/UNICART-DRESSING-scaled.jpg"
+          "assets/Partners/Optium/Optium - UNICART DRESSSING/1.jpg"
         ],
         "documents": [
           {
@@ -2081,7 +2081,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - UT 26/Ekran-goruntusu-2024-10-03-171130.png",
           "assets/Partners/Optium/Optium - UT 26/Ekran-goruntusu-2024-10-03-171138.png",
           "assets/Partners/Optium/Optium - UT 26/quality.jpg",
-          "assets/Partners/Optium/Optium - UT 26/UT-26-2-scaled.jpg",
+          "assets/Partners/Optium/Optium - UT 26/1.jpg",
           "assets/Partners/Optium/Optium - UT 26/UT-26-3-460x295.jpg",
           "assets/Partners/Optium/Optium - UT 26/UT-26-3-scaled.jpg",
           "assets/Partners/Optium/Optium - UT 26/UT-Defibrillator-Tray-scaled.jpg",
@@ -2113,7 +2113,7 @@ export const PARTNERS_CATALOG = [
           "assets/Partners/Optium/Optium - UT 27/DSC_0474-kopya.jpg",
           "assets/Partners/Optium/Optium - UT 27/DSC_0476-kopya.jpg",
           "assets/Partners/Optium/Optium - UT 27/DSC_0477-kopya.jpg",
-          "assets/Partners/Optium/Optium - UT 27/UT-27-scaled.jpg",
+          "assets/Partners/Optium/Optium - UT 27/1.jpg",
           "assets/Partners/Optium/Optium - UT 27/UT-Pushing-Tray-scaled.jpg"
         ],
         "documents": [
@@ -2290,7 +2290,7 @@ export const PARTNERS_CATALOG = [
         "name": "STRETCHER SPENCER 250kg",
         "images": [
           "assets/Partners/Spencer/SPENCER - STRETCHER SPENCER 250kg/CARRERA-XL-T-TEC-45_CA60000-min-1024x1024.png",
-          "assets/Partners/Spencer/SPENCER - STRETCHER SPENCER 250kg/images.png"
+          "assets/Partners/Spencer/SPENCER - STRETCHER SPENCER 250kg/1.png"
         ],
         "documents": [
           {
