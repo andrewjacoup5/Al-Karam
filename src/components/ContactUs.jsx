@@ -165,12 +165,12 @@ function ContactUs({ source = "Contact Us Page" }) {
                 For complete failures in life-support ventilators, anesthesia workstations, or emergency defibrillators, call our technical dispatch team immediately:
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {[
                   "+2 01099442054",
                   "+2 01272398884",
-                  "+2 01098812385"
-                  
+                  "+2 01098812385",
+                  "+2 01013580600"
                 ].map((phone) => (
                   <a
                     key={phone}

@@ -300,7 +300,8 @@ export default function App() {
                   </span>
                   <span className="pl-6.5 block text-[11px] leading-tight">
                     <span>+2 01272398884</span><br />
-                    <span>+2 01098812385</span>
+                    <span>+2 01098812385</span><br />
+                    <span>+2 01013580600</span>
                   </span>
                 </div>
 
