@@ -1,0 +1,66 @@
+{
+  "deviceName": "IN 43",
+  "overview": "IN 43 ELECTRONIC ICU BED, 4 MOTORS Electrical operated backrest, height and legrest adjustment Electrical operated Trendelenburg, Reverse Trendelenburg, fowler and vascular position Patient handset Foot end nurse control unit Control panels embedded on side rails; 2 for patient; 2 for nursing staff Footrest adjustment by ratchet Auto-CPR Auto Regression system on backrest Auto contour Hygienic design (PP), lockable and tuck away side rails Easy removable ABS mattress platform X-Ray Translucent Backrest with Cassette Holder Removable head and footboards Electrostatic epoxy painted metal frame Height adjustable stainless steel IV pole Plastic protective crash bumpers on four corners Central Lockable Castors, 150 mm Angle indicator for backrest Angle indicator for Trendelenburg and Reverse Trendelenburg positions Cardiac chair position with single button Shock position with single button Semi-Fowler position with single button Bed exit position with single button Examination position with single button Electronic CPR with single button Activation key at remote control to prevent any undesired positions Dual sided manual CPR levers at backrest Stationary headboard Urine bag holder Rechargeable Battery Backup Bed size extension (optional) IPX6 standard electronic system Other icu bed products",
+  "specs": [
+    {
+      "label": "Overall Length",
+      "value": "223 cm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "15 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "102 cm"
+    },
+    {
+      "label": "Under Bed Clearance",
+      "value": "15 cm"
+    },
+    {
+      "label": "Height Range",
+      "value": "42-84 cm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    },
+    {
+      "label": "Trendelenburg",
+      "value": "0°-16°"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 230V AC 50-60 Hz"
+    },
+    {
+      "label": "Reverse Trendelenburg",
+      "value": "0°-16°"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX6"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-35°"
+    },
+    {
+      "label": "Batteries",
+      "value": "2x 12V Series Connected, sealed, rechargeable, Lead / Acid gel,1.2 amp hrs."
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

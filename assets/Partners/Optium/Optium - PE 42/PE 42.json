@@ -1,0 +1,62 @@
+{
+  "deviceName": "PE 42",
+  "overview": "PE 42 PEDIATRIC ICU BED, 4 MOTORS 4 Motors Electrically operated backrest, height, legrest Trendelenburg and reverse Trendelenburg positions Fowler and Entry positions Hand control unit Height adjustable IV Pole HPL mattress platform, easy clean and hygienic Fold-away PP hygienic 4 pcs side rails Protective bumpers at corners Electrostatic powder coated steel main frame Dual-sided manual CPR at backrest (optional) Battery backup (optional) Nurse control panel (optional)",
+  "specs": [
+    {
+      "label": "Overall Length",
+      "value": "190 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "92 cm"
+    },
+    {
+      "label": "Mattress Platform",
+      "value": "160×70 cm"
+    },
+    {
+      "label": "Height Range",
+      "value": "45-89 cm"
+    },
+    {
+      "label": "Trendelenburg",
+      "value": "0°-13°"
+    },
+    {
+      "label": "Reverse Trendelenburg",
+      "value": "0°-13°"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-35°"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 220V AC 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX66"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

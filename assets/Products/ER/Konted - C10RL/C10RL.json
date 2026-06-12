@@ -1,0 +1,57 @@
+{
+  "deviceName": "Konted - C10 RL",
+  "overview": "The Konted C10RL is a combination of two probes, one side of the convex array probe and the other side of the line array probe, and the convex array probe has a cardiac preset function.The Konted C10RL is a wireless ultrasound scanner with dual probe, 3 in 1 multipurpose handheld convex+linear+cardiac whole body ultrasound scan.",
+  "specs": [
+    {
+      "label": "3-in-1 probe",
+      "value": "Linear + Convex + Phased Array"
+    },
+    {
+      "label": "Imaging Modes",
+      "value": "B, B+M, Color Doppler, PW, Power Doppler"
+    },
+    {
+      "label": "Linear Frequency",
+      "value": "7.5 / 10 MHz"
+    },
+    {
+      "label": "Convex/Cardiac Frequency",
+      "value": "2.5 / 5 MHz & 3.5 / 5 MHz"
+    },
+    {
+      "label": "Scan Depth",
+      "value": "up to 305 mm"
+    },
+    {
+      "label": "Battery",
+      "value": "2800mAh lithium battery"
+    },
+    {
+      "label": "Working time",
+      "value": "≥3 hours"
+    },
+    {
+      "label": "Standby time",
+      "value": "≥12 hours"
+    },
+    {
+      "label": "Lightweight design",
+      "value": "90 g"
+    },
+    {
+      "label": "Applications",
+      "value": "Abdomen, OB/GYN, Cardiac, Vascular, Thyroid, Breast, MSK, Pediatrics, Urology"
+    }
+  ],
+  "features": [
+    "Handheld USB + Wi-Fi Color Doppler Ultrasound",
+    "Compatible with Android, iOS, and Windows",
+    "Built-in Wi-Fi signal",
+    "Supports working while charging",
+    "Supports measurements, report editing, and multi-language software",
+    "Portable for clinic, ER, ICU, OR, and bedside use"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

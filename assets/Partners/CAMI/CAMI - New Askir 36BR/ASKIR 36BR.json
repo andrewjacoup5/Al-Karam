@@ -1,0 +1,67 @@
+{
+  "deviceName": "CA-MI - ASKIR 36BR",
+  "overview": "ASKIR 36BR is a portable suction unit for the aspiration of body liquids, oral, nasal and tracheal aspiration in adults or children.For professional use and with a powerful aspiration of max 36 l/min, ASKIR 36BR is lightweight for easy transport.Three different options for operation: AC/DC adapter, internal rechargeable battery and 12V make it a versatile suction unit approved for NON-STOP operation without overheating.Provided with visual and acoustic alarm indicating low battery level.Available with Lead-type battery or Li-ion battery.The Li-ion battery model is equipped with a pressure sensor placed in the PCB that reduces by 50% the speed of the motor when no vacuum is detected and therefore no aspiration is taking place, and PROXIMITY function to switch ON/OFF without touch. Main Applications Ambulance Car Emergency Department Home Care Patient Transfer Room / Ward Tracheostomy Veterinary Accessories Included Liquid collection jar with overflow valve system (multiple options available) 8×14 mm silicone tubes (150 cm, autoclavable) with conical connector (10–11–12 mm) Antibacterial & hydrophobic filter (single-patient use) Power cord + 12V car adapter + AC/DC universal adapter",
+  "specs": [
+    {
+      "label": "Motor",
+      "value": "Oil-less, maintenance-free piston pump"
+    },
+    {
+      "label": "Battery",
+      "value": "Lead rechargeable – autonomy up to 60 min (charging time ~4 hours)"
+    },
+    {
+      "label": "Classification",
+      "value": "High Vacuum / High Flow"
+    },
+    {
+      "label": "IP Code",
+      "value": "IP21"
+    },
+    {
+      "label": "Max Vacuum (adjustable)",
+      "value": "-0.80 bar / -80 kPa / -600 mmHg"
+    },
+    {
+      "label": "Max Air Flow",
+      "value": "36 L/min"
+    },
+    {
+      "label": "Noise Level",
+      "value": "65.5 dB(A)"
+    },
+    {
+      "label": "Duty Cycle",
+      "value": "Non-stop operation (by mains only)"
+    },
+    {
+      "label": "Weight",
+      "value": "4.39 kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "35 × 21 × 18 cm"
+    },
+    {
+      "label": "Warranty",
+      "value": "2 years"
+    },
+    {
+      "label": "Manufacturing",
+      "value": "Italy"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": [
+    "Stand on 5 castors Ø 50 mm with brakes (antistatic upon request)",
+    "Carrying bag (1000 ml / 2000 ml options)",
+    "Technical Features",
+    "ASKIR 36BR (Lead Battery)",
+    "Power Feeding:",
+    "14V (4A 100–240V~)",
+    "50–60Hz AC/DC adapter",
+    "12V car adapter"
+  ]
+}

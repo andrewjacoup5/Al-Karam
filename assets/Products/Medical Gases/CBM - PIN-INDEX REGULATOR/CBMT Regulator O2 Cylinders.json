@@ -1,0 +1,58 @@
+{
+  "deviceName": "CBMT - YR-MT870 Series",
+  "overview": "Click-Style Oxygen Regulators are designed for precise and reliable oxygen flow control in medical applications.Constructed with a durable aluminum body and brass high-pressure chamber, the regulator ensures safety, longevity, and consistent performance.The click-style mechanism allows accurate preset flow selection, making it ideal for hospital and emergency use.",
+  "specs": [
+    {
+      "label": "Selectable flow settings",
+      "value": "0, 0.5, 1, 2, 3, 4, 5, 6, 8, 10, 15, 25 LPM"
+    },
+    {
+      "label": "YR-MT870 Series",
+      "value": "85 mm / 115 mm / 120 mm / 125 mm / 165 mm"
+    },
+    {
+      "label": "Outlet",
+      "value": "Barbed outlet Ø8 mm"
+    },
+    {
+      "label": "Max Inlet Pressure",
+      "value": "3000 psi"
+    },
+    {
+      "label": "Gauge Size",
+      "value": "1.5 inch"
+    },
+    {
+      "label": "Flow Range",
+      "value": "0 – 25 LPM (12 preset levels)"
+    },
+    {
+      "label": "Inlet Standards",
+      "value": "CGA540 / CGA870"
+    },
+    {
+      "label": "Outlet Options",
+      "value": "Hose barb / threaded (G3/4)"
+    },
+    {
+      "label": "Packaging",
+      "value": "20 pcs / carton &  Carton size: 40.5 × 15.5 × 35.5 cm & Gross weight: 9.8 kg"
+    }
+  ],
+  "features": [
+    "Aluminum body with brass high-pressure chamber",
+    "3000 psi maximum inlet pressure",
+    "1-1/2” diameter UL-listed gauge",
+    "Inlet connection complies with CGA standards",
+    "Internal relief valve for safety protection",
+    "Customizable color options (green, blue, yellow, etc.)",
+    "Piston design regulator for stable performance",
+    "Sintered bronze inlet filter for extended service life",
+    "Easy-to-read flow rate window",
+    "Each unit includes 12 fixed flow settings for precise control",
+    "CGA870 pin index connection"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

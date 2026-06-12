@@ -1,0 +1,38 @@
+{
+  "deviceName": "ITC - JustVAC",
+  "overview": "Medical vacuum regulators designed for precise suction control in hospital vacuum systems and medical gas outlets.Available in plastic and Venturi-effect models for wall, rail, or direct outlet mounting.",
+  "specs": [
+    {
+      "label": "P-Series",
+      "value": "Plastic vacuum regulator"
+    },
+    {
+      "label": "C-Series",
+      "value": "Venturi-effect vacuum regulator"
+    },
+    {
+      "label": "B-Series / S-Series",
+      "value": "Additional vacuum regulator configurations"
+    }
+  ],
+  "features": [
+    "Easy vacuum adjustment and reading",
+    "ON/OFF control system",
+    "Quick PUSH filter/accessory replacement",
+    "Precise suction regulation",
+    "Compact and durable design",
+    "Available in wall, rail, or bar mounting versions",
+    "Venturi models compatible with Oxygen or Medical Air outlets",
+    "Available Series"
+  ],
+  "applications": [
+    "Surgical suction systems",
+    "ICU & hospital wards",
+    "Emergency departments",
+    "Respiratory care",
+    "Medical vacuum pipeline systems",
+    "Bed head units and rail systems"
+  ],
+  "compliance": [],
+  "notes": []
+}

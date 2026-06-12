@@ -1,0 +1,47 @@
+{
+  "deviceName": "Konted - C10 CW",
+  "overview": "Wireless Ultrasound Scanners are wireless and work with a mobile app that is compatible with most iOS and Android smart devices as well Windows system, also can be connected with Type-C cable. Imaging transmission is done by internal 5G Wi-Fi , no external networks needed and work for most specialties in hospitals , clinics, healthcare center etc.",
+  "specs": [
+    {
+      "label": "Frequency",
+      "value": "2.2 / 3.6 MHz"
+    },
+    {
+      "label": "Depth",
+      "value": "up to 200 mm"
+    },
+    {
+      "label": "Imaging Modes",
+      "value": "B, M, Color Doppler, PW/CW"
+    },
+    {
+      "label": "Battery life",
+      "value": "4 hours scanning / 72 hours standby"
+    },
+    {
+      "label": "Recharge time",
+      "value": "3–4 hours"
+    },
+    {
+      "label": "Weight",
+      "value": "165 g"
+    },
+    {
+      "label": "Languages",
+      "value": "Multi-language support"
+    }
+  ],
+  "features": [
+    "Wireless phased array cardiac ultrasound probe",
+    "128 elements – 80° scan angle",
+    "Compatible with Android, iOS, Windows",
+    "Wi-Fi + USB connectivity",
+    "IPX8 waterproof",
+    "Supports Type-C USB & wireless charging",
+    "Supports DICOM, JPEG, MP4 storage",
+    "Available in 2 shell colors"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

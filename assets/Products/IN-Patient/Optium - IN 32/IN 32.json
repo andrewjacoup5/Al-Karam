@@ -1,0 +1,58 @@
+{
+  "deviceName": "IN 32",
+  "overview": "IN 32 ELECTRONIC PATIENT CARE BED, 3 MOTORS Electrical operated backrest, height and legrest adjustment Fowler and Vascular positions Hand remote control Detachable PP head and foot boards Auto-contour Easily cleanable, lockable and fold-away PP side rails Auto-regression system for backrest Easy removable ABS mattress platform Angle indicator for backrest Electrostatic powder coated metal frame Footrest adjustment by ratchet Height adjustable IV pole Protective plastic corner bumpers 125 mm diagonal lockable castors 125 mm central lockable castors (optional) Dual side manual CPR levers at backrest (optional) Bed Extension (optional) Battery backup (optional) IPX6 standard electronic system",
+  "specs": [
+    {
+      "label": "Overall Length",
+      "value": "216 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "102 cm"
+    },
+    {
+      "label": "Height Range",
+      "value": "42-84 cm"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-35°"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "12,5 cm"
+    },
+    {
+      "label": "Under Bed Clearance",
+      "value": "12,5 cm"
+    },
+    {
+      "label": "Product Weight",
+      "value": "100 kg"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "200 kg"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 230V AC 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX6"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

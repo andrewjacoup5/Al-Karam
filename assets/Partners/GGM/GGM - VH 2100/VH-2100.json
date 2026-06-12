@@ -1,0 +1,63 @@
+{
+  "deviceName": "GGM - VH-2100",
+  "overview": "Medical general-purpose humidifier designed for respiratory therapy applications with adjustable temperature control, streamlined design, and compatibility with standard humidifier chambers.",
+  "specs": [
+    {
+      "label": "Model",
+      "value": "VH-2100-115 / VH-2100-230"
+    },
+    {
+      "label": "Dimensions",
+      "value": "W135 × D170 × H156 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "1.5 kg (without chamber)"
+    },
+    {
+      "label": "Heater Plate Capacity",
+      "value": "150W max"
+    },
+    {
+      "label": "Temperature Output",
+      "value": "93°C ±6°C"
+    },
+    {
+      "label": "Power Supply",
+      "value": "230V ±23V, 0.7A max / 115V ±12V, 1.3A max"
+    },
+    {
+      "label": "Overheat Cutoff",
+      "value": "93°C ±5°C"
+    },
+    {
+      "label": "Temperature Control",
+      "value": "9 adjustable levels"
+    },
+    {
+      "label": "Standards",
+      "value": "IEC/EN 60601-1 & IEC/EN 60601-1-2 & ISO 8185"
+    },
+    {
+      "label": "Accessories",
+      "value": "VH-3144 reusable humidifier chamber (without scroll)"
+    }
+  ],
+  "features": [
+    "Streamlined compact design",
+    "Water drainage design",
+    "Compatible with standard humidifier chambers",
+    "Adjustable temperature settings (Step 1–9)",
+    "Stable heating performance",
+    "Overheat protection system",
+    "Easy operation and maintenance"
+  ],
+  "applications": [
+    "Respiratory therapy",
+    "Humidification during oxygen therapy",
+    "ICU & hospital respiratory care",
+    "Ventilator humidification systems"
+  ],
+  "compliance": [],
+  "notes": []
+}

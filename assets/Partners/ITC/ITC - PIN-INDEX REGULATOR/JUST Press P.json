@@ -1,0 +1,24 @@
+{
+  "deviceName": "ITC - JustPress P-Series",
+  "overview": "Medical gas regulator with dial flowmeter designed for oxygen therapy applications in hospitals and home care.Provides precise flow selection with integrated cylinder pressure monitoring.",
+  "specs": [],
+  "features": [
+    "Piston-type gas regulator",
+    "Dial flowmeter with click flow selection",
+    "Integrated pressure manometer",
+    "Adjustable flow settings up to 50 L/min",
+    "Compact and lightweight design",
+    "High-precision flow control",
+    "Suitable for oxygen cylinders up to 200 bar",
+    "Multiple inlet and outlet connection standards available"
+  ],
+  "applications": [
+    "Oxygen therapy",
+    "Hospital wards",
+    "Home healthcare",
+    "Emergency & ambulance use",
+    "Respiratory care systems"
+  ],
+  "compliance": [],
+  "notes": []
+}

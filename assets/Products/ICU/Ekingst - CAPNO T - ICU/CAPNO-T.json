@@ -1,0 +1,71 @@
+{
+  "deviceName": "Ekingst - Capno-T",
+  "overview": "Portable palm-size mainstream EtCO2 monitor designed for real-time CO2 and respiration monitoring in emergency, ICU, operating room, transport, and anesthesia applications.",
+  "specs": [
+    {
+      "label": "EtCO2 Range",
+      "value": "0–150 mmHg"
+    },
+    {
+      "label": "Respiration Rate",
+      "value": "3–150 bpm"
+    },
+    {
+      "label": "Accuracy",
+      "value": "±2 mmHg (0–40 mmHg) / ±5% to ±10% depending on range."
+    },
+    {
+      "label": "Display Size",
+      "value": "1.5 inch"
+    },
+    {
+      "label": "Battery",
+      "value": "Rechargeable lithium battery"
+    },
+    {
+      "label": "Power Consumption",
+      "value": "5W"
+    },
+    {
+      "label": "Operating Temperature",
+      "value": "5–40°C"
+    },
+    {
+      "label": "Humidity",
+      "value": "30–75% non-condensing"
+    },
+    {
+      "label": "Atmospheric Pressure",
+      "value": "86–106 kPa"
+    },
+    {
+      "label": "Dimensions",
+      "value": "38 × 42 × 44 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "80 g"
+    }
+  ],
+  "features": [
+    "Ultra-compact lightweight handheld design",
+    "Mainstream EtCO2 monitoring technology",
+    "Instant plug-and-play operation",
+    "No calibration required",
+    "First EtCO2 reading within 5 seconds",
+    "Accurate readings within 15 seconds",
+    "Automatic atmospheric pressure compensation",
+    "USB & optional Bluetooth connectivity",
+    "Long-distance clear display visibility",
+    "Durable design for demanding clinical environments"
+  ],
+  "applications": [
+    "Anesthesia",
+    "Operating Room",
+    "ICU & respiratory monitoring",
+    "Emergency & transport monitoring",
+    "Airway positioning and breathing monitoring"
+  ],
+  "compliance": [],
+  "notes": []
+}

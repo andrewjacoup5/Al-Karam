@@ -1,0 +1,28 @@
+{
+  "deviceName": "Axcent - Cetus x15",
+  "overview": "Vital Signs Monitor for Out-Patient Department, Spot-Check, Transport, Ward and other Basic Monitoring",
+  "specs": [
+    {
+      "label": "Analog SpO2, NIBP, Li-Ion Battery",
+      "value": "Yes"
+    }
+  ],
+  "features": [
+    "8” color TFT LCD Screen (touch screen optional)",
+    "Portable, lightweight and sturdy design",
+    "Flexible parameters configuration for different clinical environments",
+    "Rechargeable Li-ion Battery (up to 12 hours uninterruptable work)",
+    "Big font and font color display setting",
+    "Spot-check and continuous monitoring mode",
+    "Selectable for Adult, Pediatric and Neonatal patients",
+    "Wired/Wireless CMS, support HL7 protocol to HIS",
+    "Barcode scanner support",
+    "Thermal recorder support",
+    "Graphical & tabular trend review"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": [
+    "ECG, Digital or Masimo SpO2, TEMP, Quick Temp (Ear or Forehead), EtCO2 Analyzer, Barcode Scanner, Thermal Recorder, Touch Screen, Wired/Wireless CMS"
+  ]
+}

@@ -197,6 +197,22 @@ export default function DocxParser({ docxPath, fallbackName, onDeviceNameDetecte
       setLoading(true);
       setError(null);
       try {
+        // Try loading pre-parsed JSON first
+        const jsonPath = docxPath.replace(/\.docx$/i, ".json");
+        const jsonResponse = await fetch(jsonPath);
+        if (jsonResponse.ok) {
+          const parsed = await jsonResponse.json();
+          if (active) {
+            setParsedData(parsed);
+            if (parsed && onDeviceNameDetected) {
+              onDeviceNameDetected(parsed.deviceName);
+            }
+            setLoading(false);
+          }
+          return;
+        }
+
+        // Fallback to client-side docx parsing if JSON is not available
         const mammoth = await loadMammoth();
         const response = await fetch(docxPath);
         if (!response.ok) {
@@ -214,7 +230,7 @@ export default function DocxParser({ docxPath, fallbackName, onDeviceNameDetecte
           setLoading(false);
         }
       } catch (err) {
-        console.warn("Mammoth parse warning: ", err);
+        console.warn("Specification parse warning: ", err);
         if (active) {
           setError(err.message || "Failed to load document specifications.");
           setLoading(false);

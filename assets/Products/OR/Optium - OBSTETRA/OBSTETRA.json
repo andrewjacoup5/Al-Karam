@@ -1,0 +1,58 @@
+{
+  "deviceName": "OBSTETRA",
+  "overview": "OBSTETRA ELECTRONIC DELIVERY BED, COLUMNAR MOTORS Electronic adjustments of backrest, legrest, height-up & down positions Electrical operated Trendelenburg and Reverse Trendelenburg positions. Metal parts coated with zinc phosphate and varnished with an electrostatic epoxy-polyester powder Easily cleanable, 3-section (HPL) compact laminate mattress surface. X-Ray permeable lying surface Converting to Bed Removable headboard and footboard made of hygienic PP materials. Tuck-away side rails made of hygienic PP materials IV pole receptacles and on the two corners of the headboard Rotating protective bumpers at all (four) corners of the bed Height adjustable IV pole Pair drainage hooks at both sides of the bed. Stainless steel accessory rails 125 mm diameter swivel castors with central locking system and directional lock Nurse control panel Electronically CPR (Reset) Equipped with powerful column motors Two-piece ABS plastic covered lower chassis Stainless steel accessories corrosion resistant Removable stainless steel fluid basin Adjustable patient hand grips Sliding foot section mechanism Angle indicators on the side rails for the backrest, Trendelenburg and Reverse Trendelenburg positions. Back up battery for non-stop operation in case of power failure. Foam mattress of 12 cm thickness and 28 kg/m3 suitable for lying surface with antibacterial & flame retardant cover Adjustable Leg supports Squatting Bar Upholstered heel Supports (foot support) Manual CPR for the backrest Accessory Trolley Control panels embedded on side rails (optional) Twin castors of 150 mm diameter (optional) Foot switch (optional)",
+  "specs": [
+    {
+      "label": "Backrest Angle",
+      "value": "0°-67°"
+    },
+    {
+      "label": "Bed Surface (Extended)",
+      "value": "85×191 cm"
+    },
+    {
+      "label": "Pelvic Angle",
+      "value": "0°-27°"
+    },
+    {
+      "label": "Bed Surface (Retracted)",
+      "value": "85×144 cm"
+    },
+    {
+      "label": "Trendelenburg Angle",
+      "value": "0°-20°"
+    },
+    {
+      "label": "Height (without Mattress)",
+      "value": "60-100 cm"
+    },
+    {
+      "label": "Reverse Trendelenburg Angle",
+      "value": "0°-20°"
+    },
+    {
+      "label": "Mattress Thickness (Backrest and Pelvic Sections)",
+      "value": "12 cm"
+    },
+    {
+      "label": "External Dimensions",
+      "value": "109×209 cm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    },
+    {
+      "label": "Product Weight (Empty)",
+      "value": "140 kg"
+    },
+    {
+      "label": "Safe Working Load Capacity",
+      "value": "250 kg"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

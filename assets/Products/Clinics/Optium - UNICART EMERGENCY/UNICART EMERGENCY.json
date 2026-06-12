@@ -1,0 +1,26 @@
+{
+  "deviceName": "UNICART EMERGENCY",
+  "overview": "UNICART EMERGENCY EMERGENCY CART",
+  "specs": [
+    {
+      "label": "Width",
+      "value": "825 mm"
+    },
+    {
+      "label": "Depth",
+      "value": "585 mm"
+    },
+    {
+      "label": "Height",
+      "value": "1150 mm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

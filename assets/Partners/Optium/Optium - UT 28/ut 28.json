@@ -1,0 +1,26 @@
+{
+  "deviceName": "UT 28",
+  "overview": "UT 28 ANESTHESIA TROLLEY",
+  "specs": [
+    {
+      "label": "Body Dimension",
+      "value": "700 x 550 mm"
+    },
+    {
+      "label": "Height",
+      "value": "1150 mm"
+    },
+    {
+      "label": "Total Height",
+      "value": "1550 mm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

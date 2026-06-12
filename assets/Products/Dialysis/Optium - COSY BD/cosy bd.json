@@ -1,0 +1,50 @@
+{
+  "deviceName": "COSY BD",
+  "overview": "COSY BD BLOOD DRAWING CHAIR Synchronized backrest and legrest adjustment by gas spring Leather upholstery on sitting, back and leg sections Adjustable arm supports Removable Cushion Enhanced maneuverability with swivel rear castors Ergonomic push handles Height adjustable IV pole HPL Foot support platform Adjustable armrest supports (optional)",
+  "specs": [
+    {
+      "label": "Width",
+      "value": "65 cm"
+    },
+    {
+      "label": "Length",
+      "value": "159 cm"
+    },
+    {
+      "label": "Height",
+      "value": "45 cm"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-72°"
+    },
+    {
+      "label": "Footrest Angle",
+      "value": "0°-72°"
+    },
+    {
+      "label": "Trendelenburg Angle (Stable)",
+      "value": "0°-3°"
+    },
+    {
+      "label": "Safe Working Load Capacity",
+      "value": "200 kg"
+    },
+    {
+      "label": "Rear Castor Diameter",
+      "value": "125 mm"
+    },
+    {
+      "label": "Front Castor Diameter",
+      "value": "300 mm"
+    },
+    {
+      "label": "Weight",
+      "value": "55 kg"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

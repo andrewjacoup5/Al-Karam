@@ -1,0 +1,28 @@
+{
+  "deviceName": "Axcent - Cetus x12",
+  "overview": "Multi-Parameter Patient Monitor with flexible Configuration and reliable Features",
+  "specs": [
+    {
+      "label": "ECG, Analog SpO2, NIBP, 2x TEMP, PR, RESP, Li-ion battery",
+      "value": "Yes"
+    }
+  ],
+  "features": [
+    "12.1” color TFT LCD screen",
+    "8 waveform display, up to 12-lead ECG analysis",
+    "Useful calculation (Hemodynamic, Drug Dose, Oxygenation, Ventilation)",
+    "Pacemaker detection",
+    "ST & arrhythmia analysis",
+    "OxyCRGs screen",
+    "Wired/Wireless CMS, support HL7 protocol to HIS",
+    "SpO2 pulse-tone modulation (Pitch Tone)",
+    "MEWS (Modified Early Warning Score)",
+    "Graphical & tabular trend review (120 hours)",
+    "Rechargeable Lithium-Ion Battery (2.600 mAh)"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": [
+    "Touch-Screen, 12-lead ECG, Digital or Masimo SpO2, 2/4/6 IBP, Cardiac Output, EtCO2 Analyzer, Multi-Gas Analyzer, BIS, NMT, HDMI, Thermal Recorder, Wired/Wireless CMS"
+  ]
+}

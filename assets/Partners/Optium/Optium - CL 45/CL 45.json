@@ -1,0 +1,70 @@
+{
+  "deviceName": "CL 45",
+  "overview": "CL 45 ELECTRONIC ICU BED, COLUMN MOTORS Columnar Motors Electrical operated backrest, height and legrest adjustment Electrical operated Trendelenburg, Reverse Trendelenburg, fowler and vascular position Footrest adjustment by ratchet Remote control for adjusting positions Auto-CPR Auto Regression system on backrest Auto contour Hygienic design (PP), lockable and tuck away side rails Easy removable ABS mattress platform X-ray translucent HPL backrest Removable head and footboards Electrostatic epoxy painted metal frame Height adjustable stainless steel IV pole Plastic crash bumpers Central Lockable Castors, 150 mm Angle indicator for backrest Angle indicator for Trendelenburg and reverse Trendelenburg positions Cardiac chair position Shock position Semi-Fowler position Bed exit position Examination position CPR activation with single button Foot end nurse control panel Control panels embedded on side rails; 2 for patient; 2 for nursing staff Activation key at remote control to prevent any undesired positions Dual sided manual CPR levers at backrest Rechargeable Battery Backup X-ray cassette holder Urine bag holder Integrated weight scale system (Optional) Bed size extension (optional) IPX6 standard electronic system",
+  "specs": [
+    {
+      "label": "Overall Length",
+      "value": "220 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "100 cm"
+    },
+    {
+      "label": "Mattress Surface",
+      "value": "85 x 200 cm"
+    },
+    {
+      "label": "Height",
+      "value": "48-86 cm"
+    },
+    {
+      "label": "Trendelenburg",
+      "value": "0°-15°"
+    },
+    {
+      "label": "Reverse Trendelenburg",
+      "value": "0°-15°"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-40°"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "15 cm"
+    },
+    {
+      "label": "Under bed Clearance",
+      "value": "15 cm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 230V AC 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX6"
+    },
+    {
+      "label": "Batteries",
+      "value": "2x 12V Series Connected, sealed, rechargeable, Lead / Acid gel, 1.2 amp hrs."
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

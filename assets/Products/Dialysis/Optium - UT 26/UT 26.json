@@ -1,0 +1,26 @@
+{
+  "deviceName": "UT 26",
+  "overview": "UT 26 EMERGENCY TROLLEY",
+  "specs": [
+    {
+      "label": "Body Dimension",
+      "value": "700 x 550 mm"
+    },
+    {
+      "label": "External Dimension (with Accessories)",
+      "value": "980 x 700 mm"
+    },
+    {
+      "label": "Height",
+      "value": "1250 mm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

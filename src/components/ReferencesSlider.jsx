@@ -15,11 +15,18 @@ function ReferencesSlider({ setActivePage }) {
   );
 
   useEffect(() => {
+    let timeoutId = null;
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setWindowWidth(window.innerWidth);
+      }, 150);
     };
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   const itemsPerSlide = windowWidth >= 1024 ? 4 : windowWidth >= 640 ? 2 : 1;

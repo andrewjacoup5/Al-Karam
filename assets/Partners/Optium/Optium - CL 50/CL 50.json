@@ -1,0 +1,82 @@
+{
+  "deviceName": "CL 50",
+  "overview": "CL 50 ELECTRONIC ICU BED, 5 MOTORS, COLUMN MOTORS Electrically operated backrest, height, and legrest adjustment Electrically operated Trendelenburg, Reverse Trendelenburg, Fowler, and vascular position Lateral tilt functionality for enhanced patient positioning Foot end nurse control unit Footrest adjustment by ratchet Auto-CPR Auto Regression system on backrest Auto contour Hygienic design (PP), lockable, and tuck-away side rails Easy removable ABS mattress platform X-ray cassette holder Removable headboard and footboard Electrostatic epoxy-painted metal frame Height-adjustable stainless steel IV pole Plastic protective crash bumpers on four corners Central Lockable Castors, 150 mm Angle indicator for backrest Angle indicator for Trendelenburg and Reverse Trendelenburg positions Cardiac chair position with single button Shock position with single button Semi-Fowler position with single button Bed exit position with single button Examination position with single button Electronic CPR with one-touch button Foot switch control for additional convenience Activation key at remote control to prevent undesired positions Dual-sided manual CPR levers at backrest Urine bag holder Rechargeable battery backup Bed size extension (optional) X-ray cassette holder at backrest IPX6 standard electronic system",
+  "specs": [
+    {
+      "label": "Control panels embedded on side rails",
+      "value": "2 for patients, 2 for nursing staff"
+    },
+    {
+      "label": "Overall Length",
+      "value": "220 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "100 cm"
+    },
+    {
+      "label": "Mattress Surface",
+      "value": "85 x 200 cm"
+    },
+    {
+      "label": "Height",
+      "value": "50-88 cm"
+    },
+    {
+      "label": "Trendelenburg",
+      "value": "0°-15°"
+    },
+    {
+      "label": "Reverse Trendelenburg",
+      "value": "0°-15°"
+    },
+    {
+      "label": "Lateral Tilt (Right)",
+      "value": "0°-17°"
+    },
+    {
+      "label": "Lateral Tilt (Left)",
+      "value": "0°-17°"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-40°"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "15 cm"
+    },
+    {
+      "label": "Under bed Clearance",
+      "value": "15 cm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 230V AC 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX6"
+    },
+    {
+      "label": "Batteries",
+      "value": "2x 12V Series Connected, sealed, rechargeable, Lead / Acid gel, 1.2 amp hrs."
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

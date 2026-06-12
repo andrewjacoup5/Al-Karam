@@ -1,0 +1,35 @@
+{
+  "deviceName": "Konted - C10 TX",
+  "overview": "Newest C10TX wireless ultrasound scanner with dual probe, multipurpose handheld convex+linear+cardiac Ultrasound probe can diagnose whole body parts. C10TX can be used by wired or wireless connection to mobile phones/ipad/PC. It is IP68 waterproof, you can scan whole body part anytime anywhere.",
+  "specs": [
+    {
+      "label": "3-in-1 probe",
+      "value": "Convex + Linear + Cardiac"
+    },
+    {
+      "label": "Imaging modes",
+      "value": "B, B/M, Color Doppler, PW, PDI"
+    },
+    {
+      "label": "Weight",
+      "value": "only 182 g"
+    },
+    {
+      "label": "Applications",
+      "value": "Abdomen, OB/GYN, Cardiac, Vascular, Lung, Thyroid, Breast, MSK, Pediatrics, Urology"
+    }
+  ],
+  "features": [
+    "USB & Wi-Fi connectivity",
+    "Dual 128 elements / Dual 64 channels",
+    "Supports Android, iOS, and Windows",
+    "Built-in dual batteries with wireless charging",
+    "Supports scanning while charging",
+    "IP68 waterproof with cooling coating",
+    "Supports measurements, vessel flow analysis, annotation, dual screen, image/video/report saving, and printing",
+    "Portable handheld design with anti-skid body and multiple color options"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

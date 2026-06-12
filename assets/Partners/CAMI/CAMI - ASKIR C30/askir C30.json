@@ -1,0 +1,71 @@
+{
+  "deviceName": "CA-MI - ASKIR C30",
+  "overview": "A surgical suction unit indicated for professional use.Thanks to its powerful aspiration and the double collection system, it finds application in general surgery.The device is suitable for nasal, oral and endotracheal aspiration of bodily fluids (mucus or catarrh) from adults and children.",
+  "specs": [
+    {
+      "label": "Motor",
+      "value": "Oil-less and maintenance-free piston pump"
+    },
+    {
+      "label": "Power Supply",
+      "value": "230V / 50 Hz"
+    },
+    {
+      "label": "Classification",
+      "value": "High vacuum / High flow"
+    },
+    {
+      "label": "Max Vacuum",
+      "value": "-0.80 Bar (-80 kPa) / 600 mmHg (adjustable)"
+    },
+    {
+      "label": "Free Air Flow Rate",
+      "value": "40 L/min"
+    },
+    {
+      "label": "Noise Level",
+      "value": "61.5 dB(A)"
+    },
+    {
+      "label": "Duty Cycle",
+      "value": "Non-stop operation"
+    },
+    {
+      "label": "Weight",
+      "value": "6.20 Kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "32 × 30 × 99 cm"
+    },
+    {
+      "label": "Warranty",
+      "value": "2 years"
+    },
+    {
+      "label": "Shipping Carton",
+      "value": "1 unit"
+    },
+    {
+      "label": "Manufacturing Country",
+      "value": "Italy"
+    }
+  ],
+  "features": [
+    "Non-stop operationDesigned to guarantee the best performance, the unit can work continuously 24/24h.",
+    "ManeuverableMounted on a 5-castor stand for easy movement and positioning.",
+    "High-quality materialsThe chassis is made of UL94-V0 durable, flame-retardant, corrosion-resistant and rust-proof ABS plastic.",
+    "Long-lasting accessoriesAll accessories are made of resistant, autoclavable materials to ensure safety and hygiene over time."
+  ],
+  "applications": [
+    "General Surgery",
+    "Neurosurgery",
+    "Gynecology",
+    "Obstetrics",
+    "Operating Theatre",
+    "Dental Practice",
+    "Technical Data"
+  ],
+  "compliance": [],
+  "notes": []
+}

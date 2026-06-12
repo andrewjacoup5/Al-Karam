@@ -1,0 +1,42 @@
+{
+  "deviceName": "CBMT - ME 4.6L",
+  "overview": "DOT-standard medical aluminum oxygen cylinder designed for safe and reliable oxygen storage and delivery in medical applications. Manufactured from lightweight high-strength aluminum alloy for durability, portability, and corrosion resistance.Suitable for emergency care, ambulance services, hospitals, home care, and patient transport applications.",
+  "specs": [
+    {
+      "label": "Model Number",
+      "value": "ME"
+    },
+    {
+      "label": "Service Pressure",
+      "value": "2015 psi / 139 bar"
+    },
+    {
+      "label": "Diameter",
+      "value": "4.38 in / 111.3 mm"
+    },
+    {
+      "label": "Length",
+      "value": "25.4 in / 645 mm"
+    },
+    {
+      "label": "Empty Weight",
+      "value": "7.8 lbs / 3.6 kg"
+    },
+    {
+      "label": "Oxygen Capacity",
+      "value": "24.0 cu.ft / 679 L"
+    },
+    {
+      "label": "Water Capacity",
+      "value": "10.2 lbs / 4.6 L"
+    },
+    {
+      "label": "Standard Thread Size",
+      "value": "0.75-16UNF-2B"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

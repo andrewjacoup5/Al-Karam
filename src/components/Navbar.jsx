@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { Activity, Menu, X, PhoneCall, ShieldCheck } from "lucide-react";
 
-export default function Navbar({ activePage, setActivePage }) {
+function Navbar({ activePage, setActivePage }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -178,3 +178,5 @@ export default function Navbar({ activePage, setActivePage }) {
     </nav>
   );
 }
+
+export default memo(Navbar);

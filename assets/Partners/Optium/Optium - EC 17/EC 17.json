@@ -1,0 +1,54 @@
+{
+  "deviceName": "EC 17",
+  "overview": "EC 17 ENT AND EYE EXAMINATION CHAIR, 4 MOTORS 4 DC motors. Suitable for ENT and eye examination purposes Electronic adjustments of backrest, leg rest, height, and Trendelenburg functions by hand control unit The head rest is removable and adjustable in multiple positions Anti-microbial, water proof, flame retardant, air permeable and easy cleanable cushion and not effected to skin The chair the upholstery is made of high density foam of 30 kg/m3 with Artificial leather cover Foam’s capacity let the patient redistribute weight and surface pressure, potentially reducing decubitus ulcers ABS covering designed to keep itself in the upholstery and it blocks the dust which goes into the upholstery During the back rest movement, arm rests moves with the back rest simultaneously and the arm rests are easy removable Easy adjustable and removable upholstered arm rests The chair base is mounted on adjustable feet",
+  "specs": [
+    {
+      "label": "Backrest Angle",
+      "value": "0°-78°"
+    },
+    {
+      "label": "Trendelenburg Angle",
+      "value": "0°-12°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-88°"
+    },
+    {
+      "label": "Headrest Angle",
+      "value": "0°-90°"
+    },
+    {
+      "label": "Safe Working Load Capacity",
+      "value": "180 kg"
+    },
+    {
+      "label": "Weight",
+      "value": "110 kg"
+    },
+    {
+      "label": "External Dimensions (with Armrest)",
+      "value": "1959 x 640 mm"
+    },
+    {
+      "label": "Height Range",
+      "value": "640-840 mm"
+    },
+    {
+      "label": "Power In",
+      "value": "Max. 3,15A 100V-240V ~ 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX 4"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

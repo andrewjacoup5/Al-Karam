@@ -1,0 +1,33 @@
+{
+  "deviceName": "Axcent - Musca x2",
+  "overview": "A compact Ventilator suitable for Emergency and Disaster Relief Situations, Applications in Ambulances, Public Areas and also for Intra-Hospital and Inter-Hospital Transport",
+  "specs": [
+    {
+      "label": "I-E ratio range",
+      "value": "1:9 to 9:1."
+    },
+    {
+      "label": "tidal volume range",
+      "value": "50 to 2500 ml."
+    },
+    {
+      "label": "9 ventilation modes",
+      "value": "IPPV, V-AC, V-SIMV, P-AC, P-SIMV, CPAP, PCV, Manual, CPR."
+    }
+  ],
+  "features": [
+    "Compact design with weight of 3.4 kg.",
+    "7” color touch screen with screen lock function.",
+    "Airway pressure and EtCO2 real-time waveforms.",
+    "Smart CPR mode according to AHA guideline.",
+    "Internal PEEP valve.",
+    "40% or 100% for FiO2.",
+    "Rechargeable Li-ion battery with 6 hours working time.",
+    "Optional Mainstream EtCO2 analyzer.",
+    "Audible and visual alarm for multiple parameters.",
+    "IPX4 waterproof."
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

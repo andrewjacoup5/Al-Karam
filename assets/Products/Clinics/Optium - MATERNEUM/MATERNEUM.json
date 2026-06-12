@@ -1,0 +1,58 @@
+{
+  "deviceName": "MATERNEUM",
+  "overview": "MATERNEUM ELECTRONIC GYNECOLOGY COUCH Three motors Electrical backrest, height, and Trendelenburg/Reverse Trendelenburg adjustments Electric adjustment system with remote control Three sectional ergonomic design Consist of back section, pelvis and thighs section Electrostatic powder-coated metal frame Anti-microbial, waterproof, flame-retardant, and easy-to-clean upholstery Stainless steel accessory rails Stainless steel fold-down side rails with patient handles Easy removable stainless steel fluid basin Paper roll support Adjustable and lockable polyurethane leg supports with straps 4 castors with retractable rolling system brakes fixing floor on 4 rubber caps Backrest with gas spring (optional) Hydraulic height adjustment (optional) Grip handles (optional) Footrest (optional) Rechargeable battery backup system (optional) Foot switch (optional) Two-motor version (optional)",
+  "specs": [
+    {
+      "label": "External Length",
+      "value": "1650 mm"
+    },
+    {
+      "label": "External Width",
+      "value": "800 mm"
+    },
+    {
+      "label": "Total Lying Surface",
+      "value": "700 x 1650 mm"
+    },
+    {
+      "label": "Height Range (electrical)",
+      "value": "525-960 mm"
+    },
+    {
+      "label": "Height Range (hydraulic)",
+      "value": "485-905 mm"
+    },
+    {
+      "label": "Backrest Angle (electrical)",
+      "value": "0°-85°"
+    },
+    {
+      "label": "Backrest Angle (gas spring)",
+      "value": "0°-80°"
+    },
+    {
+      "label": "Trendelenburg Angle",
+      "value": "0°-16°"
+    },
+    {
+      "label": "Reverse Trendelenburg Angle",
+      "value": "0°-4°"
+    },
+    {
+      "label": "Upholstery Thickness",
+      "value": "50 mm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "50 mm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

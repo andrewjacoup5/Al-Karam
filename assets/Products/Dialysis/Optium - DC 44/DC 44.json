@@ -1,0 +1,62 @@
+{
+  "deviceName": "DC 44",
+  "overview": "DC 44 ELECTRICAL DIALYSIS AND CHEMOTHERAPY CHAIR, 4 MOTORS 4 motors for electronic adjustments of backrest, legrest, height, and Trendelenburg functions by hand control unit Suitable for Hemodialysis and Chemotherapy sessions Anti-microbial, water proof, flame retardant, air permeable and easy cleanable cushion and not effected to skin The chair is upholstered by viscoelastic foam which is known as memory foam, is a type of open cell, flexible polyurethane foam. It is body heat and weight sensitive material. It contours to the body shape, distributes the body pressure over a wide area and besides comfortable seating, allows for good blood circulation Foam’s capacity let the patient redistribute weight and surface pressure, potentially reducing decubitus ulcers ABS covering designed to keep itself in the upholstery and it blocks the dust which goes into the upholstery During the back rest movement, arm rests moves with the back rest simultaneously and the arm rests are easy removable Easy adjustable and removable upholstered arm rests Adjustable and removable cramp support and head support Head support provided with cushion for neck support 360° swivel, diagonal lockable castors of 125 mm diameter Height adjustable IV pole with 2 hooks Food / Reading Table (optional) Rechargeable Back-up battery (optional) Weighing Scale (optional) Central brake castors, 125 mm (optional) Manual CPR (optional) Tablet with holder (optional) Reading lamp (optional)",
+  "specs": [
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Trendelenburg Angle",
+      "value": "0°-13°"
+    },
+    {
+      "label": "Reverse Trendelenburg Angle",
+      "value": "0°-(-5)°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-35°"
+    },
+    {
+      "label": "Safe Working Load Capacity",
+      "value": "180 kg"
+    },
+    {
+      "label": "Weight",
+      "value": "115 kg"
+    },
+    {
+      "label": "External Dimensions (with Armrest)",
+      "value": "201 x 105 cm"
+    },
+    {
+      "label": "Bed Surface",
+      "value": "201 x 65 cm"
+    },
+    {
+      "label": "Height Range",
+      "value": "55-75 cm"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "125 mm"
+    },
+    {
+      "label": "Power In",
+      "value": "Max. 3,15A 100V-240V ~ 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IP66"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

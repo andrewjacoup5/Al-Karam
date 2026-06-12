@@ -1,0 +1,58 @@
+{
+  "deviceName": "CL 22",
+  "overview": "CL 22 ELECTRONIC PATIENT CARE BED, 2 MOTORS Electrical operated backrest and legrest adjustment Fowler and Vascular positions Hand remote control Detachable PP head and foot boards Auto-contour Easily cleanable, lockable and fold-away PP side rails Auto-regression system for backrest Easy removable ABS mattress platform Angle indicator for backrest Electrostatic powder coated metal frame Footrest adjustment by ratchet Height adjustable IV pole 125 mm diagonal lockable castors Protective plastic corner bumpers Dual side manual CPR levers at backrest (optional) Trendelenburg position (optional) IPX6 standard electronic system",
+  "specs": [
+    {
+      "label": "Overall Length",
+      "value": "220 cm"
+    },
+    {
+      "label": "Overall Width",
+      "value": "100 cm"
+    },
+    {
+      "label": "Mattress Surface",
+      "value": "85×200 cm"
+    },
+    {
+      "label": "Height",
+      "value": "45 cm"
+    },
+    {
+      "label": "Backrest Angle",
+      "value": "0°-70°"
+    },
+    {
+      "label": "Legrest Angle",
+      "value": "0°-40°"
+    },
+    {
+      "label": "Castor Diameter",
+      "value": "12,5 cm"
+    },
+    {
+      "label": "Under bed Clearance",
+      "value": "12,5 cm"
+    },
+    {
+      "label": "Safe Working Load",
+      "value": "250 kg"
+    },
+    {
+      "label": "Power In",
+      "value": "1.5A max. At 230V AC 50-60 Hz"
+    },
+    {
+      "label": "Electrical Shock Protection",
+      "value": "Class I, Type B"
+    },
+    {
+      "label": "Liquid Ingress Protection",
+      "value": "IPX6"
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

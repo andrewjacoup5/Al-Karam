@@ -1,0 +1,22 @@
+{
+  "deviceName": "Axcent - Musca x1",
+  "overview": "The essential Emergency Ventilator. Keep it simple – safe Life!",
+  "specs": [
+    {
+      "label": "Tidal volume range",
+      "value": "100 to 1500 ml"
+    }
+  ],
+  "features": [
+    "Portable and easy operation",
+    "Innovative voice-guided application",
+    "Air Mix option for 60% O2",
+    "3 rotary knobs for flexible parameters adjustment",
+    "TFT display for airway pressure and ventilation mode",
+    "3 ventilation modes. IPPV, Assisted control and Manual",
+    "Li-ion rechargeable battery with more than 10 hours of working time"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

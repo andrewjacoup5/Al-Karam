@@ -1,0 +1,32 @@
+{
+  "deviceName": "Konted - C10 XL",
+  "overview": "Mini wireless Cardiovascular ultrasound, multipurpose dual head linear+cardiac Ultrasound probe can provide you with HD heart images. The C10XL, as a kind of wifi ultrasound probe, is a combination of two probes, one side of the phased array probe and the other side of the line array probe.",
+  "specs": [
+    {
+      "label": "Imaging modes",
+      "value": "B, B/M, Color Doppler, PW, PDI, B+Color+PW"
+    },
+    {
+      "label": "Linear probe",
+      "value": "7.5/10 MHz, depth up to 100 mm"
+    },
+    {
+      "label": "Features",
+      "value": "Dual screen display, auto vessel flow measurement, measure magnify, full-screen imaging, 8 TGC, and 10 presets/body marks"
+    }
+  ],
+  "features": [
+    "Dual probe handheld ultrasound (Linear + Phased)",
+    "Wireless Wi-Fi & USB connectivity",
+    "Compatible with Android, iOS, and Windows",
+    "128 elements electronic array",
+    "Suitable for Cardiac, MSK, Nerve, Thyroid, Vascular, Abdomen, OB/GYN, Emergency, and Clinical applications",
+    "Built-in 2800mAh battery with USB & wireless charging",
+    "Working time up to 3 hours",
+    "Supports DICOM, report editing/printing, image & video saving/sharing",
+    "Portable lightweight design for bedside and emergency use"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": []
+}

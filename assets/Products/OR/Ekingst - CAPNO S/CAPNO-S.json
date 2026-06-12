@@ -1,0 +1,26 @@
+{
+  "deviceName": "Ekingst - Capno-S",
+  "overview": "Compact sidestream EtCO2 module for accurate CO2 monitoring in ICU, anesthesia, ventilator, and patient monitoring applications.Designed for plug-and-play OEM integration with stable performance and low power consumption.",
+  "specs": [],
+  "features": [
+    "Sidestream EtCO2 monitoring",
+    "High-precision CO2 measurement",
+    "Plug-and-play integration",
+    "Automatic pressure compensation",
+    "Self-calibration function",
+    "Low power consumption",
+    "Long service life & low noise",
+    "Reusable water filter system",
+    "Multiple communication protocols"
+  ],
+  "applications": [
+    "Patient monitors",
+    "ICU & critical care",
+    "Anesthesia systems",
+    "Ventilators",
+    "Emergency monitoring",
+    "OEM medical device integration"
+  ],
+  "compliance": [],
+  "notes": []
+}

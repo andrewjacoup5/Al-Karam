@@ -1,0 +1,64 @@
+{
+  "deviceName": "Ekingst - Capno-M",
+  "overview": "Compact mainstream EtCO2 module designed for accurate real-time CO2 monitoring in anesthesia, ICU, ventilator, and patient monitoring applications.Supports adult, pediatric, and neonatal patients with fast response time and OEM plug-and-play integration.",
+  "specs": [
+    {
+      "label": "CO2 Range",
+      "value": "0–150 mmHg / 0–20 kPa."
+    },
+    {
+      "label": "Accuracy",
+      "value": "±2 mmHg (0–40 mmHg) / ±5% to ±10% depending on range."
+    },
+    {
+      "label": "Respiration Rate",
+      "value": "2–150 bpm."
+    },
+    {
+      "label": "Power Supply",
+      "value": "5V ±5%."
+    },
+    {
+      "label": "Power Consumption",
+      "value": "<150 mA."
+    },
+    {
+      "label": "Warm-up Time",
+      "value": "<8 seconds."
+    },
+    {
+      "label": "Protection",
+      "value": "IPX4 splash-proof."
+    },
+    {
+      "label": "Interface",
+      "value": "RS-232 communication."
+    },
+    {
+      "label": "Operating Temperature",
+      "value": "5°C to 50°C."
+    }
+  ],
+  "features": [
+    "Mainstream EtCO2 monitoring technology",
+    "High accuracy NDIR infrared CO2 measurement",
+    "Plug-and-play OEM integration",
+    "Fast response time (~70 ms)",
+    "Low power consumption",
+    "Automatic pressure compensation",
+    "Adult / Pediatric / Neonatal support",
+    "Reusable airway adapters.",
+    "Compact lightweight design.",
+    "Maintenance-free operation."
+  ],
+  "applications": [
+    "Patient monitors.",
+    "Anesthesia systems.",
+    "ICU & critical care.",
+    "Ventilators.",
+    "Emergency & transport monitoring .",
+    "OEM medical device integration."
+  ],
+  "compliance": [],
+  "notes": []
+}

@@ -1,0 +1,29 @@
+{
+  "deviceName": "Axcent - Cetus x15",
+  "overview": "Multi-Parameter Critical Care Monitor for all Patient Categories",
+  "specs": [
+    {
+      "label": "ECG, Analog SpO2, NIBP, 2x TEMP, PR, RESP, Li-ion battery",
+      "value": "Yes"
+    }
+  ],
+  "features": [
+    "15.6” High resolution TFT LCD Touch screen",
+    "10 waveform display, up to 12-lead ECG analysis",
+    "Useful calculation (Hemodynamic, Drug Dose, Oxygenation, Ventilation)",
+    "Pacemaker detection",
+    "ST & arrhythmia analysis",
+    "SpO2 support PVI and PI, low perfusion 0.2%",
+    "BISx module, NMT module optional",
+    "Wired/Wireless CMS, support HL7 protocol to HIS",
+    "SpO2 pulse-tone modulation (Pitch Tone)",
+    "VGA support external display",
+    "Graphical & tabular trend review (120 hours)",
+    "48 hours full disclosure wave review for each patient"
+  ],
+  "applications": [],
+  "compliance": [],
+  "notes": [
+    "Touch-Screen, 12-lead ECG, Digital or Masimo SpO2, 2/4/6 IBP, Cardiac Output, EtCO2 Analyzer, Multi-Gas Analyzer, BIS, NMT, HDMI, Thermal Recorder, Wired/Wireless CMS"
+  ]
+}

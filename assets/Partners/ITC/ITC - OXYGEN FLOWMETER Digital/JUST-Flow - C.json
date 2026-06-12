@@ -1,0 +1,31 @@
+{
+  "deviceName": "ITC - JustFlow C-Series",
+  "overview": "Medical dial flowmeter designed for hospital gas pipeline systems with click-type flow selection and precise oxygen flow control.Compatible with humidifier jars and available with stabilized pressure models for improved flow accuracy.",
+  "specs": [],
+  "features": [
+    "Dial-type flowmeter with click flow selection",
+    "Front window flow indication",
+    "Precise adjustable flow control",
+    "Direct humidifier jar connection",
+    "Available with pressure stabilization system",
+    "Single or dual configurations available",
+    "Rail, wall, or bar mounting options",
+    "Compact and durable construction",
+    "Available Connections",
+    "DIN 13260-2",
+    "NF S 90-116",
+    "BS 5682",
+    "SS 8752430",
+    "ISO 18082 (NIST)",
+    "CGA V-5 (DISS)"
+  ],
+  "applications": [
+    "Oxygen therapy.",
+    "ICU & hospital wards.",
+    "Bed head units.",
+    "Medical gas pipeline systems.",
+    "Emergency and respiratory care."
+  ],
+  "compliance": [],
+  "notes": []
+}
