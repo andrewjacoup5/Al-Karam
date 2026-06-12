@@ -567,10 +567,10 @@ export const PARTNERS_CATALOG = [
         "folderName": "ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET",
         "name": "OXYGEN CYLINDER REGULATOR WITH OUTLET",
         "images": [
-          "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/1.jpg",
+          "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/12.jpg",
           "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/2.jpg",
           "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/3.jpg",
-          "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/4.jpg",
+          "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/1.jpg",
           "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/5.jpg",
           "assets/Partners/ITC/ITC - OXYGEN CYLINDER REGULATOR WITH OUTLET/6.jpg"
         ],
