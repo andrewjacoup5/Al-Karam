@@ -156,7 +156,7 @@ export const CLIENTS = [
   {
     name: "Saudi German Hospital",
     arabicName: "المستشفى السعودي الألماني",
-    logo: "/Our Clients/السعودى الألماني.png",
+    logo: "/Our Clients/Saudi German Hospital.png",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "Private Care",
@@ -166,7 +166,7 @@ export const CLIENTS = [
   {
     name: "Dar Al-Fouad Hospital",
     arabicName: "مستشفى دار الفؤاد",
-    logo: "/Our Clients/دار الفؤاد.png",
+    logo: "/Our Clients/Dar Al-Fouad Hospital.png",
     location: "Giza / 6th October",
     arabicLocation: "الجيزة / 6 أكتوبر",
     sector: "Specialized Cardiology",
@@ -176,7 +176,7 @@ export const CLIENTS = [
   {
     name: "Al-Salam International Hospital",
     arabicName: "مستشفى السلام الدولي",
-    logo: "/Our Clients/مستشفي السلام الدولي.jpg",
+    logo: "/Our Clients/Al-Salam International Hospital.jpg",
     location: "Cairo / Maadi",
     arabicLocation: "القاهرة / المعادي",
     sector: "Private Care",
@@ -186,7 +186,7 @@ export const CLIENTS = [
   {
     name: "Ain Shams University Hospital",
     arabicName: "مستشفيات جامعة عين شمس",
-    logo: "/Our Clients/جامعة عين شمس.png",
+    logo: "/Our Clients/Ain Shams University Hospital.png",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -196,7 +196,7 @@ export const CLIENTS = [
   {
     name: "Cairo University Hospital",
     arabicName: "مستشفيات جامعة القاهرة",
-    logo: "/Our Clients/جامعة القاهرة.jpg",
+    logo: "/Our Clients/Cairo University Hospital.jpg",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -206,7 +206,7 @@ export const CLIENTS = [
   {
     name: "Magdi Yacoub Heart Foundation",
     arabicName: "مؤسسة مجدي يعقوب لأبحاث القلب",
-    logo: "/Our Clients/مؤسسة مجدى يعقوب.webp",
+    logo: "/Our Clients/Magdi Yacoub Heart Foundation.webp",
     location: "Aswan / Cairo",
     arabicLocation: "أسوان / القاهرة",
     sector: "Heart Foundation",
@@ -216,7 +216,7 @@ export const CLIENTS = [
   {
     name: "Arab Contractors Hospital",
     arabicName: "مستشفى المقاولون العرب",
-    logo: "/Our Clients/المقاولون العرب.png",
+    logo: "/Our Clients/Arab Contractors Hospital.png",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "Private Care",
@@ -246,7 +246,7 @@ export const CLIENTS = [
   {
     name: "Abou El-Reesh El-Mounira Hospital",
     arabicName: "مستشفى أبو الريش المنيرة للأطفال",
-    logo: "/Our Clients/أبو الريش المنيرة.jpg",
+    logo: "/Our Clients/Abou El-Reesh El-Mounira Hospital.jpg",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -256,7 +256,7 @@ export const CLIENTS = [
   {
     name: "Abou El-Reesh Japanese Hospital",
     arabicName: "مستشفى أبو الريش الياباني للأطفال",
-    logo: "/Our Clients/أبو الريش الياباني.png",
+    logo: "/Our Clients/Abou El-Reesh Japanese Hospital.png",
     location: "Greater Cairo",
     arabicLocation: "القاهرة الكبرى",
     sector: "University Medical Center",
@@ -266,7 +266,7 @@ export const CLIENTS = [
   {
     name: "Al-Assema Hospital",
     arabicName: "مستشفى العاصمة",
-    logo: "/Our Clients/العاصمة.jpg",
+    logo: "/Our Clients/Al-Assema Hospital.jpg",
     location: "New Capital / Cairo",
     arabicLocation: "العاصمة الإدارية / القاهرة",
     sector: "Private Care",
@@ -276,7 +276,7 @@ export const CLIENTS = [
   {
     name: "Fayoum University Hospital",
     arabicName: "مستشفى جامعة الفيوم",
-    logo: "/Our Clients/الفيوم.jpg",
+    logo: "/Our Clients/Fayoum University Hospital.jpg",
     location: "Upper Egypt",
     arabicLocation: "الوجه القبلي",
     sector: "University Medical Center",
@@ -286,7 +286,7 @@ export const CLIENTS = [
   {
     name: "Academic Institute of Cardiothoracic",
     arabicName: "المعهد الأكاديمي لجراحة القلب والصدر",
-    logo: "/Our Clients/المعهد الأكاديمي.jpg",
+    logo: "/Our Clients/Academic Institute of Cardiothoracic.jpg",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "University Medical Center",
@@ -296,7 +296,7 @@ export const CLIENTS = [
   {
     name: "Alexandria University Hospital",
     arabicName: "مستشفيات جامعة الإسكندرية",
-    logo: "/Our Clients/جامعة الإسكندرية.jpg",
+    logo: "/Our Clients/Alexandria University Hospital.jpg",
     location: "Alexandria",
     arabicLocation: "الإسكندرية",
     sector: "University Medical Center",
@@ -306,7 +306,7 @@ export const CLIENTS = [
   {
     name: "Menoufia University Hospital",
     arabicName: "مستشفى جامعة المنوفية",
-    logo: "/Our Clients/جامعة المنوفية.jpg",
+    logo: "/Our Clients/Menoufia University Hospital.jpg",
     location: "Delta Region",
     arabicLocation: "الدلتا",
     sector: "University Medical Center",
@@ -316,7 +316,7 @@ export const CLIENTS = [
   {
     name: "King Salman International University",
     arabicName: "جامعة الملك سلمان الدولية - المستشفى التعليمي",
-    logo: "/Our Clients/جامعة_الملك_سلمان.png",
+    logo: "/Our Clients/King Salman International University.png",
     location: "Sinai / Sharm El Sheikh",
     arabicLocation: "سيناء / شرم الشيخ",
     sector: "University Medical Center",
@@ -326,7 +326,7 @@ export const CLIENTS = [
   {
     name: "Queens Royal Hospital",
     arabicName: "مستشفى كوينز رويال التخصصي",
-    logo: "/Our Clients/كوينز رويال.webp",
+    logo: "/Our Clients/Queens Royal Hospital.webp",
     location: "Cairo",
     arabicLocation: "القاهرة",
     sector: "Private Care",
@@ -336,7 +336,7 @@ export const CLIENTS = [
   {
     name: "El-Obour Specialty Hospital",
     arabicName: "مستشفى العبور التخصصي",
-    logo: "/Our Clients/مستشفي العبور التخصصي.png",
+    logo: "/Our Clients/El-Obour Specialty Hospital.png",
     location: "Qalyubia / El Obour",
     arabicLocation: "القليوبية / العبور",
     sector: "Private Care",
@@ -346,7 +346,7 @@ export const CLIENTS = [
   {
     name: "Al-Araby Hospital",
     arabicName: "مستشفى العربي التخصصي",
-    logo: "/Our Clients/مستشفي العربي.png",
+    logo: "/Our Clients/Al-Araby Hospital.png",
     location: "Delta Region / Menoufia",
     arabicLocation: "الدلتا / المنوفية",
     sector: "Private Care",
@@ -356,7 +356,7 @@ export const CLIENTS = [
   {
     name: "Nasaem Hospital",
     arabicName: "مستشفى نسائم التخصصي",
-    logo: "/Our Clients/نسائم.jpg",
+    logo: "/Our Clients/Nasaem Hospital.jpg",
     location: "New Cairo",
     arabicLocation: "القاهرة الجديدة",
     sector: "Private Care",
