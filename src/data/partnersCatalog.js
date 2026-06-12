@@ -493,7 +493,7 @@ export const PARTNERS_CATALOG = [
         "folderName": "CBM - OXYGEN CYLINDER ALUMINUM",
         "name": "OXYGEN CYLINDER ALUMINUM",
         "images": [
-          "assets/Partners/CBM/CBM - OXYGEN CYLINDER ALUMINUM/2.jpg"
+          "assets/Partners/CBM/CBM - OXYGEN CYLINDER ALUMINUM/1.jpg"
         ],
         "documents": [
           {
@@ -513,7 +513,7 @@ export const PARTNERS_CATALOG = [
         "folderName": "CBM - PIN-INDEX REGULATOR",
         "name": "PIN-INDEX REGULATOR",
         "images": [
-          "assets/Partners/CBM/CBM - PIN-INDEX REGULATOR/1.png"
+          "assets/Partners/CBM/CBM - PIN-INDEX REGULATOR/2.jpg"
         ],
         "documents": [
           {
